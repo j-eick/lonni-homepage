@@ -6,20 +6,20 @@ import useWindowSize from "./hooks/useWindowSize";
 import { useEffect } from "react";
 
 export default function Home() {
-    const [windowSize] = useWindowSize();
+    const WidthInfo = useWindowSize();
 
     useEffect(() => {
-        console.log(windowSize);
+        // console.log(windowSize);
     }, []);
     return (
         <div className={styles.page}>
-            <p className={styles.resizeInfo}>{windowSize.width}px</p>
+            <WidthInfo />
             <div className={styles.canvas}>
                 <Image
                     src={"/profil.jpg"}
                     width={"300"}
-                    height={"300"}
                     alt={"Lonni_Inman"}
+                    height={"300"}
                     className={styles.profilePic}
                     priority={false}
                 />

@@ -9,6 +9,13 @@
     background-color: #d8d4d4;
 }
 
+.resizeInfo {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+}
+
 .canvas {
     position: relative;
     width: 100%;

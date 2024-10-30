@@ -1,3 +1,5 @@
+import styles from "../page.module.css";
+
 import { useEffect, useState } from "react";
 
 type WindowProps = {
@@ -10,6 +12,10 @@ export default function useWindowSize() {
         width: window.innerWidth,
         height: window.innerHeight,
     });
+
+    const WidthInfo = () => {
+        return <p className={styles.resizeInfo}>{windowSize.width}px</p>;
+    };
 
     useEffect(() => {
         const handleWindowListener = () => {
@@ -26,5 +32,5 @@ export default function useWindowSize() {
         };
     }, []);
 
-    return [windowSize];
+    return WidthInfo;
 }
