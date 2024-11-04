@@ -7,6 +7,8 @@
     --secondary_rgba: rgba(15, 76, 117, 0.7);
     --tertiary: #3282b8;
     --quaternary: #bbe1fa;
+
+    --lineHeight-lineBreaks: 2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,9 +33,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    line-height: var(--lineHeight-lineBreaks);
 }
 
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -47,4 +53,8 @@ a {
 img {
     max-width: 100%;
     display: block;
+}
+
+[role="list"] {
+    list-style: none;
 }
