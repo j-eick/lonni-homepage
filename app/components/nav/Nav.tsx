@@ -1,45 +1,42 @@
 import Link from "next/link";
-import navStyle from "../../home/home.desktop.module.css";
+import styles from "./nav.module.css";
 
-type NavProps = {
-    className?: string;
-};
-export default function Nav({ className }: NavProps) {
+export default function Nav() {
     return (
-        <nav className={className}>
+        <nav className={styles.nav}>
             <Link
                 href="/home"
-                className={navStyle.link}
+                className={styles.link}
             >
                 Home
             </Link>
             <Link
                 href="/home/ausbildung"
-                className={navStyle.link}
+                className={styles.link}
             >
                 Ausbildung
             </Link>
             <Link
                 href="/home/künstlerischeTätigkeit"
-                className={navStyle.link}
+                className={styles.link}
             >
                 Künstlerische Tätigkeit
             </Link>
             <Link
                 href="/home/pädagogischeErfahrung"
-                className={navStyle.link}
+                className={styles.link}
             >
                 Pädagogische Erfahrung
             </Link>
             <Link
                 href="/home/links"
-                className={navStyle.link}
+                className={styles.link}
             >
                 Links
             </Link>
             <Link
                 href="/home/kontakt"
-                className={navStyle.link}
+                className={styles.link}
             >
                 Kontakt
             </Link>
