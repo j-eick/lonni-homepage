@@ -9,32 +9,17 @@
     --quaternary: #bbe1fa;
 
     --lineHeight-lineBreaks: 2;
-}
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-}
+    /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.414,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
-html,
-body {
-    height: 100%;
-    max-width: 100vw;
-    /* overflow-x: hidden; */
-}
-
-body {
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    /* background-color: #d8d4d4; */
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    line-height: var(--lineHeight-lineBreaks);
+    --step--2: clamp(0.6252rem, 0.7185rem + -0.1204vw, 0.6944rem);
+    --step--1: clamp(0.8333rem, 0.8157rem + 0.0881vw, 0.884rem);
+    --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+    --step-1: clamp(1.2rem, 1.0026rem + 0.987vw, 1.7675rem);
+    --step-2: clamp(1.44rem, 1.0716rem + 1.8422vw, 2.4992rem);
+    --step-3: clamp(1.728rem, 1.0998rem + 3.1408vw, 3.5339rem);
+    --step-4: clamp(2.0736rem, 1.0568rem + 5.0841vw, 4.997rem);
+    --step-5: clamp(2.4883rem, 0.8962rem + 7.9607vw, 7.0657rem);
 }
 
 *,
@@ -43,6 +28,32 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    line-height: var(--lineHeight-lineBreaks);
+}
+
+h1 {
+    font-size: var(--step-5);
+}
+
+p {
+    font-size: var(--step-0);
 }
 
 a {
@@ -57,4 +68,21 @@ img {
 
 [role="list"] {
     list-style: none;
+}
+
+.resizeInfo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: fit-content;
+    color: red;
+}
+
+.border {
+    border: 2px solid darkgrey;
+}
+
+.border-dashed {
+    border: 2px dashed lightgrey;
 }

@@ -1,0 +1,105 @@
+@media screen and (min-width: 900px) {
+    .canvas {
+        height: 80%;
+        width: 70%;
+
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 1fr;
+        gap: 1em;
+
+        .mainCanvas {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .header {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                grid-template-rows: 1fr;
+
+                .title {
+                    font-size: 2em;
+                    padding: 0;
+                }
+
+                .track {
+                }
+            }
+        }
+    }
+
+    .navCanvas {
+        position: relative;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+
+        /* border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray; */
+
+        .fluteHead {
+            grid-column: span 6;
+            height: 30%;
+            width: 110%;
+            min-width: 10em;
+            border: 1px solid black;
+            border-radius: 4em;
+        }
+
+        .fluteBody {
+            position: relative;
+
+            grid-column: span 6;
+            position: relative;
+            height: 90%;
+            width: 30%;
+
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-bottom-left-radius: 0.5em;
+            border-bottom-right-radius: 0.5em;
+
+            .ring {
+                position: absolute;
+                top: 1em;
+                height: 0.65em;
+                width: 100%;
+
+                border-radius: 0.15em;
+                background-color: black;
+            }
+
+            .keyContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 100%;
+            }
+
+            .option {
+                position: relative;
+                left: -60px;
+
+                max-width: 190%;
+                min-width: 7em;
+                height: 12%;
+
+                display: grid;
+                place-items: center;
+
+                background-color: #d68f8f;
+                border-radius: 0.75em;
+            }
+        }
+    }
+
+    .main {
+        height: 80%;
+    }
+}
