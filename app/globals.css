@@ -1,3 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Calinastiya;
+    src: url("./fonts/Calinastiya.ttf");
+}
+
+@layer components {
+    .fadingLine {
+        @apply before:content-[""] before:w-full before:h-0.5 
+        before:bg-gradient-to-r before:from-transparent before:via-slate-900 before:to-transparent
+        before:top-full;
+    }
+}
+
 :root {
     --background: #ffffff;
     --foreground: #171717;
@@ -7,6 +24,8 @@
     --secondary_rgba: rgba(15, 76, 117, 0.7);
     --tertiary: #3282b8;
     --quaternary: #bbe1fa;
+
+    --landigpage_titleFont: "Calinastiya";
 
     --lineHeight-lineBreaks: 2;
 
