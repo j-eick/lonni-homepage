@@ -94,6 +94,13 @@ module.exports = {
             },
             boxShadow: {
                 mainShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+                asideShadow: "rgba(0, 0, 0, 0.3) 2px 0px 8px, rgba(140, 140, 140, 0.22) 0px 0px 20px",
+            },
+            fontFamily: {
+                landingTitle: ["Calinastiya"],
+            },
+            gridTemplateRows: {
+                mainLayout: "6em 1fr",
             },
             height: {
                 "7/10": "70%",
@@ -104,6 +111,12 @@ module.exports = {
                 "9.5/10": "95%",
             },
             width: {
+                "1.5/10": "15%",
+                "2/10": "20%",
+                "2.5/10": "25%",
+                "3/10": "30%",
+                "6/10": "60%",
+                "6.5/10": "65%",
                 "7/10": "70%",
                 "7.5/10": "75%",
                 "8/10": "80%",
@@ -114,10 +127,16 @@ module.exports = {
             maxWidth: {
                 "950px": "950px",
                 "1050px": "1050px",
+                "1150px": "1150px",
+                "1250px": "1250px",
+                "1350px": "1350px",
             },
             screens: {
                 "950x": "950px",
                 "1250x": "1250px",
+            },
+            translate: {
+                1.5: "6px",
             },
             animation: {
                 ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
