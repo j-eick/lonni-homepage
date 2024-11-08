@@ -9,7 +9,7 @@
 
 @layer components {
     .content-allPages {
-        @apply h-8/10 w-9/10 max-w-1150px flex gap-8 overflow-hidden mainGradient
+        @apply h-8/10 w-8.5/10 max-w-1150px flex overflow-hidden mainGradient
         backdrop-blur-xl backdrop-brightness-85 bg-slate-200/30
         shadow-mainShadow rounded-3xl border-1 border-slate-100/50;
     }
