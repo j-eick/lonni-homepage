@@ -1,56 +1,57 @@
 "use client";
 
 import Link from "next/link";
-import desktop from "./main.desktop.module.css";
+import links from "@/lib/navLinks";
 import useWindowSize from "../../hooks/useWindowSize";
+import { usePathname } from "next/navigation";
 
 export default function Ausbildung() {
     const windowSize = useWindowSize();
+    const path = usePathname();
+
     return (
-        <div className={desktop.canvas}>
-            <p className={`${desktop.resizeInfo}`}>{windowSize.width}px</p>
-            <main className={` ${desktop.main}`}>
-                <nav className={desktop.nav}>
-                    <Link
-                        href="/home"
-                        className={desktop.link}
+        <>
+            <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
+            <div className="content-allPages">
+                <aside className={`p-4 pt-20 max-w-52 w-2/10 h-full leading-6 shadow-asideShadow bg-stone-500/20`}>
+                    <nav>
+                        <ul className="flex flex-col gap-5">
+                            {links.map((link, i) => (
+                                <li
+                                    key={i}
+                                    className={`relative px-3 h-14 flex items-end
+                                                before:absolute before:left-1/2 before:-translate-x-1/2 ${
+                                                    path === link.href ? "fadingLineWhite" : "fadingLineBlack"
+                                                } `}
+                                >
+                                    <Link
+                                        href={link.href}
+                                        className="w-full "
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
+                </aside>
+                <main
+                    className={`w-8/10 pt-2 px-10 pb-10 grid grid-cols-1 grid-rows-mainLayout overflow-hidden
+                                rounded-3xl`}
+                >
+                    <section
+                        className={`row-start-1
+                                    h-11 w-9/10 ml-auto flex justify-end items-center
+                                    border-b-1 border-slate-600/30`}
                     >
-                        Home
-                    </Link>
-                    <Link
-                        href="/main/ausbildung"
-                        className={desktop.link}
+                        <p className="translate-y-1.5 text-right">Music ticker...</p>
+                        <span className="translate-y-1">PlayIcon</span>
+                    </section>
+                    <article
+                        className={`row-start-2 
+                                    h-auto`}
                     >
-                        Ausbildung
-                    </Link>
-                    <Link
-                        href="/main/künstlerischeTätigkeit"
-                        className={desktop.link}
-                    >
-                        Künstlerische Tätigkeit
-                    </Link>
-                    <Link
-                        href="/main/pädagogischeErfahrung"
-                        className={desktop.link}
-                    >
-                        Pädagogische Erfahrung
-                    </Link>
-                    <Link
-                        href="/main/links"
-                        className={desktop.link}
-                    >
-                        Links
-                    </Link>
-                    <Link
-                        href="/main/kontakt"
-                        className={desktop.link}
-                    >
-                        Kontakt
-                    </Link>
-                </nav>
-                <section className={desktop.content}>
-                    <article>
-                        <h1>Ausbildung</h1>
+                        <h4 className="pb-4">Ausbildung</h4>
                         <ul
                             className=""
                             role="list"
@@ -72,10 +73,8 @@ export default function Ausbildung() {
                             </li>
                         </ul>
                     </article>
-                </section>
-                <section className={desktop.profile}>Profile</section>
-                <footer className={desktop.footer}>asd</footer>
-            </main>
-        </div>
+                </main>
+            </div>
+        </>
     );
 }
