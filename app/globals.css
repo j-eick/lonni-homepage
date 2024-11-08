@@ -8,6 +8,12 @@
 }
 
 @layer components {
+    .content-allPages {
+        @apply h-8/10 w-9/10 max-w-1150px flex gap-8 overflow-hidden mainGradient
+        backdrop-blur-xl backdrop-brightness-85 bg-slate-200/30
+        shadow-mainShadow rounded-3xl border-1 border-slate-100/50;
+    }
+
     .fadingLineBlack {
         @apply before:content-[""] before:w-full before:h-0.5 
         before:bg-gradient-to-r before:from-transparent before:via-slate-900 before:to-transparent
