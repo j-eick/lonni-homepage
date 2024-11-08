@@ -8,11 +8,24 @@
 }
 
 @layer components {
-    .fadingLine {
+    .fadingLineBlack {
         @apply before:content-[""] before:w-full before:h-0.5 
         before:bg-gradient-to-r before:from-transparent before:via-slate-900 before:to-transparent
         before:top-full;
     }
+    .fadingLineWhite {
+        @apply before:content-[""] before:w-full before:h-0.5 
+        before:bg-gradient-to-r before:from-transparent before:via-slate-200 before:to-transparent
+        before:top-full;
+    }
+
+    .bb {
+        @apply border-1 border-black;
+    }
+    .bw {
+        @apply border-1 border-white;
+    }
+
     .mainGradient {
         background-image: linear-gradient(
             to right top,
@@ -51,11 +64,17 @@
     --step--2: clamp(0.6252rem, 0.7185rem + -0.1204vw, 0.6944rem);
     --step--1: clamp(0.8333rem, 0.8157rem + 0.0881vw, 0.884rem);
     --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
-    --step-1: clamp(1.2rem, 1.0026rem + 0.987vw, 1.7675rem);
+    /* --step-1: clamp(1.2rem, 1.0026rem + 0.987vw, 1.7675rem);
     --step-2: clamp(1.44rem, 1.0716rem + 1.8422vw, 2.4992rem);
     --step-3: clamp(1.728rem, 1.0998rem + 3.1408vw, 3.5339rem);
     --step-4: clamp(2.0736rem, 1.0568rem + 5.0841vw, 4.997rem);
-    --step-5: clamp(2.4883rem, 0.8962rem + 7.9607vw, 7.0657rem);
+    --step-5: clamp(2.4883rem, 0.8962rem + 7.9607vw, 7.0657rem); */
+
+    --step-1: clamp(1.08rem, 0.9023rem + 0.8883vw, 1.5908rem);
+    --step-2: clamp(1.296rem, 0.9644rem + 1.658vw, 2.2493rem);
+    --step-3: clamp(1.5552rem, 0.9898rem + 2.8267vw, 3.1805rem);
+    --step-4: clamp(1.8662rem, 0.9511rem + 4.5757vw, 4.4973rem);
+    --step-5: clamp(2.2395rem, 0.8066rem + 7.1646vw, 6.3591rem);
 }
 
 *,

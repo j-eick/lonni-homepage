@@ -25,7 +25,7 @@ export default function App() {
                     className={`row-start-4 px-4 py-3 flex flex-col gap-4 items-center border rounded-3xl
                                 hover:shadow-mainShadow`}
                 >
-                    <h1 className="text-3xl">Lonni Inman</h1>
+                    <h1 className="text-3xl font-landingTitle">Lonni Inman</h1>
                     <nav className="relative row-start-8 h-max">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
