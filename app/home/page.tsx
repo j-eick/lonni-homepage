@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import links from "../../lib/navLinks.ts";
 import Nav from "@/components/ui/nav/Nav.tsx";
+import PageTitle from "@/components/ui/page-title/PageTitle.tsx";
+import InfoContainer from "@/components/ui/info-container/InfoContainer.tsx";
 
 export default function Home() {
     const windowSize = useWindowSize();
@@ -29,19 +31,12 @@ export default function Home() {
                     className={`w-full pt-2 px-10 pb-10 grid grid-cols-1 grid-rows-mainLayout overflow-hidden
                                 rounded-3xl `}
                 >
-                    <section
-                        className={`row-start-1
-                                    h-11 w-9/10 ml-auto flex justify-end items-center
-                                    border-b-1 border-slate-600/30`}
-                    >
-                        <p className="translate-y-1.5 text-right">Music ticker...</p>
-                        <span className="translate-y-1">PlayIcon</span>
-                    </section>
+                    <InfoContainer />
                     <article
                         className={`row-start-2 
                                     h-auto overflow-y-auto `}
                     >
-                        <h4 className="pb-10 text-2xl font-semibold">Welcome to my page!</h4>
+                        <PageTitle content="Welcome to my page!" />
                         <p className="leading-relaxed">
                             As a professional musician and educator, I am passionate about sharing the joy of music.
                             Whether you're interested in music lessons, attending concerts, or participating in

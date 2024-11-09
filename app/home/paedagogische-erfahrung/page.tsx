@@ -4,6 +4,8 @@ import Link from "next/link";
 import links from "@/lib/navLinks";
 import useWindowSize from "../../hooks/useWindowSize";
 import { usePathname } from "next/navigation";
+import PageTitle from "@/components/ui/page-title/PageTitle";
+import Nav from "@/components/ui/nav/Nav";
 
 export default function Ausbildung() {
     const windowSize = useWindowSize();
@@ -14,26 +16,10 @@ export default function Ausbildung() {
             <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
             <div className="content-allPages">
                 <aside className={`p-4 pt-20 max-w-52 w-2/10 h-full leading-6 shadow-asideShadow bg-stone-500/20`}>
-                    <nav>
-                        <ul className="flex flex-col gap-5">
-                            {links.map((link, i) => (
-                                <li
-                                    key={i}
-                                    className={`relative px-3 h-14 flex items-end
-                                                before:absolute before:left-1/2 before:-translate-x-1/2 ${
-                                                    path === link.href ? "fadingLineWhite" : "fadingLineBlack"
-                                                } `}
-                                >
-                                    <Link
-                                        href={link.href}
-                                        className="w-full "
-                                    >
-                                        {link.name}
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
+                    <Nav
+                        links={links}
+                        path={path}
+                    />
                 </aside>
                 <main
                     className={`w-8/10 pt-2 px-10 pb-10 grid grid-cols-1 grid-rows-mainLayout overflow-hidden
@@ -51,7 +37,7 @@ export default function Ausbildung() {
                         className={`row-start-2 
                                     h-auto`}
                     >
-                        <h4 className="pb-4">Pädagogische Erfahrung</h4>
+                        <PageTitle content="Pädagogische Erfahrung" />
                         <ul
                             className=""
                             role="list"
