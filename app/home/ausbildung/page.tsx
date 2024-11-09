@@ -51,22 +51,22 @@ export default function Ausbildung() {
                         className={`row-start-2 
                                     h-auto`}
                     >
-                        <h4 className="pb-4">Ausbildung</h4>
+                        <h4 className="pb-10 text-2xl font-semibold">Ausbildung</h4>
                         <ul
-                            className=""
+                            className="space-y-6 list-disc pl-6"
                             role="list"
                         >
-                            <li>
+                            <li className="text-lg leading-relaxed">
                                 Studium der moderne Querflöte an Northwestern University, Chicago, USA sowie
                                 Postgraduate Studies als Rotary Foundation Fellow an der Royal Academy of Music in
                                 Glasgow, Schottland.
                             </li>
-                            <li>
+                            <li className="text-lg leading-relaxed">
                                 Kontakt-Studium in barocke und klassische Traversflöte an der Akademie für Alte Musik
                                 bzw. Hochschule für Musik Bremen sowie Weiterbildungsstudium in klassische
                                 Klappen-Traversflöte an der Hochschule für Musik Bremen.
                             </li>
-                            <li>
+                            <li className="text-lg leading-relaxed">
                                 Regelmäßig Teilnahme an Fortbildungen und Meisterkurse an diverse Institutionen u.a.
                                 Mozarteum in Salzburg, Stiftung Kloster Michaelstein, Hochschule für Musik Bremen,
                                 Landesmusikakademie Hamburg und Johannes-Brahms-Konservatorium Hamburg.
