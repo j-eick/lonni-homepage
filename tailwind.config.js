@@ -100,7 +100,7 @@ module.exports = {
                 landingTitle: ["Calinastiya"],
             },
             gridTemplateRows: {
-                mainLayout: "6em 1fr",
+                mainLayout: "18% 1fr",
             },
             height: {
                 "7/10": "70%",
@@ -140,6 +140,8 @@ module.exports = {
             },
             animation: {
                 ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
+                float: "float 5s ease-in-out infinite alternate",
+                spin: "spin 5s linear infinite",
             },
             keyframes: {
                 ripple: {
@@ -149,6 +151,14 @@ module.exports = {
                     "50%": {
                         transform: "translate(-50%, -50%) scale(0.9)",
                     },
+                },
+                float: {
+                    "0%": { transform: "translate(0, 0)" },
+                    "100%": { transform: "translate(10px, 10px)" },
+                },
+                spin: {
+                    "0%": { transform: "rotate(0deg)" },
+                    "100%": { transform: "rotate(360deg)" },
                 },
             },
         },

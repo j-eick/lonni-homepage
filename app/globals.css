@@ -69,6 +69,7 @@
 
     --step--2: clamp(0.6252rem, 0.7185rem + -0.1204vw, 0.6944rem);
     --step--1: clamp(0.8333rem, 0.8157rem + 0.0881vw, 0.884rem);
+    --step-01: clamp(0.9rem, 0.8217rem + 0.3913vw, 1.125rem);
     --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
     /* --step-1: clamp(1.2rem, 1.0026rem + 0.987vw, 1.7675rem);
     --step-2: clamp(1.44rem, 1.0716rem + 1.8422vw, 2.4992rem);
@@ -81,6 +82,8 @@
     --step-3: clamp(1.5552rem, 0.9898rem + 2.8267vw, 3.1805rem);
     --step-4: clamp(1.8662rem, 0.9511rem + 4.5757vw, 4.4973rem);
     --step-5: clamp(2.2395rem, 0.8066rem + 7.1646vw, 6.3591rem);
+
+    --aside-width: clamp(150px, 4.88vw + 105px, 208px);
 }
 
 *,
@@ -109,6 +112,10 @@ body {
     line-height: var(--lineHeight-lineBreaks);
 }
 
+aside {
+    width: var(--aside-width);
+}
+
 h1 {
     font-size: var(--step-5);
 }
@@ -129,6 +136,10 @@ p {
     font-size: var(--step-0);
 }
 
+.navP {
+    font-size: var(--step-01);
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -140,7 +151,6 @@ img {
 }
 
 [role="list"] {
-    list-style: none;
 }
 
 .resizeInfo {
