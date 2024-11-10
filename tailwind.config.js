@@ -99,6 +99,9 @@ module.exports = {
             fontFamily: {
                 landingTitle: ["Calinastiya"],
             },
+            fontSize: {
+                "16px": "16px",
+            },
             gridTemplateRows: {
                 mainLayout: "18% 1fr",
             },
