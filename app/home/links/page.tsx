@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 import Nav from "@/components/ui/nav/Nav";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import { YouTubeEmbed } from "@next/third-parties/google";
-import VideoTitle from "@/components/ui/video/VideoTitle";
 
 export default function Ausbildung() {
     const windowSize = useWindowSize();
@@ -48,30 +47,17 @@ export default function Ausbildung() {
                                     videoid="is9dRWiRDNs"
                                     width={320}
                                 />
-                                <VideoTitle
-                                    content="Flöte mal historisch"
-                                    bgColor="dark"
-                                />
                             </li>
                             <li className="relative w-max overflow-hidden rounded-2xl">
                                 <YouTubeEmbed
                                     videoid="gEUwCTkKEwM"
                                     width={320}
                                 />
-                                <VideoTitle
-                                    content="Il Clavifiato - Historisch"
-                                    bgColor="light"
-                                />
                             </li>
                             <li className="relative w-max overflow-hidden rounded-2xl">
                                 <YouTubeEmbed
                                     videoid="NEyrmkzSGLg"
                                     width={320}
-                                />
-                                <VideoTitle
-                                    content="Zauberstab Flöte beendet Schumann Plus Reihe"
-                                    className="text-16px leading-5"
-                                    bgColor="dark"
                                 />
                             </li>
                         </ul>

@@ -10,7 +10,7 @@ export default function VideoTitle({ content, bgColor, className }: VideoTitlePr
     const backgroundColor = useMemo(() => {
         switch (bgColor) {
             case "light":
-                return "bg-slate-300/30";
+                return "bg-slate-200/30";
             case "dark":
                 return "bg-slate-600/20";
 
