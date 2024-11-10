@@ -5,6 +5,8 @@ import useWindowSize from "../../hooks/useWindowSize";
 import { usePathname } from "next/navigation";
 import Nav from "@/components/ui/nav/Nav";
 import PageTitle from "@/components/ui/page-title/PageTitle";
+import { YouTubeEmbed } from "@next/third-parties/google";
+import VideoTitle from "@/components/ui/video/VideoTitle";
 
 export default function Ausbildung() {
     const windowSize = useWindowSize();
@@ -34,16 +36,44 @@ export default function Ausbildung() {
                     </section>
                     <article
                         className={`row-start-2 
-                                    h-auto`}
+                                    h-auto overflow-y-auto`}
                     >
                         <PageTitle content="Links" />
                         <ul
-                            className=""
+                            className="flex flex-col gap-5"
                             role="list"
                         >
-                            <li>https://www.youtube.com/watch?v=is9dRWiRDNs</li>
-                            <li>https://www.youtube.com/watch?v=gEUwCTkKEwM</li>
-                            <li>https://www.youtube.com/watch?v=NEyrmkzSGLg</li>
+                            <li className="relative w-max overflow-hidden rounded-2xl">
+                                <YouTubeEmbed
+                                    videoid="is9dRWiRDNs"
+                                    width={320}
+                                />
+                                <VideoTitle
+                                    content="Flöte mal historisch"
+                                    className="bg-slate-600/20"
+                                />
+                            </li>
+                            <li className="relative w-max overflow-hidden rounded-2xl">
+                                <YouTubeEmbed
+                                    videoid="gEUwCTkKEwM"
+                                    width={320}
+                                />
+                                <VideoTitle
+                                    content="Il Clavifiato - Historisch"
+                                    className="bg-slate-300/30"
+                                />
+                            </li>
+                            <li className="relative w-max overflow-hidden rounded-2xl">
+                                <YouTubeEmbed
+                                    videoid="NEyrmkzSGLg"
+                                    width={320}
+                                />
+                                <VideoTitle
+                                    content="Zauberstab Flöte beendet Schumann Plus Reihe
+"
+                                    className="bg-slate-600/20 text-16px leading-5"
+                                />
+                            </li>
                         </ul>
                     </article>
                 </main>
