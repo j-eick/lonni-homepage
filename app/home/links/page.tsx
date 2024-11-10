@@ -50,7 +50,7 @@ export default function Ausbildung() {
                                 />
                                 <VideoTitle
                                     content="Flöte mal historisch"
-                                    className="bg-slate-600/20"
+                                    bgColor="dark"
                                 />
                             </li>
                             <li className="relative w-max overflow-hidden rounded-2xl">
@@ -60,7 +60,7 @@ export default function Ausbildung() {
                                 />
                                 <VideoTitle
                                     content="Il Clavifiato - Historisch"
-                                    className="bg-slate-300/30"
+                                    bgColor="light"
                                 />
                             </li>
                             <li className="relative w-max overflow-hidden rounded-2xl">
@@ -69,9 +69,9 @@ export default function Ausbildung() {
                                     width={320}
                                 />
                                 <VideoTitle
-                                    content="Zauberstab Flöte beendet Schumann Plus Reihe
-"
-                                    className="bg-slate-600/20 text-16px leading-5"
+                                    content="Zauberstab Flöte beendet Schumann Plus Reihe"
+                                    className="text-16px leading-5"
+                                    bgColor="dark"
                                 />
                             </li>
                         </ul>
