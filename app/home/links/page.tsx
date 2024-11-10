@@ -7,6 +7,25 @@ import Nav from "@/components/ui/nav/Nav";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import { YouTubeEmbed } from "@next/third-parties/google";
 
+type MusicVideoProps = {
+    url: string;
+    id: string;
+    title: string;
+};
+const musicVideos: MusicVideoProps[] = [
+    { url: "https://www.youtube.com/watch?v=is9dRWiRDNs", id: "is9dRWiRDNs", title: "Flöte mal historisch" },
+    {
+        url: "https://www.youtube.com/watch?v=gEUwCTkKEwM",
+        id: "gEUwCTkKEwM",
+        title: "Il Clavifiato - Historische Instrumente",
+    },
+    {
+        url: "https://www.youtube.com/watch?v=NEyrmkzSGLg",
+        id: "NEyrmkzSGLg",
+        title: "Zauberstab Flöte beendet Schumann Plus Reihe",
+    },
+];
+
 export default function Ausbildung() {
     const windowSize = useWindowSize();
     const path = usePathname();
@@ -42,24 +61,18 @@ export default function Ausbildung() {
                             className="flex flex-col gap-5"
                             role="list"
                         >
-                            <li className="relative w-max overflow-hidden rounded-2xl">
-                                <YouTubeEmbed
-                                    videoid="is9dRWiRDNs"
-                                    width={320}
-                                />
-                            </li>
-                            <li className="relative w-max overflow-hidden rounded-2xl">
-                                <YouTubeEmbed
-                                    videoid="gEUwCTkKEwM"
-                                    width={320}
-                                />
-                            </li>
-                            <li className="relative w-max overflow-hidden rounded-2xl">
-                                <YouTubeEmbed
-                                    videoid="NEyrmkzSGLg"
-                                    width={320}
-                                />
-                            </li>
+                            {musicVideos.map((video, i) => (
+                                <li
+                                    key={i}
+                                    className="relative w-max overflow-hidden rounded-2xl"
+                                >
+                                    <YouTubeEmbed
+                                        videoid={video.id}
+                                        width={320}
+                                    />
+                                </li>
+                            ))}
+                            w
                         </ul>
                     </article>
                 </main>
