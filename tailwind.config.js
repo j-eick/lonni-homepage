@@ -80,6 +80,7 @@ module.exports = {
                 hompageBg: "url('/homepageBg.jpg')",
                 hompageBgLessBorder: "url('/homepageBg2.webp')",
                 bg1: "url('/bg1.jpg')",
+                tiles: "linear-gradient((rgba(255,255,255,.5)), url('/wgTiles.jpg')",
             },
             backgroundPosition: {
                 middleLeft: "-translate-x-1/2",

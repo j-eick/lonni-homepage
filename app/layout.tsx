@@ -38,16 +38,5 @@ type MainLayoutProps = {
     children: ReactNode;
 };
 const MainLayout = ({ children }: MainLayoutProps) => {
-    return (
-        <div
-            className={`relative h-full w-full flex items-center justify-center
-                        bg-bg1 bg-no-repeat bg-center bg-cover`}
-        >
-            <div
-                className={`backdrop-blur-4px
-                            absolute inset-0 z-0 w-full h-full grid place-items-center`}
-            />
-            {children}
-        </div>
-    );
+    return <div className="w-full h-full">{children}</div>;
 };

@@ -31,6 +31,9 @@
     .bw {
         @apply border-1 border-white;
     }
+    .br {
+        @apply border-1 border-red-400;
+    }
 
     .mainGradient {
         background-image: linear-gradient(
@@ -101,6 +104,9 @@ body {
 
 body {
     min-height: 100svh;
+    max-width: 1200px;
+    border: 1px dashed red;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
