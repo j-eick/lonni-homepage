@@ -151,6 +151,19 @@ a {
     text-decoration: none;
 }
 
+#startpage-navItems a {
+    display: grid;
+    place-items: center;
+    border-radius: 1em;
+    border: 1px solid white;
+    background-color: rgb(215, 215, 215);
+}
+
+#startpage-navItems a:hover {
+    background-color: rgb(194, 194, 194);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 img {
     max-width: 100%;
     display: block;
