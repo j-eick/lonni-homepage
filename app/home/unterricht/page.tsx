@@ -1,10 +1,11 @@
 "use client";
 
-import useWindowSize from "../hooks/useWindowSize";
+import useWindowSize from "@/app/hooks/useWindowSize";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import Link from "next/link";
-import { startpage } from "@/lib/paragraphs/startpage";
+import { unterricht } from "@/lib/paragraphs/unterricht";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 export default function Home() {
     const windowSize = useWindowSize();
@@ -43,6 +44,7 @@ export default function Home() {
                         className={`z-10
                                     col-start-2 col-end-8
                                     row-start-4 row-end-8
+                                    ${path === "unterricht" ? "bg-selected" : ""}
                                     `}
                     >
                         Unterricht
@@ -82,18 +84,30 @@ export default function Home() {
                 Lonni Inman
             </h1>
             <main
-                className={`br
+                className={`
                             pb-10
                             col-start-6 col-end-13
                             row-start-4 row-end-12
                             `}
             >
                 <article
-                    className={`pl-12 pr-12
+                    className={`pl-12
                                 whitespace-pre-wrap
                                 `}
                 >
-                    {startpage.welcomeText}
+                    <ul className="br flex flex-col gap-5 leading-standardText overflow-auto">
+                        {unterricht.unterrichtText.map((text, i) => (
+                            <li
+                                key={i}
+                                className="flex items-start gap-3"
+                            >
+                                <div className="pt-2.5 text-sm">
+                                    <MdOutlineKeyboardArrowRight />
+                                </div>
+                                <p>{text}</p>
+                            </li>
+                        ))}
+                    </ul>
                 </article>
             </main>
         </div>

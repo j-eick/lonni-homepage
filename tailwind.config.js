@@ -75,6 +75,9 @@ module.exports = {
                 85: ".85",
                 90: ".9",
             },
+            backgroundColor: {
+                selected: "rgb(194, 194, 194)",
+            },
             backgroundImage: {
                 fluteLonni: "url('/lonniFlute.png')",
                 hompageBg: "url('/homepageBg.jpg')",
@@ -159,6 +162,13 @@ module.exports = {
                 "8.5/10": "85%",
                 "9/10": "90%",
                 "9.5/10": "95%",
+            },
+            lineHeight: {
+                standardText: 1.8,
+            },
+            padding: {
+                1.5: "6px",
+                2.5: "10px",
             },
             width: {
                 "1.5/10": "15%",
