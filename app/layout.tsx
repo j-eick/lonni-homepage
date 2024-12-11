@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import localFont from "next/font/local";
 import "./globals.css";
+import localFont from "next/font/local";
 import { ReactNode } from "react";
 
 const geistSans = localFont({
@@ -38,5 +38,12 @@ type MainLayoutProps = {
     children: ReactNode;
 };
 const MainLayout = ({ children }: MainLayoutProps) => {
-    return <div className={`h-full w-full`}>{children}</div>;
+    return (
+        <div
+            className={`h-full
+                        1120x:w-canvas-width`}
+        >
+            {children}
+        </div>
+    );
 };
