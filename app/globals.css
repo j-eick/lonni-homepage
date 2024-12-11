@@ -26,7 +26,7 @@
     }
 
     .bb {
-        @apply border-1 border-black;
+        @apply border-1 border-slate-300;
     }
     .bw {
         @apply border-1 border-white;
@@ -112,6 +112,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
     line-height: var(--lineHeight-lineBreaks);
+
+    /* background-image: url("/flute2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 aside {
@@ -135,7 +139,7 @@ h5 {
 }
 
 p {
-    font-size: var(--step-0);
+    font-size: var(--step--01);
 }
 
 .navP {

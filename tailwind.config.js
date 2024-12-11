@@ -84,6 +84,7 @@ module.exports = {
                 hompageBgLessBorder: "url('/homepageBg2.webp')",
                 bg1: "url('/bg1.jpg')",
                 tiles: "linear-gradient((rgba(255,255,255,.5)), url('/wgTiles.jpg')",
+                fluteBg: "url('/flute2.jpg')",
             },
             backgroundPosition: {
                 middleLeft: "-translate-x-1/2",
@@ -105,6 +106,7 @@ module.exports = {
             },
             fontSize: {
                 "16px": "16px",
+                "80px": "80px",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",
@@ -183,6 +185,7 @@ module.exports = {
                 "8.5/10": "85%",
                 "9/10": "90%",
                 "9.5/10": "95%",
+                "nav-minWidth": "min(30%, 270px)",
             },
             maxWidth: {
                 "950px": "950px",
@@ -193,6 +196,7 @@ module.exports = {
             },
             screens: {
                 "950x": "950px",
+                "1175x": "1175px",
                 "1250x": "1250px",
             },
             translate: {

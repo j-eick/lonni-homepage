@@ -38,5 +38,5 @@ type MainLayoutProps = {
     children: ReactNode;
 };
 const MainLayout = ({ children }: MainLayoutProps) => {
-    return <div className="w-full h-full">{children}</div>;
+    return <div className={`h-full w-full`}>{children}</div>;
 };
