@@ -7,8 +7,8 @@ type WindowProps = {
 
 export default function useWindowSize() {
     const [windowSize, setwindowSize] = useState<WindowProps>({
-        width: 0,
-        height: 0,
+        width: window.innerWidth,
+        height: window.innerHeight,
     });
 
     useEffect(() => {
