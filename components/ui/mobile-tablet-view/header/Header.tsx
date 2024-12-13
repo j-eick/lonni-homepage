@@ -48,7 +48,12 @@ export default function Header({ className }: HeaderProps) {
                         className="grid grid-cols-10 grid-rows-2"
                     >
                         <span className="w-full col-start-2">Lonni</span>
-                        <span className="w-full row-start-2 col-start-4">Inman</span>
+                        <span
+                            className={`row-start-2 col-start-4 col-end-10
+                                        grid justify-end`}
+                        >
+                            <span className="">Inman</span>
+                        </span>
                     </h1>
                 </li>
                 <li className="grow">
@@ -58,7 +63,7 @@ export default function Header({ className }: HeaderProps) {
                                 className={`h-full w-full leading-1.5 ${linkStyle}`}
                                 href={navLinks.auftritteCDs.href}
                             >
-                                Auftritte <br /> und CDs
+                                Auftritte & CDs
                             </Link>
                         </li>
                         <li className={liStyle}>
