@@ -111,6 +111,8 @@ module.exports = {
             fontSize: {
                 "16px": "16px",
                 "80px": "80px",
+                pageTitle: "33px",
+                firstLetterTitle: "44px",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",
@@ -175,9 +177,12 @@ module.exports = {
                 "9.5/10": "95%",
             },
             lineHeight: {
-                1: "1",
-                1.5: "1.5",
-                2: "2",
+                1: 1,
+                1.2: 1.2,
+                1.3: 1.3,
+                1.4: 1.4,
+                1.5: 1.5,
+                2: 2,
                 standardText: 1.8,
             },
             padding: {

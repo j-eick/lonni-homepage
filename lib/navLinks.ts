@@ -17,6 +17,6 @@ export const navLinks: LinksProps = {
     home: { href: "/home", name: "Home" },
     unterricht: { href: "/home/unterricht", name: "Unterricht" },
     kt: { href: "/home/künstlerische-tätigkeiten", name: "Projekte" },
-    auftritteCDs: { href: "/home/auftritte-cds", name: "Auftritte und CDs" },
+    auftritteCDs: { href: "/home/auftritte-cds", name: "Auftritte & CDs" },
     kontakt: { href: "/home/kontakt", name: "Kontakt" },
 };

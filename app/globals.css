@@ -113,11 +113,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    line-height: var(--lineHeight-lineBreaks);
-
-    /* background-image: url("/flute2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
+    line-height: 1.4;
 }
 
 aside {
@@ -148,10 +144,15 @@ h5 {
 
 p {
     font-size: var(--step--01);
+    line-height: 1.75;
 }
 
-.navP {
-    font-size: var(--step-01);
+.flowText > * + * {
+    margin-top: 0.75em;
+}
+
+.flowText > * + *:last-child {
+    margin-top: 2em;
 }
 
 a {
