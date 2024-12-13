@@ -40,7 +40,7 @@ type MainLayoutProps = {
 const MainLayout = ({ children }: MainLayoutProps) => {
     return (
         <div
-            className={`h-full
+            className={`h-full 
                         1120x:w-canvas-width`}
         >
             {children}
