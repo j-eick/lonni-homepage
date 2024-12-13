@@ -1,12 +1,22 @@
-import { LinksProps } from "./types/links";
+type LinkProp = {
+    href: string;
+    name: string;
+};
 
-const links: LinksProps[] = [
-    { href: "/home", name: "Home" },
-    { href: "/home/ausbildung", name: "Ausbildung" },
-    { href: "/home/kuenstlerische-taetigkeit", name: "Künstlerische Tätigkeit" },
-    { href: "/home/paedagogische-erfahrung", name: "Pädagogische Erfahrung" },
-    { href: "/home/links", name: "Links" },
-    { href: "/home/kontakt", name: "Kontakt" },
-];
+type LinksProps = {
+    startpage: LinkProp;
+    home: LinkProp;
+    unterricht: LinkProp;
+    kt: LinkProp;
+    auftritteCDs: LinkProp;
+    kontakt: LinkProp;
+};
 
-export default links;
+export const navLinks: LinksProps = {
+    startpage: { href: "/", name: "startpage" },
+    home: { href: "/home", name: "Home" },
+    unterricht: { href: "/home/unterricht", name: "Unterricht" },
+    kt: { href: "/home/künstlerische-tätigkeiten", name: "Projekte" },
+    auftritteCDs: { href: "/home/auftritte-cds", name: "Auftritte und CDs" },
+    kontakt: { href: "/home/kontakt", name: "Kontakt" },
+};
