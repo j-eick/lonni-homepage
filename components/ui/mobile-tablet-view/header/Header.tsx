@@ -14,8 +14,11 @@ export default function Header({ className }: HeaderProps) {
     return (
         <header className={className}>
             <ul className="w-full h-full flex justify-around">
-                <li className="grow">
-                    <ul className={`h-full flex justify-between`}>
+                <li className={`grow relative`}>
+                    <ul
+                        className={`relative h-full flex justify-between
+                                    `}
+                    >
                         <li className={liStyle}>
                             <Link
                                 className={`h-full w-full ${linkStyle}`}

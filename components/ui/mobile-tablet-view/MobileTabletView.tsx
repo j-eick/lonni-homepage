@@ -6,7 +6,7 @@ export default function MobileTablet() {
         <div className="h-full w-screen pt-14">
             <div className="min-h-full w-8.5/10 mx-auto my-0 flex flex-col">
                 <Header className="relative flex w-full mb-14" />
-                <section className="w-9/10 mx-auto my-0 flex gap-3 bbb">
+                <section className="w-9/10 mx-auto my-0 flex gap-3">
                     <main className={`w-9/12`}>
                         <article className="flowText">
                             <h1 className="relative mb-7 text-pageTitle leading-1.3">
@@ -14,7 +14,7 @@ export default function MobileTablet() {
                                     <span className="font-bold text-firstLetterTitle">H</span>erzlich Willkommen!
                                 </span>
                             </h1>
-                            <div className="bb flowText">{welcomeText}</div>
+                            <div className="bb pl-5 flowText">{welcomeText}</div>
                         </article>
                     </main>
                     <aside className="grow leading-1 bb">
