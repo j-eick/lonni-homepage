@@ -28,6 +28,9 @@
     .bb {
         @apply border-1 border-slate-300;
     }
+    .bbb {
+        @apply border-4 border-slate-800;
+    }
     .bw {
         @apply border-1 border-white;
     }
@@ -124,6 +127,12 @@ aside {
 h1 {
     font-size: var(--step-5);
 }
+
+#titleLonni {
+    font-size: var(--step-4);
+    line-height: 1.2;
+}
+
 h2 {
     font-size: var(--step-4);
 }

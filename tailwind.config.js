@@ -101,6 +101,10 @@ module.exports = {
                 mainShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
                 asideShadow: "rgba(0, 0, 0, 0.3) 2px 0px 8px, rgba(140, 140, 140, 0.22) 0px 0px 20px",
             },
+            flexGrow: {
+                2: "2",
+                3: "3",
+            },
             fontFamily: {
                 landingTitle: ["Calinastiya"],
             },
@@ -158,6 +162,11 @@ module.exports = {
                 18: "18",
             },
             height: {
+                "1.5/10": "15%",
+                "2/10": "20%",
+                "2.5/10": "25%",
+                "3/10": "30%",
+                "7/10": "70%",
                 "7/10": "70%",
                 "7.5/10": "75%",
                 "8/10": "80%",
@@ -166,6 +175,9 @@ module.exports = {
                 "9.5/10": "95%",
             },
             lineHeight: {
+                1: "1",
+                1.5: "1.5",
+                2: "2",
                 standardText: 1.8,
             },
             padding: {
