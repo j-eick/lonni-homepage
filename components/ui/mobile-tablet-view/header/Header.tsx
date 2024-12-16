@@ -5,10 +5,15 @@ import { ReactNode } from "react";
 type HeaderProps = {
     children?: ReactNode;
     className: string;
+    link1: string;
+    link2: string;
+    link3: string;
+    link4: string;
+    link5: string;
 };
 
-export default function Header({ className }: HeaderProps) {
-    const liStyle = "grow";
+export default function Header({ className, link1, link2, link3, link4, link5 }: HeaderProps) {
+    const liStyle = "grow h-1/3 w-full flex items-center justify-center";
     const linkStyle = "grid place-items-center";
 
     return (
@@ -21,10 +26,10 @@ export default function Header({ className }: HeaderProps) {
                     >
                         <li className={liStyle}>
                             <Link
-                                className={`h-full w-full ${linkStyle}`}
+                                className={`${linkStyle}`}
                                 href={navLinks.home.href}
                             >
-                                {navLinks.home.name}
+                                {link1}
                             </Link>
                         </li>
                         <li className={liStyle}>
@@ -32,7 +37,7 @@ export default function Header({ className }: HeaderProps) {
                                 className={`h-full w-full ${linkStyle}`}
                                 href={navLinks.unterricht.href}
                             >
-                                {navLinks.unterricht.name}
+                                {link2}
                             </Link>
                         </li>
                         <li className={liStyle}>
@@ -40,7 +45,7 @@ export default function Header({ className }: HeaderProps) {
                                 className={`h-full w-full ${linkStyle}`}
                                 href={navLinks.kt.href}
                             >
-                                {navLinks.kt.name}
+                                {link3}
                             </Link>
                         </li>
                     </ul>
@@ -66,7 +71,7 @@ export default function Header({ className }: HeaderProps) {
                                 className={`h-full w-full leading-1.5 ${linkStyle}`}
                                 href={navLinks.auftritteCDs.href}
                             >
-                                Auftritte & CDs
+                                {link4}
                             </Link>
                         </li>
                         <li className={liStyle}>
@@ -74,7 +79,7 @@ export default function Header({ className }: HeaderProps) {
                                 className={`h-full w-full ${linkStyle}`}
                                 href={navLinks.kontakt.href}
                             >
-                                {navLinks.kontakt.name}
+                                {link5}
                             </Link>
                         </li>
                     </ul>
