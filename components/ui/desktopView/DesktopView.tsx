@@ -1,15 +1,15 @@
-import { startpage } from "@/lib/paragraphs/startpage";
 import SideNavSquaresA from "../nav/desktop-design-versions/SideNavSquaresA";
+import { welcomeText } from "@/lib/paragraphs/home";
 
 export default function DesktopView() {
-  return (
-    <>
-        <SideNavSquaresA
-            className={`w-full bb
+    return (
+        <>
+            <SideNavSquaresA
+                className={`w-full bb
                         col-start-1 col-end-6
                         row-start-2 row-end-12
                         `}
-        />
+            />
             <div
                 className={`h-full pl-6 pr-7 z-10 bb
                             flex items-end
@@ -25,10 +25,8 @@ export default function DesktopView() {
                             row-start-4 row-end-12
                             `}
             >
-                <article className={`pl-7 whitespace-pre-wrap`}>
-                    <p>{startpage.welcomeText}</p>
-                </article>
+                <article className={`pl-7 flowText`}>{welcomeText}</article>
             </main>
-    </>
-  )
+        </>
+    );
 }
