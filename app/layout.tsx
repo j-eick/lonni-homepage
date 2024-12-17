@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import localFont from "next/font/local";
-import { ReactNode } from "react";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -27,23 +26,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>
-                <MainLayout>{children}</MainLayout>
-            </body>
+            <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
         </html>
     );
 }
-
-type MainLayoutProps = {
-    children: ReactNode;
-};
-const MainLayout = ({ children }: MainLayoutProps) => {
-    return (
-        <div
-            className={`h-full 
-                        1120x:w-canvas-width`}
-        >
-            {children}
-        </div>
-    );
-};
