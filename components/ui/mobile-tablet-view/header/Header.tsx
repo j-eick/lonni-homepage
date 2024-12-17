@@ -13,8 +13,8 @@ type HeaderProps = {
 };
 
 export default function Header({ className, link1, link2, link3, link4, link5 }: HeaderProps) {
-    const liStyle = "grow h-1/3 w-full flex items-center justify-center";
-    const linkStyle = "grid place-items-center";
+    const liStyle = "grow h-full w-full flex items-center justify-center";
+    const linkStyle = "h-1/3 w-full grid place-items-center";
 
     return (
         <header className={className}>
