@@ -34,7 +34,7 @@ export default function Header({ className, link1, link2, link3, link4, link5 }:
                         </li>
                         <li className={liStyle}>
                             <Link
-                                className={`h-full w-full ${linkStyle}`}
+                                className={`${linkStyle}`}
                                 href={navLinks.unterricht.href}
                             >
                                 {link2}
@@ -42,7 +42,7 @@ export default function Header({ className, link1, link2, link3, link4, link5 }:
                         </li>
                         <li className={liStyle}>
                             <Link
-                                className={`h-full w-full ${linkStyle}`}
+                                className={`${linkStyle}`}
                                 href={navLinks.kt.href}
                             >
                                 {link3}
@@ -51,24 +51,26 @@ export default function Header({ className, link1, link2, link3, link4, link5 }:
                     </ul>
                 </li>
                 <li className="w-4/12">
-                    <h1
-                        id="titleLonni"
-                        className="grid grid-cols-10 grid-rows-2"
-                    >
-                        <span className="w-full col-start-2">Lonni</span>
-                        <span
-                            className={`row-start-2 col-start-4 col-end-10
-                                        grid justify-end`}
+                    <Link href="/home">
+                        <h1
+                            id="titleLonni"
+                            className="grid grid-cols-10 grid-rows-2"
                         >
-                            <span className="">Inman</span>
-                        </span>
-                    </h1>
+                            <span className="w-full col-start-2">Lonni</span>
+                            <span
+                                className={`row-start-2 col-start-4 col-end-10
+                                        grid justify-end`}
+                            >
+                                <span className="">Inman</span>
+                            </span>
+                        </h1>
+                    </Link>
                 </li>
                 <li className="grow">
                     <ul className={`h-full flex justify-between`}>
                         <li className={liStyle}>
                             <Link
-                                className={`h-full w-full leading-1.5 ${linkStyle}`}
+                                className={`leading-1.5 ${linkStyle}`}
                                 href={navLinks.auftritteCDs.href}
                             >
                                 {link4}
@@ -76,7 +78,7 @@ export default function Header({ className, link1, link2, link3, link4, link5 }:
                         </li>
                         <li className={liStyle}>
                             <Link
-                                className={`h-full w-full ${linkStyle}`}
+                                className={`${linkStyle}`}
                                 href={navLinks.kontakt.href}
                             >
                                 {link5}

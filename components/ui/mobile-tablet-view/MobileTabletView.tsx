@@ -13,6 +13,8 @@ export default function MobileTablet({ children }: { children: ReactNode }) {
                     link4="Auftritte & CDs"
                     link5="Kontakt"
                 />
+
+                {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
                 <section className="w-9/10 mx-auto my-0 flex gap-3">{children}</section>
             </div>
         </div>

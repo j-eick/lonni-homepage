@@ -13,10 +13,28 @@ type LinksProps = {
 };
 
 export const navLinks: LinksProps = {
-    startpage: { href: "/", name: "startpage" },
-    home: { href: "/home", name: "Home" },
-    unterricht: { href: "/home/unterricht", name: "Unterricht" },
-    kt: { href: "/home/künstlerische-tätigkeiten", name: "Projekte" },
-    auftritteCDs: { href: "/home/auftritte-cds", name: "Auftritte & CDs" },
-    kontakt: { href: "/home/kontakt", name: "Kontakt" },
+    startpage: {
+        href: "/",
+        name: "startpage",
+    },
+    home: {
+        href: "/home",
+        name: "Home",
+    },
+    unterricht: {
+        href: "/home/unterricht",
+        name: "Unterricht",
+    },
+    kt: {
+        href: "/home/künstlerische-tätigkeiten",
+        name: "Projekte",
+    },
+    auftritteCDs: {
+        href: "/home/auftritte-cds",
+        name: "Auftritte & CDs",
+    },
+    kontakt: {
+        href: "/home/kontakt",
+        name: "Kontakt",
+    },
 };

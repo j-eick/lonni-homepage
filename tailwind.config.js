@@ -109,6 +109,8 @@ module.exports = {
                 landingTitle: ["Calinastiya"],
             },
             fontSize: {
+                "3xl": "1.953rem",
+                "4xl": "2.441rem",
                 "16px": "16px",
                 "80px": "80px",
                 pageTitle: "33px",
