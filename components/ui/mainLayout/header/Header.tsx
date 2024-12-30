@@ -54,11 +54,11 @@ export default function Header({ className, link1, link2, link3, link4, link5 }:
                     <Link href="/home">
                         <h1
                             id="titleLonni"
-                            className="grid grid-cols-10 grid-rows-2"
+                            className="grid grid-cols-10 grid-rows-2 font-pageTitle "
                         >
-                            <span className="w-full col-start-2">Lonni</span>
+                            <span className="w-full col-start-2 text-headerTitle">Lonni</span>
                             <span
-                                className={`row-start-2 col-start-4 col-end-10
+                                className={`row-start-2 col-start-4 col-end-10 text-headerTitle
                                         grid justify-end`}
                             >
                                 <span className="">Inman</span>
