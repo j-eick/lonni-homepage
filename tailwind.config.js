@@ -107,12 +107,15 @@ module.exports = {
             },
             fontFamily: {
                 landingTitle: ["Calinastiya"],
+                pageTitle: "Argentina Script",
+                pageTitle2: "AquilineTwo",
+                pageTitle3: "Andrea",
             },
             fontSize: {
                 "3xl": "1.953rem",
                 "4xl": "2.441rem",
                 "16px": "16px",
-                "80px": "80px",
+                headerTitle: "85px",
                 pageTitle: "33px",
                 firstLetterTitle: "44px",
             },

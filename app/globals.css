@@ -7,6 +7,28 @@
     src: url("./fonts/Calinastiya.ttf");
 }
 
+@font-face {
+    font-family: adelia;
+    src: url("./fonts/adelia.ttf");
+}
+
+@font-face {
+    font-family: Blacksword;
+    src: url("./fonts/Blacksword.otf");
+}
+@font-face {
+    font-family: Argentina Script;
+    src: url("./fonts/Argentina Script.ttf");
+}
+@font-face {
+    font-family: Andrea;
+    src: url("./fonts/Andrea.ttf");
+}
+@font-face {
+    font-family: AquilineTwo;
+    src: url("./fonts/AquilineTwo.ttf");
+}
+
 @layer components {
     .content-allPages {
         @apply h-8/10 w-8.5/10 max-w-1150px flex overflow-hidden mainGradient
@@ -145,12 +167,14 @@ h5 {
 p {
     font-size: var(--step--01);
 }
-
 .flowText > * + * {
     margin-top: 0.75em;
 }
+.flowTextAndLastChild > * + * {
+    margin-top: 0.75em;
+}
 
-.flowText > :last-child {
+.flowTextAndLastChild > :last-child {
     margin-top: 2em;
 }
 
