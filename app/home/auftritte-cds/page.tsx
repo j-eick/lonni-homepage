@@ -3,7 +3,8 @@
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import SideVideos from "@/components/ui/SideVideos";
-import { welcomeText } from "@/lib/paragraphs/home";
+// import SideVideos from "@/components/ui/SideVideos";
+import { auftritteCds } from "@/lib/paragraphs/auftritteCds";
 
 export default function Home() {
     return (
@@ -24,19 +25,16 @@ export default function Home() {
                 <main className={`w-9/12`}>
                     <article className="flowText">
                         <h1 className="relative mb-7 text-pageTitle leading-1.3">
-                            <span
-                                className={`block font-pageTitle
-                                            w-11/12 border-b-1 border-slate-700/40`}
-                            >
-                                <span className="font-bold text-firstLetterTitle">H</span>erzlich Willkommen!
+                            <span className="block w-11/12 border-b-1 border-slate-700/40">
+                                <span className="font-bold text-firstLetterTitle">A</span>uftritte & CDs
                             </span>
                         </h1>
-                        <div className="pr-10 flowTextAndLastChild">{welcomeText}</div>
+                        <div className="pr-10 flowText">{auftritteCds}</div>
                     </article>
                 </main>
                 <SideVideos />
             </section>
-            <div
+            {/* <div
                 className={`bb 
                 w-9/10 mx-auto my-0 mt-5
                 flex `}
@@ -50,7 +48,7 @@ export default function Home() {
                     <li className="grow text-center">Kontakt</li>
                 </ul>
                 <div />
-            </div>
+            </div> */}
         </MainLayout>
     );
 }

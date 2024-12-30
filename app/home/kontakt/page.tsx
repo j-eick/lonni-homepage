@@ -1,52 +1,47 @@
 "use client";
 
-import links from "@/lib/navLinks";
-import useWindowSize from "../../hooks/useWindowSize";
-import { usePathname } from "next/navigation";
-import Nav from "@/components/ui/nav/Nav";
-import PageTitle from "@/components/ui/page-title/PageTitle";
+import Header from "@/components/ui/mainLayout/header/Header";
+import MainLayout from "@/components/ui/mainLayout/MainLayout";
+import { kontakt } from "@/lib/paragraphs/kontakt";
 
-export default function Ausbildung() {
-    const windowSize = useWindowSize();
-    const path = usePathname();
-
+export default function Home() {
     return (
-        <>
-            <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
-            <div className="content-allPages">
-                <aside className={`p-4 pt-20 max-w-52 w-2/10 h-full leading-6 shadow-asideShadow bg-stone-500/20`}>
-                    <Nav
-                        links={links}
-                        path={path}
-                    />
-                </aside>
+        <MainLayout>
+            <Header
+                className="relative flex w-full mb-14"
+                link1="Home"
+                link2="Unterricht"
+                link3="Projekte"
+                link4="Auftritte & CDs"
+                link5="Kontakt"
+            />
+            {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
+            <section
+                className={`grow 
+                w-9/10 mx-auto my-0 flex gap-5`}
+            >
                 <main
-                    className={`w-8/10 pt-2 px-10 pb-10 grid grid-cols-1 grid-rows-mainLayout overflow-hidden
-                                rounded-3xl`}
+                    className={`br
+                                w-9/12 mx-auto my-0`}
                 >
-                    <section
-                        className={`row-start-1
-                                    h-11 w-9/10 ml-auto flex justify-end items-center
-                                    border-b-1 border-slate-600/30`}
-                    >
-                        <p className="translate-y-1.5 text-right">Music ticker...</p>
-                        <span className="translate-y-1">PlayIcon</span>
-                    </section>
                     <article
-                        className={`row-start-2 
-                                    h-auto`}
+                        className={`bbb flowText
+                                    pt-16`}
                     >
-                        <PageTitle content="Kontakt" />
-                        <p>Für Buchung und Anfragen für Unterricht, Konzerte oder Workshops: </p>
-                        <ul>
-                            <li>Telefon: 040/56 32 01</li>
-                            <li>Mobile: +49162 332 3355</li>
-                            <li>E-Mail: lonni.inman@gmx.de</li>
-                            <li>Adresse: Beethovenallee 14 22529 Hamburg</li>
-                        </ul>
+                        {/* <h1 className="relative mb-7 text-pageTitle leading-1.3">
+                            <span className="block w-11/12 border-b-1 border-slate-700/40">
+                                <span className="font-bold text-firstLetterTitle">K</span>ontakt
+                            </span>
+                        </h1> */}
+                        <div
+                            className={`flowText
+                                        w-max mx-auto my-0`}
+                        >
+                            {kontakt}
+                        </div>
                     </article>
                 </main>
-            </div>
-        </>
+            </section>
+        </MainLayout>
     );
 }
