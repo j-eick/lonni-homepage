@@ -3,38 +3,57 @@ type LinkProp = {
     name: string;
 };
 
-type LinksProps = {
-    startpage: LinkProp;
-    home: LinkProp;
-    unterricht: LinkProp;
-    kt: LinkProp;
-    auftritteCDs: LinkProp;
-    kontakt: LinkProp;
-};
-
-export const navLinks: LinksProps = {
-    startpage: {
-        href: "/",
-        name: "startpage",
-    },
-    home: {
+export const navLinksLeft: LinkProp[] = [
+    {
         href: "/home",
         name: "Home",
     },
-    unterricht: {
+
+    {
         href: "/home/unterricht",
         name: "Unterricht",
     },
-    kt: {
+
+    {
         href: "/home/projekte",
         name: "Projekte",
     },
-    auftritteCDs: {
+];
+
+export const navLinksRight: LinkProp[] = [
+    {
         href: "/home/auftritte-cds",
         name: "Auftritte & CDs",
     },
-    kontakt: {
+    {
         href: "/home/kontakt",
         name: "Kontakt",
     },
-};
+];
+
+// export const navLinks: LinksProps = {
+//     startpage: {
+//         href: "/",
+//         name: "startpage",
+//     },
+//     home: {
+//         href: "/home",
+//         name: "Home",
+//     },
+//     unterricht: {
+//         href: "/home/unterricht",
+//         name: "Unterricht",
+//     },
+//     kt: {
+//         href: "/home/projekte",
+//         name: "Projekte",
+//     },
+//     auftritteCDs: {
+//         href: "/home/auftritte-cds",
+//         name: "Auftritte & CDs",
+//     },
+//     kontakt: {
+//         href: "/home/kontakt",
+//         name: "Kontakt",
+//     },
+// };
