@@ -110,6 +110,9 @@ module.exports = {
                 pageTitle: "Argentina Script",
                 pageTitle2: "AquilineTwo",
                 pageTitle3: "Andrea",
+                // "navLink-unselected": "Roboto-Thin",
+                "navLink-unselected": "Roboto-Light",
+                "navLink-selected": "Roboto-LightItalic",
             },
             fontSize: {
                 "3xl": "1.953rem",
@@ -118,6 +121,8 @@ module.exports = {
                 headerTitle: "85px",
                 pageTitle: "33px",
                 firstLetterTitle: "44px",
+                navLinks: "17px",
+                "navLinks-selected": "19px",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",
@@ -211,6 +216,8 @@ module.exports = {
                 "canvas-width": "min(85%, 1200px)",
             },
             maxWidth: {
+                "navContainer-left": "440px",
+                "navContainer-right": "405px",
                 "950px": "950px",
                 "1050px": "1050px",
                 "1150px": "1150px",

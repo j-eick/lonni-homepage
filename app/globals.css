@@ -28,6 +28,14 @@
     font-family: AquilineTwo;
     src: url("./fonts/AquilineTwo.ttf");
 }
+@font-face {
+    font-family: Roboto-Light;
+    src: url("./fonts/roboto/Roboto-Light.ttf");
+}
+@font-face {
+    font-family: Roboto-LightItalic;
+    src: url("./fonts/roboto/Roboto-LightItalic.ttf");
+}
 
 @layer components {
     .content-allPages {
