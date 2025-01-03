@@ -8,14 +8,7 @@ import { welcomeText } from "@/lib/paragraphs/home";
 export default function Home() {
     return (
         <MainLayout>
-            <Header
-                className="relative flex w-full mb-14"
-                link1="Home"
-                link2="Unterricht"
-                link3="Projekte"
-                link4="Auftritte & CDs"
-                link5="Kontakt"
-            />
+            <Header className="relative flex w-full mb-14" />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
             <section
                 className={`grow 
