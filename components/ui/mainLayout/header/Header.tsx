@@ -48,16 +48,17 @@ export default function Header({ className }: HeaderProps) {
                         ))}
                     </ul>
                 </li>
-                <li className="w-4/12">
+                <li className="min-w-[300px] max-w-[335px] flex-1 shrink">
                     <Link href="/home">
                         <h1
                             id="titleLonni"
-                            className="grid grid-cols-10 grid-rows-2 font-pageTitle "
+                            className={`h-[215px] relative
+                                        font-pageTitle`}
                         >
-                            <span className="w-full col-start-2 text-headerTitle">Lonni</span>
+                            <span className="absolute top-7 w-full text-headerTitle-lonni ">Lonni</span>
                             <span
-                                className={`row-start-2 col-start-4 col-end-10 text-headerTitle
-                                        grid justify-end`}
+                                className={`absolute right-0 bottom-7 text-headerTitle-inman 
+                                        `}
                             >
                                 <span className="">Inman</span>
                             </span>
