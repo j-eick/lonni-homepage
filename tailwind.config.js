@@ -238,6 +238,7 @@ module.exports = {
                 ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
                 float: "float 5s ease-in-out infinite alternate",
                 spin: "spin 5s linear infinite",
+                slideIn: "slideIn 0.3s ease-in-out forwards",
             },
             keyframes: {
                 ripple: {
@@ -255,6 +256,10 @@ module.exports = {
                 spin: {
                     "0%": { transform: "rotate(0deg)" },
                     "100%": { transform: "rotate(360deg)" },
+                },
+                slideIn: {
+                    "0%": { width: "0%" },
+                    "100%": { width: "100%" },
                 },
             },
         },

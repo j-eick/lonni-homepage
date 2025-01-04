@@ -2,6 +2,7 @@ import { navLinksLeft, navLinksRight } from "@/lib/navLinks";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import "./header.css";
 
 type HeaderProps = {
     className: string;
@@ -13,11 +14,14 @@ export default function Header({ className }: HeaderProps) {
 
     console.log(path);
 
-    const hoverScaleClasses = "hover:text-lg";
+    const hoverScaleClasses = "hover:text-navLinks-selected";
     const linkStyleClasses = (href: string) =>
         `h-1/3 w-full grid place-items-center 
         ${href === buttonClicked ? `text-navLinks-selected font-bold` : ""}
         ${hoverScaleClasses} duration-300 transition-all`;
+    const selectedLinkClasses = (href: string) => `w-max px-2 text-center relative
+        ${href === buttonClicked ? `navLinks-underline` : ""}
+    `;
 
     useEffect(() => {
         setButtonClicked(path);
@@ -28,7 +32,7 @@ export default function Header({ className }: HeaderProps) {
             {/* ###   LEFT NAV--ITEMS   ### */}
             <ul className="w-full h-full flex justify-around">
                 <li className={`grow relative max-w-navContainer-left`}>
-                    <ul className={`relative h-full flex justify-between gap-3 bb`}>
+                    <ul className={`relative h-full flex justify-between gap-3`}>
                         {navLinksLeft.map(link => (
                             <li
                                 key={link.href}
@@ -38,7 +42,7 @@ export default function Header({ className }: HeaderProps) {
                                     className={linkStyleClasses(link.href)}
                                     href={link.href}
                                 >
-                                    {link.name}
+                                    <span className={selectedLinkClasses(link.href)}>{link.name}</span>
                                 </Link>
                             </li>
                         ))}
@@ -66,13 +70,13 @@ export default function Header({ className }: HeaderProps) {
                         {navLinksRight.map(link => (
                             <li
                                 key={link.href}
-                                className="grow h-full w-full flex items-center justify-center br"
+                                className="grow h-full w-full flex items-center justify-center font-navLink-unselected text-navLinks"
                             >
                                 <Link
                                     className={linkStyleClasses(link.href)}
                                     href={link.href}
                                 >
-                                    {link.name}
+                                    <span className={selectedLinkClasses(link.href)}>{link.name}</span>
                                 </Link>
                             </li>
                         ))}
