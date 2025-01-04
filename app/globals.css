@@ -36,6 +36,10 @@
     font-family: Roboto-LightItalic;
     src: url("./fonts/roboto/Roboto-LightItalic.ttf");
 }
+@font-face {
+    font-family: Walkway SemiBold;
+    src: url("./fonts/pageTitle/Walkway SemiBold.ttf");
+}
 
 @layer components {
     .content-allPages {

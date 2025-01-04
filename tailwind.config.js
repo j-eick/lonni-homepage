@@ -107,12 +107,9 @@ module.exports = {
             },
             fontFamily: {
                 landingTitle: ["Calinastiya"],
-                pageTitle: "Argentina Script",
-                pageTitle2: "AquilineTwo",
-                pageTitle3: "Andrea",
-                // "navLink-unselected": "Roboto-Thin",
-                "navLink-unselected": "Roboto-Light",
-                "navLink-selected": "Roboto-LightItalic",
+                headerTitle: "Argentina Script",
+                pageTitle: "Walkway SemiBold",
+                navLink: "Roboto-Light",
             },
             fontSize: {
                 "3xl": "1.953rem",
