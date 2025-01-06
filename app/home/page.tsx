@@ -2,7 +2,7 @@
 
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
-import SideVideos from "@/components/ui/SideVideos";
+import PageTitle from "@/components/ui/page-title/PageTitle";
 import { welcomeText } from "@/lib/paragraphs/home";
 
 export default function Home() {
@@ -16,18 +16,15 @@ export default function Home() {
             >
                 <main className={`w-9/12`}>
                     <article className="flowText">
-                        <h1 className="relative mb-7 text-pageTitle leading-1.3">
-                            <span
-                                className={`block font-pageTitle tracking-wider
-                                            w-11/12 border-b-1 border-slate-700/40`}
-                            >
-                                <span className="font-bold text-firstLetterTitle">H</span>erzlich Willkommen!
-                            </span>
-                        </h1>
+                        <PageTitle>
+                            <div
+                                className={`absolute h-24 w-24 rounded-3xl bg-slate-400/20
+                                            top-1/2 -translate-y-1/2 -left-10 -z-10`}
+                            />
+                        </PageTitle>
                         <div className="pr-10 flowTextAndLastChild">{welcomeText}</div>
                     </article>
                 </main>
-                <SideVideos />
             </section>
             <div
                 className={`bb 
@@ -42,7 +39,7 @@ export default function Home() {
                     <li className="grow text-center">Konzerte</li>
                     <li className="grow text-center">Kontakt</li>
                 </ul>
-                <div />
+                {/* <div /> */}
             </div>
         </MainLayout>
     );
