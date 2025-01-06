@@ -1,16 +1,22 @@
 import { allVideoLinks } from "@/lib/videoLinks";
 
-export default function SideVideos() {
+type SideVideosProps = {
+    width?: number;
+    height?: number;
+};
+
+export default function SideVideos({ width = 300, height = 200 }: SideVideosProps) {
     return (
         <aside className="grow p-5 bb h-max">
             <ul className="flex flex-col gap-3">
-                {allVideoLinks.map((link, i) => (
-                    // <li key={link}></li>
-                    <iframe
-                        key={i}
-                        src={link}
-                        allowFullScreen
-                    />
+                {allVideoLinks.map(link => (
+                    <li key={link}>
+                        <iframe
+                            src={link}
+                            width={width}
+                            height={height}
+                        />
+                    </li>
                 ))}
             </ul>
         </aside>
