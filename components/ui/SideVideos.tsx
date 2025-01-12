@@ -5,12 +5,15 @@ type SideVideosProps = {
     height?: number;
 };
 
-export default function SideVideos({ width = 300, height = 200 }: SideVideosProps) {
+export default function SideVideos({ width = 350, height = 190 }: SideVideosProps) {
     return (
-        <aside className="grow p-5 bb h-max">
-            <ul className="flex flex-col gap-3">
+        <aside className="grow p-5  h-max">
+            <ul className={`flex flex-col gap-5`}>
                 {allVideoLinks.map(link => (
-                    <li key={link}>
+                    <li
+                        key={link}
+                        className="w-max overflow-hidden rounded-3xl border-white"
+                    >
                         <iframe
                             src={link}
                             width={width}
