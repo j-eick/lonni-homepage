@@ -120,7 +120,6 @@ module.exports = {
                 pageTitle: "33px",
                 firstLetterTitle: "44px",
                 navLinks: "17px",
-                "navLinks-selected": "19px",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",
@@ -196,6 +195,9 @@ module.exports = {
             padding: {
                 1.5: "6px",
                 2.5: "10px",
+            },
+            scale: {
+                "navLinks-selected": "1.15",
             },
             width: {
                 "1.5/10": "15%",
