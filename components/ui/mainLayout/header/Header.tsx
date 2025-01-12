@@ -14,12 +14,11 @@ export default function Header({ className }: HeaderProps) {
 
     console.log(path);
 
-    const hoverScaleClasses = "hover:text-navLinks-selected";
+    // const hoverScaleClasses = "hover:navLinks-underline";
     const linkStyleClasses = (href: string) =>
-        `h-1/3 w-full grid place-items-center 
-        ${href === buttonClicked ? `text-navLinks-selected font-bold` : ""}
-        ${hoverScaleClasses} duration-300 transition-all`;
-    const underlineLinkClasses = (href: string) => `w-max px-2 text-center relative
+        `h-1/3 w-full grid place-items-center duration-300 transition-all
+        ${href === buttonClicked ? `scale-navLinks-selected text-navLinks font-bold` : ""}`;
+    const underlineLinkClasses = (href: string) => `w-max px-2 text-center relative navLinks-underlineHover
         ${href === buttonClicked ? `navLinks-underline` : ""}
     `;
 
