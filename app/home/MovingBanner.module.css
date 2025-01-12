@@ -1,0 +1,20 @@
+.bannerContainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.movingBanner {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: moveLeft 15s linear infinite;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
