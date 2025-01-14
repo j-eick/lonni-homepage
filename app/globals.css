@@ -89,9 +89,21 @@
             rgba(198, 204, 205, 0.3)
         );
     }
+
+    .gradient {
+        background-color: #ffffff;
+        background-image: linear-gradient(160deg, #ffffff 0%, #deeff8 54%, #ffffff 100%);
+    }
+
+    .thumbnail-link {
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
 }
 
 :root {
+    --font-primary: Roboto-Light, "Inter";
+    --font-secondary: Walkway SemiBold, "Inter";
+
     --background: #ffffff;
     --foreground: #171717;
 
@@ -123,8 +135,8 @@
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;

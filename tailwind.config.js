@@ -5,9 +5,7 @@ module.exports = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
-
-        // Or if using `src` directory:
-        "./src/**/*.{js,ts,jsx,tsx,mdx}",
+        "./lib/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
         extend: {
@@ -15,6 +13,11 @@ module.exports = {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
                 sm: "calc(var(--radius) - 4px)",
+            },
+            boxShadow: {
+                thumbnailLink:
+                    "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+                thumbnailLink2: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
             },
             colors: {
                 background: "hsl(var(--background))",
@@ -94,6 +97,9 @@ module.exports = {
                 "105%": "105%",
                 "110%": "110%",
             },
+            borderRadius: {
+                "3xl": "24px",
+            },
             borderWidth: {
                 1: "1px",
             },
@@ -106,10 +112,13 @@ module.exports = {
                 3: "3",
             },
             fontFamily: {
+                primary: "var(--font-primary)",
                 landingTitle: ["Calinastiya"],
                 headerTitle: "Argentina Script",
                 pageTitle: "Walkway SemiBold",
                 navLink: "Roboto-Light",
+                pagelinks: "Walkway SemiBold",
+                projektLink: "var(--font-secondary)",
             },
             fontSize: {
                 "3xl": "1.953rem",
@@ -120,6 +129,13 @@ module.exports = {
                 pageTitle: "33px",
                 firstLetterTitle: "44px",
                 navLinks: "17px",
+
+                //-----  Projekt-Links  -----
+                projektDescription: "var(--step-0)",
+                projektSubtext: "var(--step--1)",
+                "projektSubtext-small": ".7em",
+                projektUrl: "1.5em",
+                "projektUrl-small": ".85em",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",
@@ -229,6 +245,7 @@ module.exports = {
                 // "950x": "950px",
                 // "1175x": "1175px",
                 "1120x": "1120px",
+                "1230px": "1230px",
                 // "1250x": "1250px",
             },
             translate: {
@@ -239,6 +256,7 @@ module.exports = {
                 float: "float 5s ease-in-out infinite alternate",
                 spin: "spin 5s linear infinite",
                 slideIn: "slideIn 0.3s ease-in-out forwards",
+                slideInRightToLeft: "slideInRightToLeft 0.3s ease-in-out forwards",
             },
             keyframes: {
                 ripple: {
@@ -260,6 +278,10 @@ module.exports = {
                 slideIn: {
                     "0%": { width: "0%" },
                     "100%": { width: "100%" },
+                },
+                slideInRightToLeft: {
+                    "0%": { opacity: 0, transform: "translate(25%, 0)" },
+                    "100%": { opacity: 1, transform: "translate(0, 0)" },
                 },
             },
         },
