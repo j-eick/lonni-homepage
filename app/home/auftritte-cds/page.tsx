@@ -2,8 +2,8 @@
 
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
-import SideVideos from "@/components/ui/SideVideos";
-import { auftritteCds } from "@/lib/paragraphs/auftritteCds";
+import { AuftritteCds } from "@/lib/paragraphs/auftritteCds";
+import { allVideoLinks } from "@/lib/videoLinks";
 
 export default function Home() {
     return (
@@ -14,7 +14,7 @@ export default function Home() {
                 className={`grow 
                 w-9/10 mx-auto my-0 flex gap-5`}
             >
-                <main className={`w-9/12`}>
+                <main className={`w-8/12`}>
                     <article className="flowText">
                         <h1 className="relative mb-7 text-pageTitle leading-1.3">
                             <span
@@ -24,10 +24,31 @@ export default function Home() {
                                 <span className="font-bold text-firstLetterTitle">A</span>uftritte & CDs
                             </span>
                         </h1>
-                        <div className="pr-10 flowText">{auftritteCds}</div>
+                        <div className="pr-10 flowText">
+                            <AuftritteCds />
+                        </div>
                     </article>
                 </main>
-                <SideVideos />
+                <aside className="grow w-4/12 p-5 h-max">
+                    <ul className={`flex flex-col gap-5`}>
+                        {allVideoLinks.map(link => (
+                            <li
+                                key={link}
+                                className={`overflow-hidden rounded-3xl border-white 
+                                            w-[290px] h-[163px]`}
+                            >
+                                <iframe
+                                    src={link}
+                                    width="100%"
+                                    height="100%"
+                                    allowFullScreen
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    className="pointer-events-auto"
+                                />
+                            </li>
+                        ))}
+                    </ul>
+                </aside>
             </section>
         </MainLayout>
     );
