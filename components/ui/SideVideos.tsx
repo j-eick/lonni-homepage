@@ -5,7 +5,7 @@ type SideVideosProps = {
     height?: number;
 };
 
-export default function SideVideos({ width = 350, height = 190 }: SideVideosProps) {
+export default function SideVideos({ width = 290, height = 155 }: SideVideosProps) {
     return (
         <aside className="grow p-5  h-max">
             <ul className={`flex flex-col gap-5`}>

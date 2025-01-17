@@ -69,7 +69,7 @@ export default function LinkCard({
 
                 {/* -------  LINK TEXT BANNER  ------- */}
                 <div
-                    className={`mb-5 h-2/10 flex justify-center items-center 
+                    className={`mb-5 h-2.25/10 flex justify-center items-center 
                                 text-slate-100 font-secondary tracking-wider
                                 text-projektUrl font-semibold
                                 transition-colors duration-300 ease-in-out`}

@@ -12,11 +12,8 @@ export default function Home() {
         <MainLayout>
             <Header className="relative flex w-full mb-14" />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
-            <section
-                className={`br
-                w-9/10 mx-auto my-0 flex gap-5`}
-            >
-                <main className={`w-8/12 bb pr-10`}>
+            <section className={`w-9/10 mx-auto my-0 flex gap-5`}>
+                <main className={`w-8/12`}>
                     <article className="flowText">
                         <h1 className="relative mb-7 text-pageTitle leading-1.3">
                             <span
@@ -53,15 +50,15 @@ export default function Home() {
                                 <Pronounced>Fortbildungen</Pronounced> gehalten im Rahmen des „JeKi Tages“ der
                                 Landesinstitut für Lehrerbildung und Schulentwicklung Hamburg.
                             </Bulletpoint>
-                            {/* <Bulletpoint>
+                            <Bulletpoint>
                                 <Pronounced>Wettbewerbe</Pronounced> - Erfolgreiche Teilnahme mehrerer Schüler bei
                                 Jugendmusiziert und Bundeswettbewerben.
-                            </Bulletpoint> */}
+                            </Bulletpoint>
                         </ul>
                     </article>
                 </main>
-                <aside className={`w-4/12 `}>
-                    <ul className="mx-auto my-0 w-max flex flex-col gap-7">
+                <aside className={`w-4/12 flex justify-end`}>
+                    <ul className="w-max flex flex-col gap-5">
                         <LinkCard
                             description="Kammermusik mit historischen Instrumenten"
                             url="trioclassico.de"
