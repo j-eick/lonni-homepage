@@ -20,46 +20,7 @@ module.exports = {
                 thumbnailLink2: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
             },
             colors: {
-                background: "hsl(var(--background))",
-                foreground: "hsl(var(--foreground))",
-                card: {
-                    DEFAULT: "hsl(var(--card))",
-                    foreground: "hsl(var(--card-foreground))",
-                },
-                popover: {
-                    DEFAULT: "hsl(var(--popover))",
-                    foreground: "hsl(var(--popover-foreground))",
-                },
-                primary: {
-                    DEFAULT: "hsl(var(--primary))",
-                    foreground: "hsl(var(--primary-foreground))",
-                },
-                secondary: {
-                    DEFAULT: "hsl(var(--secondary))",
-                    foreground: "hsl(var(--secondary-foreground))",
-                },
-                muted: {
-                    DEFAULT: "hsl(var(--muted))",
-                    foreground: "hsl(var(--muted-foreground))",
-                },
-                accent: {
-                    DEFAULT: "hsl(var(--accent))",
-                    foreground: "hsl(var(--accent-foreground))",
-                },
-                destructive: {
-                    DEFAULT: "hsl(var(--destructive))",
-                    foreground: "hsl(var(--destructive-foreground))",
-                },
-                border: "hsl(var(--border))",
-                input: "hsl(var(--input))",
-                ring: "hsl(var(--ring))",
-                chart: {
-                    1: "hsl(var(--chart-1))",
-                    2: "hsl(var(--chart-2))",
-                    3: "hsl(var(--chart-3))",
-                    4: "hsl(var(--chart-4))",
-                    5: "hsl(var(--chart-5))",
-                },
+                primary: "#1b262c",
             },
             backdropBlur: {
                 "2px": "2px",
@@ -106,6 +67,8 @@ module.exports = {
             boxShadow: {
                 mainShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
                 asideShadow: "rgba(0, 0, 0, 0.3) 2px 0px 8px, rgba(140, 140, 140, 0.22) 0px 0px 20px",
+                regular: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
+                flat: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
             },
             flexGrow: {
                 2: "2",
@@ -113,14 +76,16 @@ module.exports = {
             },
             fontFamily: {
                 primary: "var(--font-primary)",
+                secondary: "var(--font-secondary)",
+
                 landingTitle: ["Calinastiya"],
                 headerTitle: "Argentina Script",
                 pageTitle: "Walkway SemiBold",
                 navLink: "Roboto-Light",
-                pagelinks: "Walkway SemiBold",
-                projektLink: "var(--font-secondary)",
             },
             fontSize: {
+                "size-default": "var(--size-default)",
+
                 "3xl": "1.953rem",
                 "4xl": "2.441rem",
                 "16px": "16px",
@@ -131,10 +96,11 @@ module.exports = {
                 navLinks: "17px",
 
                 //-----  Projekt-Links  -----
-                projektDescription: "var(--step-0)",
+                "size-projektDescription": "var(--step-0)",
                 projektSubtext: "var(--step--1)",
                 "projektSubtext-small": ".7em",
-                projektUrl: "1.5em",
+                // projektUrl: "1.3em",
+                projektUrl: "var(--step-0)",
                 "projektUrl-small": ".85em",
             },
             gridTemplateRows: {
@@ -240,6 +206,7 @@ module.exports = {
                 "1200px": "1200px",
                 "1250px": "1250px",
                 "1350px": "1350px",
+                "canvas--1270px": "1270px",
             },
             screens: {
                 // "950x": "950px",
