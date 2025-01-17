@@ -4,10 +4,12 @@ import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import "../../globals.css";
 import LinkCard from "@/components/ui/link-card/LinkCard";
-import { ReactNode } from "react";
 import { MySVG } from "@/lib/MySVG";
+import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
 
 export default function Home() {
+    const bulletpointSize = 14;
+
     return (
         <MainLayout>
             <Header className="relative flex w-full mb-14" />
@@ -24,35 +26,45 @@ export default function Home() {
                             </span>
                         </h1>
                         <ul className="flowText">
-                            <Bulletpoint>
-                                <Pronounced>Onlineauftritte</Pronounced> zu verschiedenen Themen
+                            <Bulletpoint bulletpointSize={bulletpointSize}>
+                                <strong className="font-semibold">Onlineauftritte</strong> zu verschiedenen Themen
                             </Bulletpoint>
-                            <Bulletpoint>
-                                <Pronounced>Orchester-Tätigkeit</Pronounced> in diversen Barockorchestern in
-                                Norddeutschland
+                            <Bulletpoint bulletpointSize={bulletpointSize}>
+                                <strong className="font-semibold">Orchester-Tätigkeit</strong> in diversen
+                                Barockorchestern in Norddeutschland
                             </Bulletpoint>
-                            <Bulletpoint>
-                                <Pronounced>Konzertreisen</Pronounced> und Rundfunk- und Fernsehauftritte
+                            <Bulletpoint bulletpointSize={bulletpointSize}>
+                                <strong className="font-semibold">Konzertreisen</strong> und Rundfunk- und
+                                Fernsehauftritte
                             </Bulletpoint>
-                            <Bulletpoint classname="relative">
-                                <Pronounced>CD-Aufnahmen</Pronounced>
+                            <Bulletpoint
+                                classname="relative"
+                                bulletpointSize={bulletpointSize}
+                            >
+                                <strong className="font-semibold">CD-Aufnahmen</strong>
                                 <ul>
-                                    <Bulletpoint fill="none">
+                                    <Bulletpoint
+                                        fill="none"
+                                        bulletpointSize={bulletpointSize}
+                                    >
                                         Trio Classico - Franz Danzi, Trios, Op. 71 mit Ancient Music Edition
                                     </Bulletpoint>
-                                    <Bulletpoint fill="none">
+                                    <Bulletpoint
+                                        fill="none"
+                                        bulletpointSize={bulletpointSize}
+                                    >
                                         Reflections - Flöte und Gitarre mit Daminus Records
                                     </Bulletpoint>
                                     <InfoBanner />
                                 </ul>
                             </Bulletpoint>
-                            <Bulletpoint>
-                                <Pronounced>Fortbildungen</Pronounced> gehalten im Rahmen des „JeKi Tages“ der
-                                Landesinstitut für Lehrerbildung und Schulentwicklung Hamburg.
+                            <Bulletpoint bulletpointSize={bulletpointSize}>
+                                <strong className="font-semibold">Fortbildungen</strong> gehalten im Rahmen des „JeKi
+                                Tages“ der Landesinstitut für Lehrerbildung und Schulentwicklung Hamburg.
                             </Bulletpoint>
-                            <Bulletpoint>
-                                <Pronounced>Wettbewerbe</Pronounced> - Erfolgreiche Teilnahme mehrerer Schüler bei
-                                Jugendmusiziert und Bundeswettbewerben.
+                            <Bulletpoint bulletpointSize={bulletpointSize}>
+                                <strong className="font-semibold">Wettbewerbe</strong> - Erfolgreiche Teilnahme mehrerer
+                                Schüler bei Jugendmusiziert und Bundeswettbewerben.
                             </Bulletpoint>
                         </ul>
                     </article>
@@ -81,35 +93,6 @@ export default function Home() {
         </MainLayout>
     );
 }
-
-const Pronounced = ({ children }: { children: ReactNode }) => {
-    return <strong className="font-semibold">{children}</strong>;
-};
-
-const bulletpointClasses = "flex place-items-start gap-4";
-const bulletpointSize = 14;
-const bulletpointPosition = "pt-2";
-
-type BulletpointProps = {
-    children: ReactNode;
-    size?: number;
-    fill?: "none" | "currentColor";
-    classname?: string;
-};
-
-const Bulletpoint = ({ children, size = bulletpointSize, fill = "currentColor", classname }: BulletpointProps) => {
-    return (
-        <li className={`${bulletpointClasses} ${classname}`}>
-            <span className={bulletpointPosition}>
-                <MySVG.BulletItemArrow
-                    size={size}
-                    fill={fill}
-                />
-            </span>
-            <div>{children}</div>
-        </li>
-    );
-};
 
 const InfoBanner = () => {
     return (
