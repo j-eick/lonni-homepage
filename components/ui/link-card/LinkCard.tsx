@@ -14,8 +14,8 @@ type LinkCardProps = {
 };
 
 export default function LinkCard({
-    width = 350,
-    height = 250,
+    width = 300,
+    height = 200,
     description,
     descriptionStyle,
     subText,
@@ -52,13 +52,13 @@ export default function LinkCard({
             {/* -------  TEXT LAYER  ------- */}
             <div
                 className={`absolute inset-0 flex flex-col
-                            font-pagelinks 
+                            font-secondary text-size-projektDescription
                             rounded-2xl overflow-hidden`}
             >
                 {/* -------  DESCRIPTION  ------- */}
                 <div
                     className={`grow px-3 grid place-items-center
-                                text-projektDescription tracking-wider text-center leading-8 ${descriptionStyle}`}
+                                tracking-wider text-center leading-8 ${descriptionStyle}`}
                 >
                     {description}
                     {/* -------  ADDITIONAL TEXT  ------- */}
@@ -66,28 +66,24 @@ export default function LinkCard({
                     {/* -------  OPTIONAL TEXT  ------- */}
                     {!!optional && <span className="text-red-500">{optional}</span>}
                 </div>
+
+                {/* -------  LINK TEXT BANNER  ------- */}
                 <div
-                    className={`mb-5 h-2.5/10 flex justify-center items-center 
-                                text-slate-200 font-projektLink tracking-wider
-                                transition-colors duration-300 ease-in-out
-                                text-projektUrl`}
+                    className={`mb-5 h-2/10 flex justify-center items-center 
+                                text-slate-100 font-secondary tracking-wider
+                                text-projektUrl font-semibold
+                                transition-colors duration-300 ease-in-out`}
                 >
-                    {/* -------  LINK TEXT BANNER  ------- */}
                     {!isHovered ? (
                         <div
                             className={`w-full h-full grid place-items-center transition-all duration-300
-                                        ${!isHovered ? "bg-slate-700/40" : ""}`}
+                                        ${!isHovered ? "bg-slate-700/30" : ""}`}
                         >
                             {url}
                         </div>
                     ) : (
-                        <div className={`w-full h-full flex bg-slate-700/40`}>
-                            <div
-                                className={`w-8/12 h-full flex justify-center items-center
-                                            text-projektUrl-small`}
-                            >
-                                {url}
-                            </div>
+                        <div className={`w-full h-full flex bg-slate-700/30`}>
+                            <div className={`w-8/12 h-full flex justify-center items-center`}>{url}</div>
                             <span
                                 className={`w-4/12 h-full flex justify-center items-center animate-slideInRightToLeft`}
                             >
