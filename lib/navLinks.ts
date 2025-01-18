@@ -16,14 +16,14 @@ export const navLinksLeft: LinkProp[] = [
 
     {
         href: "/home/projekte",
-        name: "Projekte",
+        name: "Projekte & CDs",
     },
 ];
 
 export const navLinksRight: LinkProp[] = [
     {
         href: "/home/auftritte-cds",
-        name: "Auftritte & CDs",
+        name: "Biografie",
     },
     {
         href: "/home/kontakt",
