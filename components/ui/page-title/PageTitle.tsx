@@ -1,18 +1,37 @@
-import { ReactNode } from "react";
-
 type PageTitleProps = {
-    content?: ReactNode;
+    firstLetter: string;
+    rest: string;
 };
-export default function PageTitle({ content }: PageTitleProps) {
+export default function PageTitle({ firstLetter, rest }: PageTitleProps) {
     return (
-        <h1 className="relative mb-7 text-pageTitle leading-1.3">
-            {content}
+        <div className=" relative ">
             <span
-                className={`block font-pageTitle tracking-wider
-                                            w-11/12 border-b-1 border-slate-700/40`}
+                className={`absolute top-[-75px] -left-4 
+                                    font-quaternary tracking-widest font-black
+                                    text-[80px] opacity-[.03] `}
             >
-                <span className="font-bold text-firstLetterTitle">H</span>erzlich Willkommen!
+                <span className="text-[120px]">{firstLetter}</span>
+                {rest}
             </span>
-        </h1>
+            <h1 className="relative mb-7 text-pageTitle font-secondary leading-1.3">
+                <span
+                    className={`block font-pageTitle tracking-wider
+                                            w-11/12 border-b-1 border-slate-700/40`}
+                >
+                    <span className="font-bold text-firstLetterTitle">{firstLetter}</span>
+                    {rest}
+                </span>
+            </h1>
+        </div>
+        // ###-----  old version -----###
+        // <h1 className="relative mb-7 text-pageTitle leading-1.3">
+        //     {content}
+        //     <span
+        //         className={`block font-pageTitle tracking-wider
+        //                                     w-11/12 border-b-1 border-slate-700/40`}
+        //     >
+        //         <span className="font-bold text-firstLetterTitle">H</span>erzlich Willkommen!
+        //     </span>
+        // </h1>
     );
 }
