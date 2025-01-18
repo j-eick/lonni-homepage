@@ -22,7 +22,7 @@ export const navLinksLeft: LinkProp[] = [
 
 export const navLinksRight: LinkProp[] = [
     {
-        href: "/home/auftritte-cds",
+        href: "/home/biografie",
         name: "Biografie",
     },
     {
