@@ -21,6 +21,7 @@ module.exports = {
             },
             colors: {
                 primary: "#1b262c",
+                primary2: "#141d21",
             },
             backdropBlur: {
                 "2px": "2px",
@@ -77,6 +78,8 @@ module.exports = {
             fontFamily: {
                 primary: "var(--font-primary)",
                 secondary: "var(--font-secondary)",
+                tertiary: "var(--font-tertiary)",
+                quaternary: "var(--font-quaternary)",
 
                 landingTitle: ["Calinastiya"],
                 headerTitle: "Argentina Script",

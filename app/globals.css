@@ -40,6 +40,14 @@
     font-family: Walkway SemiBold;
     src: url("./fonts/pageTitle/Walkway SemiBold.ttf");
 }
+@font-face {
+    font-family: Chopin-Light;
+    src: url("./fonts/Chopin-Light.ttf");
+}
+@font-face {
+    font-family: Walkway Expand SemiBold;
+    src: url("./fonts/pageTitle/Walkway Expand SemiBold.ttf");
+}
 
 @layer components {
     .content-allPages {
@@ -114,12 +122,14 @@
     /* ----- Schrift-Arten ----- */
     --font-primary: Roboto-Light, "Inter";
     --font-secondary: Walkway SemiBold, "Inter";
+    --font-tertiary: Chopin-Light, "Inter";
+    --font-quaternary: Walkway Expand SemiBold, "Inter";
 
     /* ----- Schrift-Farben ----- */
     --color-primary: #1b262c;
 
     /* ----- Schrift-Größen ----- */
-    --size-default: var(--step-0);
+    --size-default: var(--step-05);
 
     --background: #ffffff;
     --foreground: #171717;
@@ -149,6 +159,13 @@
     --step-5: clamp(2.2395rem, 0.8066rem + 7.1646vw, 6.3591rem);
 
     --aside-width: clamp(150px, 4.88vw + 105px, 208px);
+
+    /* NEW half-steps (example) */
+    --step-05: clamp(1.04rem, 0.91rem + 0.66vw, 1.43rem); /* between --step-0 & --step-1 */
+    --step-15: clamp(1.19rem, 0.93rem + 1.27vw, 1.92rem); /* between --step-1 & --step-2 */
+    --step-25: clamp(1.46rem, 0.97rem + 2.24vw, 2.71rem); /* between --step-2 & --step-3 */
+    --step-35: clamp(1.71rem, 0.97rem + 3.68vw, 3.84rem); /* between --step-3 & --step-4 */
+    --step-45: clamp(2.01rem, 0.9rem + 5.87vw, 5.49rem); /* between --step-4 & --step-5 */
 }
 
 *,
@@ -172,8 +189,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-secondary, Arial, Helvetica, sans-serif);
-    font-size: var(--step-1);
+    /* font-family: var(--font-secondary, Arial, Helvetica, sans-serif);
+    font-size: var(--step-1); */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
@@ -211,7 +228,7 @@ p {
 }
 
 .flowText > * + * {
-    margin-top: 0.75em;
+    margin-top: 0.8em;
 }
 .flowTextAndLastChild > * + * {
     margin-top: 0.75em;
