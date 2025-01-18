@@ -15,7 +15,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                 <div
                     className={`min-h-full w-8.5/10 max-w-canvas--1270px br overflow-hidden
                                 mx-auto my-0 flex flex-col
-                                font-primary text-size-default text-primary`}
+                                font-primary text-size-default text-primary2`}
                 >
                     {children}
                 </div>
