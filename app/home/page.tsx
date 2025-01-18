@@ -17,12 +17,10 @@ export default function Home() {
             >
                 <main className={`w-9/12`}>
                     <article className="flowText">
-                        <PageTitle>
-                            <div
-                                className={`absolute h-24 w-24 rounded-3xl bg-slate-400/20
-                                            top-1/2 -translate-y-1/2 -left-10 -z-10`}
-                            />
-                        </PageTitle>
+                        <PageTitle
+                            firstLetter="W"
+                            rest="illkommen"
+                        />
                         <div className="pr-10 flowTextAndLastChild">{welcomeText}</div>
                     </article>
                 </main>

@@ -1,16 +1,18 @@
 type PageTitleProps = {
     firstLetter: string;
+    firstLetterStyle?: string;
     rest: string;
+    restStyle?: string;
 };
-export default function PageTitle({ firstLetter, rest }: PageTitleProps) {
+export default function PageTitle({ firstLetter, firstLetterStyle, rest, restStyle }: PageTitleProps) {
     return (
         <div className=" relative ">
             <span
                 className={`absolute top-[-75px] -left-4 
                                     font-quaternary tracking-widest font-black
-                                    text-[80px] opacity-[.03] `}
+                                    text-[80px] opacity-[.03] ${restStyle}`}
             >
-                <span className="text-[120px]">{firstLetter}</span>
+                <span className={`text-[120px] ${firstLetterStyle}`}>{firstLetter}</span>
                 {rest}
             </span>
             <h1 className="relative mb-7 text-pageTitle font-secondary leading-1.3">

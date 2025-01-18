@@ -2,6 +2,7 @@
 
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
+import PageTitle from "@/components/ui/page-title/PageTitle";
 import SideVideos from "@/components/ui/SideVideos";
 import { unterricht } from "@/lib/paragraphs/unterricht";
 
@@ -16,14 +17,10 @@ export default function Home() {
             >
                 <main className={`w-9/12`}>
                     <article className="flowText">
-                        <h1 className="relative mb-7 text-pageTitle leading-1.3">
-                            <span
-                                className={`block font-pageTitle tracking-wider
-                                            w-11/12 border-b-1 border-slate-700/40`}
-                            >
-                                <span className="font-bold text-firstLetterTitle">U</span>nterricht
-                            </span>
-                        </h1>
+                        <PageTitle
+                            firstLetter="U"
+                            rest="nterricht"
+                        />
                         <div className="pr-10 flowText">{unterricht}</div>
                     </article>
                 </main>

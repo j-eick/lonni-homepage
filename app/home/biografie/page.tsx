@@ -2,6 +2,7 @@
 
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
+import PageTitle from "@/components/ui/page-title/PageTitle";
 import AuftritteCds from "@/lib/paragraphs/auftritteCds";
 import { allVideoLinks } from "@/lib/videoLinks";
 
@@ -14,23 +15,10 @@ export default function Home() {
                 className={`grow 
                 w-9/10 mx-auto my-0 flex flex-col`}
             >
-                <div className=" relative ">
-                    <span
-                        className={`absolute top-[-75px] -left-4 
-                                    font-quaternary tracking-widest font-black
-                                    text-[80px] opacity-[.025] `}
-                    >
-                        <span className="text-[120px]">B</span>iografie
-                    </span>
-                    <h1 className="relative mb-7 text-pageTitle font-secondary leading-1.3">
-                        <span
-                            className={`block font-pageTitle tracking-wider
-                                            w-11/12 border-b-1 border-slate-700/40`}
-                        >
-                            <span className="font-bold text-firstLetterTitle">B</span>iografie
-                        </span>
-                    </h1>
-                </div>
+                <PageTitle
+                    firstLetter="B"
+                    rest="iografie"
+                />
                 <div className="flex">
                     <main className={`w-8/12`}>
                         <article className="flowText">

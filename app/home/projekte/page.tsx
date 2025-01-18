@@ -6,6 +6,7 @@ import "../../globals.css";
 import LinkCard from "@/components/ui/link-card/LinkCard";
 import { MySVG } from "@/lib/MySVG";
 import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
+import PageTitle from "@/components/ui/page-title/PageTitle";
 
 export default function Home() {
     const bulletpointSize = 14;
@@ -17,14 +18,12 @@ export default function Home() {
             <section className={`w-9/10 mx-auto my-0 flex gap-5`}>
                 <main className={`w-8/12`}>
                     <article className="flowText">
-                        <h1 className="relative mb-7 text-pageTitle leading-1.3">
-                            <span
-                                className={`block font-pageTitle tracking-wider
-                                            w-11/12 border-b-1 border-slate-700/40`}
-                            >
-                                <span className="font-bold text-firstLetterTitle">P</span>rojekte
-                            </span>
-                        </h1>
+                        <PageTitle
+                            firstLetter="P"
+                            firstLetterStyle="text-[100px]"
+                            rest="rojekte & CDs"
+                            restStyle="text-[60px] top-[-53px] -left-3"
+                        />
                         <ul className="flowText">
                             <Bulletpoint bulletpointSize={bulletpointSize}>
                                 <strong className="font-semibold">Onlineauftritte</strong> zu verschiedenen Themen
