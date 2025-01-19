@@ -13,7 +13,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             <div className="w-full pt-5 pb-20">
                 <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
                 <div
-                    className={`min-h-full w-8.5/10 max-w-canvas--1270px br overflow-hidden
+                    className={`min-h-full w-8.5/10 max-w-canvas--1270px overflow-hidden
                                 mx-auto my-0 flex flex-col
                                 font-primary text-size-default text-primary2`}
                 >

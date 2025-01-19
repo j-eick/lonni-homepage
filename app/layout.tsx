@@ -26,7 +26,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+            <body className={`${geistSans.variable} ${geistMono.variable} relative`}>
+                <div className={`absolute inset-0 bg`} />
+                {children}
+            </body>
         </html>
     );
 }
