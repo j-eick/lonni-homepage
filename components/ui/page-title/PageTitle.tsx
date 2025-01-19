@@ -10,7 +10,7 @@ export default function PageTitle({ firstLetter, firstLetterStyle, rest, restSty
             <span
                 className={`absolute top-[-75px] -left-4 
                                     font-quaternary tracking-widest font-black
-                                    text-[80px] opacity-[.03] ${restStyle}`}
+                                    text-[80px] opacity-[.035] ${restStyle}`}
             >
                 <span className={`text-[120px] ${firstLetterStyle}`}>{firstLetter}</span>
                 {rest}
@@ -18,7 +18,7 @@ export default function PageTitle({ firstLetter, firstLetterStyle, rest, restSty
             <h1 className="relative mb-7 text-pageTitle font-secondary leading-1.3">
                 <span
                     className={`block font-pageTitle tracking-wider
-                                            w-11/12 border-b-1 border-slate-700/40`}
+                                w-11/12 border-b-1 border-slate-700/40`}
                 >
                     <span className="font-bold text-firstLetterTitle">{firstLetter}</span>
                     {rest}

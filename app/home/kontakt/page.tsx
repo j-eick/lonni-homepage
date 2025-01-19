@@ -3,6 +3,7 @@
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import { kontakt } from "@/lib/paragraphs/kontakt";
+import "../../globals.css";
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
                 w-9/10 mx-auto my-0 flex gap-5`}
             >
                 <main className={`w-9/12 mx-auto my-0 pb-20`}>
-                    <article className={`pt-16 flowText rounded-lg shadow-soft`}>
+                    <article className={`pt-16 flowText rounded-lg shadow-soft kontakPage-heavyRain`}>
                         {/* <h1 className="relative mb-7 text-pageTitle leading-1.3">
                             <span className="block w-11/12 border-b-1 border-slate-700/40">
                                 <span className="font-bold text-firstLetterTitle">K</span>ontakt
