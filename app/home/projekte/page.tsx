@@ -7,6 +7,7 @@ import LinkCard from "@/components/ui/link-card/LinkCard";
 import { MySVG } from "@/lib/MySVG";
 import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
 import PageTitle from "@/components/ui/page-title/PageTitle";
+import { FaRightLong } from "react-icons/fa6";
 
 export default function Home() {
     const bulletpointSize = 14;
@@ -95,13 +96,18 @@ export default function Home() {
 
 const InfoBanner = () => {
     return (
-        <div className="relative px-10 py-3 my-5 mx-auto w-max flex flex-col gap-2 rounded-lg shadow-flat text-center whitespace-pre">
+        <div
+            className={`relative px-10 py-3 my-5 mx-auto w-max flex flex-col flex-wrap gap-2 
+                        font-secondary rounded-lg shadow-flat text-center 
+                        whitespace-pre bg-slate-200/60`}
+        >
             <span className="inline-block px-2 w-max mx-auto my-0 border-b-1 border-slate-600">
                 Bestellen per eMail:
             </span>
-            <div>
-                <span className="font-semibold font-secondary tracking-wider">lonni.inman@gmx.de</span>
-                || 12eur + Versand
+            <div className="flex items-center flex-wrap gap-3">
+                <span className="inline-block font-semibold tracking-wider">lonni.inman@gmx.de</span>
+                <FaRightLong />
+                12eur + Versand
             </div>
             <MySVG.Cart
                 className="absolute -top-3 left-5"
