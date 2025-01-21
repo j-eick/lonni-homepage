@@ -78,7 +78,7 @@ module.exports = {
                 soft: "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
             },
             colors: {
-                "color-primary": "var(--primary)",
+                "color-primary": "var(--primary2)",
                 "color-secondary": "var(--secondary)",
             },
             flexGrow: {
@@ -90,6 +90,7 @@ module.exports = {
                 secondary: "var(--font-secondary)",
                 tertiary: "var(--font-tertiary)",
                 quaternary: "var(--font-quaternary)",
+                geosans: "var(--font-geosans)",
 
                 landingTitle: ["Calinastiya"],
                 headerTitle: "Argentina Script",
@@ -98,13 +99,15 @@ module.exports = {
             },
             fontSize: {
                 // -----  regular  -----
-                "size-default": "var(--step-05)",
+                "size-default": "var(--step-1)",
                 "size-small": "var(--step--1)",
+
                 // -----  Titles -----
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
                 "size-regularTitle": "var(--step-2)",
                 "size-headerTitle": "85px",
+
                 // ----------  PageTitle-Shadow ----------
                 "size-firstLetterPagetitle-shadow": "var(--step-45)",
                 "size-pageTitle-shadow": "var(--step-35)",

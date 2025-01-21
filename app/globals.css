@@ -3,31 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Calinastiya;
-    src: url("./fonts/Calinastiya.ttf");
-}
-
-@font-face {
-    font-family: adelia;
-    src: url("./fonts/adelia.ttf");
-}
-
-@font-face {
-    font-family: Blacksword;
-    src: url("./fonts/Blacksword.otf");
-}
-@font-face {
     font-family: Argentina Script;
     src: url("./fonts/Argentina Script.ttf");
 }
-@font-face {
-    font-family: Andrea;
-    src: url("./fonts/Andrea.ttf");
-}
-@font-face {
-    font-family: AquilineTwo;
-    src: url("./fonts/AquilineTwo.ttf");
-}
+
 @font-face {
     font-family: Roboto-Light;
     src: url("./fonts/roboto/Roboto-Light.ttf");
@@ -47,6 +26,10 @@
 @font-face {
     font-family: Walkway Expand SemiBold;
     src: url("./fonts/pageTitle/Walkway Expand SemiBold.ttf");
+}
+@font-face {
+    font-family: GeosansLight;
+    src: url("./fonts/GeosansLight.ttf");
 }
 
 @layer components {
@@ -137,12 +120,15 @@
     --font-tertiary: Chopin-Light, "Inter";
     --font-quaternary: Walkway Expand SemiBold, "Inter";
 
+    --font-geosans: GeosansLight, "Inter";
+
     /* ----- Schrift-Farben ----- */
     --primary: "#1c2022";
+    --primary2: rgb(49, 57, 60);
     --secondary: "#5d5d5d";
 
     /* ----- Schrift-Größen ----- */
-    --size-default: var(--step-05);
+    --size-regular: "var(--step-05)";
 
     --background: #ffffff;
     --foreground: #171717;
@@ -152,8 +138,6 @@
     --secondary_rgba: rgba(15, 76, 117, 0.7);
     --tertiary: #3282b8;
     --quaternary: #bbe1fa;
-
-    --landigpage_titleFont: "Calinastiya";
 
     --lineHeight-lineBreaks: 2;
     --lineHeight-standard: 1.4;
@@ -206,9 +190,6 @@ body {
     font-size: var(--step-1); */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    /* background: rgb(213, 224, 234);
-    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(162, 182, 198) 100%); */
 }
 
 aside {
