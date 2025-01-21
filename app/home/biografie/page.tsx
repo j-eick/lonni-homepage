@@ -9,12 +9,9 @@ import { allVideoLinks } from "@/lib/videoLinks";
 export default function Home() {
     return (
         <MainLayout>
-            <Header className="relative flex w-full" />
+            <Header className="relative flex w-full mb-14" />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
-            <section
-                className={`grow 
-                w-9/10 mx-auto my-0 flex flex-col`}
-            >
+            <section className={`w-9/10 mx-auto my-0 flex flex-col`}>
                 <PageTitle
                     firstLetter="B"
                     rest="iografie"

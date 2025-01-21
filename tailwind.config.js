@@ -63,6 +63,7 @@ module.exports = {
             },
             borderWidth: {
                 1: "1px",
+                1.5: "1.5px",
             },
             boxShadow: {
                 mainShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
@@ -104,6 +105,9 @@ module.exports = {
                 "size-firstLetterPagetitle": "var(--step-3)",
                 "size-regularTitle": "var(--step-2)",
                 "size-headerTitle": "85px",
+                // ----------  PageTitle-Shadow ----------
+                "size-firstLetterPagetitle-shadow": "var(--step-45)",
+                "size-pageTitle-shadow": "var(--step-35)",
 
                 pageTitle: "33px",
                 firstLetterTitle: "44px",
@@ -116,6 +120,9 @@ module.exports = {
                 // projektUrl: "1.3em",
                 projektUrl: "var(--step-0)",
                 "projektUrl-small": ".85em",
+            },
+            fontWeight: {
+                max: "1000",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",
