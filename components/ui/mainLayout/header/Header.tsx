@@ -54,7 +54,7 @@ export default function Header({ className }: HeaderProps) {
                             className={`h-[215px] relative
                                         font-headerTitle`}
                         >
-                            <span className="absolute top-7 w-full text-headerTitle-lonni ">Lonni</span>
+                            <span className="absolute top-7 w-full text-size-headerTitle ">Lonni</span>
                             <span
                                 className={`absolute right-0 bottom-7 text-headerTitle-inman 
                                         `}
