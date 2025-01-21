@@ -20,11 +20,11 @@ export default function Bulletpoint({
 }: BulletpointProps) {
     const bulletpointClasses = "flex place-items-start gap-4";
     // const bulletpointSize = 14;
-    const bulletpointPosition = "pt-2";
+    const bulletpointPositionClasses = "pt-3";
 
     return (
         <li className={`${bulletpointClasses} ${classname}`}>
-            <span className={bulletpointPosition}>
+            <span className={bulletpointPositionClasses}>
                 <MySVG.BulletItemArrow
                     size={bulletpointSize}
                     fill={fill}
