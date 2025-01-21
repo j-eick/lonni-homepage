@@ -19,10 +19,6 @@ module.exports = {
                     "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
                 thumbnailLink2: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
             },
-            colors: {
-                primary: "#1b262c",
-                primary2: "#141d21",
-            },
             backdropBlur: {
                 "2px": "2px",
                 "3px": "3px",
@@ -59,6 +55,9 @@ module.exports = {
                 "105%": "105%",
                 "110%": "110%",
             },
+            borderColor: {
+                "color-primary": "var(--primary)",
+            },
             borderRadius: {
                 "3xl": "24px",
             },
@@ -69,10 +68,17 @@ module.exports = {
                 mainShadow: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
                 asideShadow: "rgba(0, 0, 0, 0.3) 2px 0px 8px, rgba(140, 140, 140, 0.22) 0px 0px 20px",
                 regular: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
-                line: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
+                "flat-central":
+                    "rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+                line: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
+                line2: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
                 flat: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
                 step: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
                 soft: "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
+            },
+            colors: {
+                "color-primary": "var(--primary)",
+                "color-secondary": "var(--secondary)",
             },
             flexGrow: {
                 2: "2",
@@ -90,13 +96,15 @@ module.exports = {
                 navLink: "Roboto-Light",
             },
             fontSize: {
-                "size-default": "var(--size-default)",
+                // -----  regular  -----
+                "size-default": "var(--step-05)",
+                "size-small": "var(--step--1)",
+                // -----  Titles -----
+                "size-pageTitle": "var(--step-2)",
+                "size-firstLetterPagetitle": "var(--step-3)",
+                "size-regularTitle": "var(--step-2)",
+                "size-headerTitle": "85px",
 
-                "3xl": "1.953rem",
-                "4xl": "2.441rem",
-                "16px": "16px",
-                "headerTitle-lonni": "85px",
-                "headerTitle-inman": "90px",
                 pageTitle: "33px",
                 firstLetterTitle: "44px",
                 navLinks: "17px",
@@ -216,11 +224,8 @@ module.exports = {
                 "canvas--1270px": "1270px",
             },
             screens: {
-                // "950x": "950px",
-                // "1175x": "1175px",
                 "1120x": "1120px",
                 "1230px": "1230px",
-                // "1250x": "1250px",
             },
             translate: {
                 1.5: "6px",

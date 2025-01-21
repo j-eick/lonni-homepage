@@ -122,7 +122,7 @@
     }
     .bg {
         background: rgb(213, 224, 234);
-        background: radial-gradient(circle at 50% 10%, #e2e6e9 0%, rgb(162, 182, 198) 100%);
+        background: radial-gradient(circle at 50% 10%, #e2e6e9 0%, rgb(151, 175, 195) 100%);
     }
 
     .kontakPage-heavyRain {
@@ -138,7 +138,8 @@
     --font-quaternary: Walkway Expand SemiBold, "Inter";
 
     /* ----- Schrift-Farben ----- */
-    --color-primary: #1b262c;
+    --primary: "#1c2022";
+    --secondary: "#5d5d5d";
 
     /* ----- Schrift-Größen ----- */
     --size-default: var(--step-05);

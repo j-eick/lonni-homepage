@@ -15,9 +15,10 @@ export default function PageTitle({ firstLetter, firstLetterStyle, rest, restSty
                 <span className={`text-[120px] ${firstLetterStyle}`}>{firstLetter}</span>
                 {rest}
             </span>
+            {/* // TODO - PageTitle is not using fluid typing */}
             <h1 className="relative mb-7 text-pageTitle font-secondary leading-1.3">
                 <span
-                    className={`block font-pageTitle tracking-wider
+                    className={`block tracking-wider
                                 w-11/12 border-b-1 border-slate-700/40`}
                 >
                     <span className="font-bold text-firstLetterTitle">{firstLetter}</span>
