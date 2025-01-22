@@ -16,7 +16,7 @@ export default function Home() {
         <MainLayout>
             <Header className="relative flex w-full mb-14" />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
-            <section className={`w-9/10 mx-auto my-0 flex flex-col gap-5`}>
+            <section className={`w-9/10 mx-auto my-0 flex flex-col`}>
                 <PageTitle
                     firstLetter="P"
                     rest="rojekte & CDs"
