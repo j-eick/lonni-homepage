@@ -14,12 +14,11 @@ type BulletpointProps = {
 
 export default function Bulletpoint({
     children,
-    bulletpointSize = 12,
+    bulletpointSize = 14,
     fill = "currentColor",
     classname,
 }: BulletpointProps) {
     const bulletpointClasses = "flex place-items-start gap-4";
-    // const bulletpointSize = 14;
     const bulletpointPositionClasses = "pt-3";
 
     return (
