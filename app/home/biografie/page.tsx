@@ -4,7 +4,9 @@ import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import AuftritteCds from "@/lib/paragraphs/auftritteCds";
-import { allVideoLinks } from "@/lib/videoLinks";
+import Image from "next/image";
+import SideVideos from "@/components/ui/SideVideos";
+import profilePic from "../../../public/content/profile.jpg";
 
 export default function Home() {
     return (
@@ -33,27 +35,18 @@ export default function Home() {
                             </div>
                         </article>
                     </main>
-                    <aside className="grow w-4/12 px-5 h-max">
-                        <ul className={`flex flex-col gap-5`}>
-                            {allVideoLinks.map(link => (
-                                <li
-                                    key={link.id}
-                                    className={`overflow-hidden rounded-3xl border-2 border-slate-300 
-                                            w-[290px] h-[163px] opacity-80
-                                            hover:opacity-100`}
-                                >
-                                    <iframe
-                                        src={link.url}
-                                        width="100%"
-                                        height="100%"
-                                        allowFullScreen
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        className="pointer-events-auto"
-                                    />
-                                </li>
-                            ))}
-                        </ul>
-                    </aside>
+                    <div className="w-4/12 pt-10 flex justify-center">
+                        <div
+                            className={`h-max rounded-lg overflow-hidden 
+                                        shadow-softWhite border-1 border-slate-200`}
+                        >
+                            <Image
+                                src={profilePic}
+                                alt={""}
+                                className="w-auto h-auto object-contain block"
+                            />
+                        </div>
+                    </div>
                 </div>
             </section>
         </MainLayout>
