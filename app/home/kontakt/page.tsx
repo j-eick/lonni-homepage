@@ -18,18 +18,19 @@ export default function Home() {
                 className={`grow 
                 w-9/10 h-full mx-auto my-0 flex justify-center gap-5`}
             >
-                <main className={`w-9/12 p-10 pb-20 `}>
+                <main className={`w-9/12 p-10 pt-20 pb-20 `}>
                     <article
-                        className={`flowText rounded-lg shadow-soft kontakPage-heavyRain
-                                        relative`}
+                        className={`relative flowText
+                                    rounded-lg shadow-soft kontakPage-heavyRain`}
                     >
                         <Image
                             src={"/decoration/catSilhuette.svg"}
                             alt={""}
                             width={230}
+                            height={230}
                             className="absolute -top-16 right-0 -scale-x-100"
                         />
-                        <div className="pt-16 pb-16 px-12">
+                        <div className="pt-24 pb-16 px-12">
                             <div
                                 className={`flex flex-col gap-10 flowText
                                         mx-auto my-0`}
