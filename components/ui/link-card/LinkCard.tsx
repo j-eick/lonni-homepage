@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
+import Image from "next/image";
 
 type LinkCardProps = {
     description: ReactNode;
@@ -37,14 +38,15 @@ export default function LinkCard({
     return (
         <div
             className={`bb 
-                        relative w-max rounded-2xl overflow-hidden`}
+                        relative w-max rounded-2xl overflow-hidden border-slate-700/50
+                        hover:border-1 hover:border-slate-200 hover:shadow-flat`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             {/* -------  BACKGROUND IMG  ------- */}
-            <img
-                src="/wgTiles.jpg"
-                alt=""
+            <Image
+                src={"/wgTiles.jpg"}
+                alt={""}
                 width={width}
                 height={height}
                 className="opacity-40"
@@ -82,14 +84,17 @@ export default function LinkCard({
                             {url}
                         </div>
                     ) : (
-                        <div className={`w-full h-full flex bg-slate-700/30`}>
+                        <div
+                            className={`w-full h-full flex bg-slate-700/30
+                                        `}
+                        >
                             <div className={`w-8/12 h-full flex justify-center items-center`}>{url}</div>
                             <span
                                 className={`w-4/12 h-full flex justify-center items-center animate-slideInRightToLeft`}
                             >
                                 <Link
                                     className={`px-5
-                                                border-1 border-slate-200 rounded-lg
+                                                border-1 rounded-lg 
                                                 hover:font-bold hover:border-2 hover:cursor-pointer`}
                                     href={link}
                                 >

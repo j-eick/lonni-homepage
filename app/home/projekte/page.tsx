@@ -16,15 +16,15 @@ export default function Home() {
         <MainLayout>
             <Header className="relative flex w-full mb-14" />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
-            <section className={`w-9/10 mx-auto my-0 flex flex-col`}>
+            <section className={`grow w-9/10 mx-auto my-0 flex flex-col`}>
                 <PageTitle
                     firstLetter="P"
                     rest="rojekte & CDs"
                 />
                 <div className="flex">
                     <main className={`w-8/12`}>
-                        <article className="flowText">
-                            <ul className="flowText">
+                        <article className="">
+                            <ul className="pr-10 flowText">
                                 <Bulletpoint bulletpointSize={bulletpointSize}>
                                     <strong className="font-semibold">Onlineauftritte</strong> zu verschiedenen Themen
                                 </Bulletpoint>
@@ -68,8 +68,8 @@ export default function Home() {
                             </ul>
                         </article>
                     </main>
-                    <aside className={`w-4/12 flex justify-center`}>
-                        <ul className="w-max flex flex-col gap-5">
+                    <aside className={`grow w-4/12 flex justify-center`}>
+                        <ul className="w-max p-5 flex flex-col gap-7">
                             <LinkCard
                                 description="Kammermusik mit historischen Instrumenten"
                                 url="trioclassico.de"
