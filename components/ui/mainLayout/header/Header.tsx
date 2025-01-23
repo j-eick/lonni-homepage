@@ -24,14 +24,17 @@ export default function Header() {
 
     return (
         <header className="relative flex w-full mb-14">
-            {/* ###   LEFT NAV--ITEMS   ### */}
+            {/* -----  LEFT NAV-ITEMS  ----- */}
             <ul className="w-full h-full flex justify-around">
                 <li className={`grow relative max-w-navContainer-left`}>
-                    <ul className={`relative h-full flex justify-between gap-3`}>
+                    <ul
+                        className={`relative h-full flex justify-between gap-3
+                                    font-navLink`}
+                    >
                         {navLinksLeft.map(link => (
                             <li
                                 key={link.href}
-                                className="grow h-full w-full flex items-center justify-center font-navLink text-navLinks"
+                                className="grow h-full w-full flex items-center justify-center text-navLinks"
                             >
                                 <Link
                                     className={linkStyleClasses(link.href)}

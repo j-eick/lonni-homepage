@@ -94,9 +94,9 @@ module.exports = {
                 geosans: "var(--font-geosans)",
 
                 landingTitle: ["Calinastiya"],
-                headerTitle: "Argentina Script",
+                headerTitle: "var(--font-headerTitle)",
+                navLink: "var(--font-secondary)",
                 pageTitle: "Walkway SemiBold",
-                navLink: "Roboto-Light",
             },
             fontSize: {
                 // -----  regular  -----
@@ -113,9 +113,11 @@ module.exports = {
                 "size-firstLetterPagetitle-shadow": "var(--step-45)",
                 "size-pageTitle-shadow": "var(--step-35)",
 
+                //-----  Header-Navigation-Links -----
+                navLinks: "var(--step-0)",
+
                 pageTitle: "33px",
                 firstLetterTitle: "44px",
-                navLinks: "17px",
 
                 //-----  Projekt-Links  -----
                 "size-projektDescription": "var(--step-0)",
