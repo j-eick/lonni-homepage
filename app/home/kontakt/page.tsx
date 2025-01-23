@@ -4,6 +4,7 @@ import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import "../../globals.css";
 import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
+import Image from "next/image";
 import UsedTools from "@/components/used-tools/UsedTools";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
 
     return (
         <MainLayout>
-            <Header className="relative flex w-full mb-14" />
+            <Header />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
             <section
                 className={`grow 
@@ -22,9 +23,9 @@ export default function Home() {
                         className={`flowText rounded-lg shadow-soft kontakPage-heavyRain
                                         relative`}
                     >
-                        <img
-                            src="/decoration/catSilhuette.svg"
-                            alt=""
+                        <Image
+                            src={"/decoration/catSilhuette.svg"}
+                            alt={""}
                             width={230}
                             className="absolute -top-16 right-0 -scale-x-100"
                         />

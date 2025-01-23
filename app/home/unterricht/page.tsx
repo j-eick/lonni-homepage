@@ -9,7 +9,7 @@ import SideVideos from "@/components/ui/SideVideos";
 export default function Home() {
     return (
         <MainLayout>
-            <Header className="relative flex w-full mb-14" />
+            <Header />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
             <section
                 className={`grow 

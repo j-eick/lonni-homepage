@@ -4,11 +4,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import "./header.css";
 
-type HeaderProps = {
-    className: string;
-};
-
-export default function Header({ className }: HeaderProps) {
+export default function Header() {
     const path = usePathname();
     const [buttonClicked, setButtonClicked] = useState(path);
 
@@ -27,7 +23,7 @@ export default function Header({ className }: HeaderProps) {
     }, [path]);
 
     return (
-        <header className={className}>
+        <header className="relative flex w-full mb-14">
             {/* ###   LEFT NAV--ITEMS   ### */}
             <ul className="w-full h-full flex justify-around">
                 <li className={`grow relative max-w-navContainer-left`}>
