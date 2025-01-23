@@ -5,13 +5,13 @@ type PageTitleProps = {
     restStyle?: string;
 };
 export default function PageTitle({ firstLetter, firstLetterStyle, rest, restStyle }: PageTitleProps) {
-    const topPosition = "top-[-45px]";
-    const leftPosition = "-left-3";
+    const shadowTopPosition = "top-[-45px]";
+    const shadowLeftPosition = "-left-3";
 
     return (
         <div className=" relative w-full">
             <span
-                className={`absolute ${topPosition} ${leftPosition} 
+                className={`absolute ${shadowTopPosition} ${shadowLeftPosition} 
                             font-quaternary tracking-widest font-max
                             text-size-pageTitle-shadow opacity-[.027] ${restStyle}`}
             >

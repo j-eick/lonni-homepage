@@ -37,13 +37,13 @@ export default function Home() {
                         <ul className={`flex flex-col gap-5`}>
                             {allVideoLinks.map(link => (
                                 <li
-                                    key={link}
+                                    key={link.id}
                                     className={`overflow-hidden rounded-3xl border-2 border-slate-300 
                                             w-[290px] h-[163px] opacity-80
                                             hover:opacity-100`}
                                 >
                                     <iframe
-                                        src={link}
+                                        src={link.url}
                                         width="100%"
                                         height="100%"
                                         allowFullScreen
