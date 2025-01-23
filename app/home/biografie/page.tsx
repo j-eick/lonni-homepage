@@ -5,7 +5,6 @@ import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import AuftritteCds from "@/lib/paragraphs/auftritteCds";
 import Image from "next/image";
-import SideVideos from "@/components/ui/SideVideos";
 import profilePic from "../../../public/content/profile.jpg";
 
 export default function Home() {

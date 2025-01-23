@@ -98,22 +98,24 @@ module.exports = {
                 pageTitle: "Walkway SemiBold",
             },
             fontSize: {
-                // -----  regular  -----
-                "size-default": "var(--step-1)",
-                "size-small": "var(--step--1)",
+                // -----  Header-Title -----
+                "size-headerTitle": "85px",
 
-                // -----  Titles -----
+                // -----  Header-Navigation-Links -----
+                navLinks: "var(--step-0)",
+
+                // -----  Page-Title -----
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
                 "size-regularTitle": "var(--step-2)",
-                "size-headerTitle": "85px",
 
                 // ----------  PageTitle-Shadow ----------
                 "size-firstLetterPagetitle-shadow": "var(--step-45)",
                 "size-pageTitle-shadow": "var(--step-35)",
 
-                //-----  Header-Navigation-Links -----
-                navLinks: "var(--step-0)",
+                // -----  regular  -----
+                "size-default": "var(--step-1)",
+                "size-small": "var(--step--1)",
 
                 pageTitle: "33px",
                 firstLetterTitle: "44px",

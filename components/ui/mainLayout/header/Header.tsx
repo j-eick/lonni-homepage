@@ -55,7 +55,7 @@ export default function Header() {
                         >
                             <span className="absolute top-7 w-full text-size-headerTitle ">Lonni</span>
                             <span
-                                className={`absolute right-0 bottom-7 text-headerTitle-inman 
+                                className={`absolute right-0 bottom-12 text-size-headerTitle 
                                         `}
                             >
                                 <span className="">Inman</span>
