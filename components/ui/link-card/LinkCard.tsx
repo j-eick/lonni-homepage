@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ReactNode, useEffect, useState } from "react";
 import Image from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 type LinkCardProps = {
     description: ReactNode;
@@ -12,6 +13,7 @@ type LinkCardProps = {
     width?: number;
     height?: number;
     optional?: string;
+    photo: StaticImport;
 };
 
 export default function LinkCard({
@@ -24,6 +26,7 @@ export default function LinkCard({
     url = "",
     actualLink = "",
     optional,
+    photo,
 }: LinkCardProps) {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -37,8 +40,8 @@ export default function LinkCard({
 
     return (
         <div
-            className={`bb 
-                        relative w-max rounded-2xl overflow-hidden border-slate-700/50
+            className={`
+                        relative w-max rounded-2xl overflow-hidden border-1 border-slate-700/50
                         hover:border-1 hover:border-slate-200 hover:shadow-flat`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -51,9 +54,17 @@ export default function LinkCard({
                 height={height}
                 className="opacity-40"
             />
+            {/* -------  PHOTO  ------- */}
+            <Image
+                src={photo}
+                alt={""}
+                width={width}
+                height={height}
+                className="absolute inset-0"
+            />
             {/* -------  TEXT LAYER  ------- */}
             <div
-                className={`absolute inset-0 flex flex-col
+                className={`absolute z-20 inset-0 flex flex-col
                             font-secondary text-size-projektDescription
                             rounded-2xl overflow-hidden`}
             >
@@ -72,7 +83,7 @@ export default function LinkCard({
                 {/* -------  LINK TEXT BANNER  ------- */}
                 <div
                     className={`mb-5 h-2.25/10 flex justify-center items-center 
-                                text-slate-100 font-secondary tracking-wider
+                                text-slate-100 font-secondary tracking-widest
                                 text-projektUrl font-semibold
                                 transition-colors duration-300 ease-in-out`}
                 >

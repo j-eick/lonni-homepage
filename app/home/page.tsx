@@ -15,13 +15,13 @@ export default function Home() {
                 className={`grow
                 w-9/10 mx-auto my-0 flex gap-5`}
             >
-                <main className={`w-9/12`}>
+                <main className={`w-8/12 pl-10`}>
                     <article className="flowText">
                         <PageTitle
                             firstLetter="W"
                             rest="illkommen"
                         />
-                        <div className="pr-10 flowTextAndLastChild">{welcomeText}</div>
+                        <div className="flowTextAndLastChild">{welcomeText}</div>
                     </article>
                 </main>
             </section>
