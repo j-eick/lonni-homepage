@@ -8,6 +8,9 @@ import { MySVG } from "@/lib/MySVG";
 import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import { FaRightLong } from "react-icons/fa6";
+import trioclassico from "../../../public/content/trioclassico.jpg";
+import ilclavifiato from "../../../public/content/ilclavifiato.jpg";
+import floeteHistorisch from "../../../public/content/floeteHistorisch.jpg";
 
 export default function Home() {
     const bulletpointSize = 14;
@@ -73,10 +76,12 @@ export default function Home() {
                             <LinkCard
                                 description="Kammermusik mit historischen Instrumenten"
                                 url="trioclassico.de"
+                                photo={trioclassico}
                             />
                             <LinkCard
                                 description="Barock und Klassik auf historischen Instrumenten"
                                 url="ilclavifiato.de"
+                                photo={ilclavifiato}
                             />
                             <LinkCard
                                 description="„Flöte x Historisch“"
@@ -85,6 +90,7 @@ export default function Home() {
                                 subTextStyle="mb-3 leading-5"
                                 url="flötehistorisch.de"
                                 actualLink="https://lonniinman.wixsite.com/fl-te-mal-historisch"
+                                photo={floeteHistorisch}
                             />
                         </ul>
                     </aside>
