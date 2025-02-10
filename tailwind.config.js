@@ -50,6 +50,10 @@ module.exports = {
                 "105%": "105%",
                 "110%": "110%",
             },
+            blur: {
+                1: "1px",
+                2: "2px",
+            },
             borderColor: {
                 "color-primary": "var(--primary)",
             },
@@ -80,6 +84,7 @@ module.exports = {
             colors: {
                 "color-primary": "var(--primary2)",
                 "color-secondary": "var(--secondary)",
+                "color-linkCard-text": "var(--bright)",
             },
             flexGrow: {
                 2: "2",
@@ -121,12 +126,10 @@ module.exports = {
                 firstLetterTitle: "44px",
 
                 //-----  Projekt-Links  -----
-                "size-projektDescription": "var(--step-0)",
-                projektSubtext: "var(--step--1)",
+                "size-project-title": "var(--step-025)",
+                "size-project-description": "var(--step--075)",
                 "projektSubtext-small": ".7em",
-                // projektUrl: "1.3em",
-                projektUrl: "var(--step-0)",
-                "projektUrl-small": ".85em",
+                "size-projektUrl": "var(--step-0)",
             },
             fontWeight: {
                 max: "1000",
@@ -250,6 +253,7 @@ module.exports = {
                 spin: "spin 5s linear infinite",
                 slideIn: "slideIn 0.3s ease-in-out forwards",
                 slideInRightToLeft: "slideInRightToLeft 0.3s ease-in-out forwards",
+                slowOpacityFadeout: "slowOpacityFadeout 0.5s ease-in-out forwards",
             },
             keyframes: {
                 ripple: {
@@ -275,6 +279,10 @@ module.exports = {
                 slideInRightToLeft: {
                     "0%": { opacity: 0, transform: "translate(25%, 0)" },
                     "100%": { opacity: 1, transform: "translate(0, 0)" },
+                },
+                slowOpacityFadeout: {
+                    "0%": { opacity: 1 },
+                    "100%": { opacity: 0.6 },
                 },
             },
         },

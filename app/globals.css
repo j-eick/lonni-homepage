@@ -127,6 +127,7 @@
     --primary: "#1c2022";
     --primary2: rgb(49, 57, 60);
     --secondary: "#5d5d5d";
+    --bright: #dbdde4;
 
     /* ----- Schrift-Größen ----- */
     --size-regular: "var(--step-05)";
@@ -148,7 +149,6 @@
 
     --step--2: clamp(0.6252rem, 0.7185rem + -0.1204vw, 0.6944rem);
     --step--1: clamp(0.8333rem, 0.8157rem + 0.0881vw, 0.884rem);
-    --step--01: clamp(0.9rem, 0.8217rem + 0.3913vw, 1.125rem);
     --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
     --step-1: clamp(1.08rem, 0.9023rem + 0.8883vw, 1.5908rem);
     --step-2: clamp(1.296rem, 0.9644rem + 1.658vw, 2.2493rem);
@@ -158,7 +158,12 @@
 
     --aside-width: clamp(150px, 4.88vw + 105px, 208px);
 
-    /* NEW half-steps (example) */
+    /* NEW half-steps (smaller) */
+    --step--075: clamp(0.8667rem, 0.8187rem + 0.2397vw, 1.0045rem);
+    --step--05: clamp(0.9rem, 0.8217rem + 0.3913vw, 1.125rem);
+
+    /* NEW half-steps (bigger) */
+    --step-025: clamp(1.02rem, 0.911rem + 0.5474vw, 1.34rem);
     --step-05: clamp(1.04rem, 0.91rem + 0.66vw, 1.43rem); /* between --step-0 & --step-1 */
     --step-15: clamp(1.19rem, 0.93rem + 1.27vw, 1.92rem); /* between --step-1 & --step-2 */
     --step-25: clamp(1.46rem, 0.97rem + 2.24vw, 2.71rem); /* between --step-2 & --step-3 */

@@ -42,7 +42,7 @@ export default function LinkCard({
         <div
             className={`
                         relative w-max rounded-2xl overflow-hidden border-1 border-slate-700/50
-                        hover:border-1 hover:border-slate-200 hover:shadow-flat`}
+                        hover:border-1 hover:border-slate-700 hover:shadow-flat`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -60,43 +60,60 @@ export default function LinkCard({
                 alt={""}
                 width={width}
                 height={height}
-                className="absolute inset-0"
+                className={`absolute inset-0 z-0
+                            ${isHovered ? "blur-sm brightness-80 animate-slowOpacityFadeout " : ""}`}
             />
+            {isHovered ? <div className="absolute inset-0 z-10 bg-slate-600/40" /> : ""}
+
             {/* -------  TEXT LAYER  ------- */}
             <div
                 className={`absolute z-20 inset-0 flex flex-col
-                            font-secondary text-size-projektDescription
+                            font-secondary text-size-project-title
                             rounded-2xl overflow-hidden`}
             >
                 {/* -------  DESCRIPTION  ------- */}
                 <div
                     className={`grow px-3 grid place-items-center
-                                tracking-wider text-center leading-8 ${descriptionStyle}`}
+                                tracking-wider text-center leading-8 
+                                text-color-linkCard-text ${descriptionStyle}`}
                 >
-                    {description}
+                    {isHovered ? <p className="animate-slideInRightToLeft">{description}</p> : ""}
+
                     {/* -------  ADDITIONAL TEXT  ------- */}
-                    {!!subText && <span className={`text-projektSubtext leading-6 ${subTextStyle}`}>{subText}</span>}
+                    {isHovered
+                        ? !!subText && (
+                              <span
+                                  className={`
+                                    text-size-project-description leading-6 ${subTextStyle}
+                                    animate-slideInRightToLeft`}
+                              >
+                                  {subText}
+                              </span>
+                          )
+                        : ""}
+                    {}
+
                     {/* -------  OPTIONAL TEXT  ------- */}
                     {!!optional && <span className="text-red-500">{optional}</span>}
                 </div>
 
                 {/* -------  LINK TEXT BANNER  ------- */}
                 <div
-                    className={`mb-5 h-2.25/10 flex justify-center items-center 
-                                text-slate-100 font-secondary tracking-widest
-                                text-projektUrl font-semibold
+                    className={` h-2.5/10 flex justify-center items-center 
+                                text-color-linkCard-text font-secondary bg-slate-700/70 tracking-widest
+                                text-size-projektUrl font-semibold
                                 transition-colors duration-300 ease-in-out`}
                 >
                     {!isHovered ? (
                         <div
                             className={`w-full h-full grid place-items-center transition-all duration-300
-                                        ${!isHovered ? "bg-slate-700/30" : ""}`}
+                                        ${!isHovered ? "" : ""}`}
                         >
                             {url}
                         </div>
                     ) : (
                         <div
-                            className={`w-full h-full flex bg-slate-700/30
+                            className={`w-full h-full flex 
                                         `}
                         >
                             <div className={`w-8/12 h-full flex justify-center items-center`}>{url}</div>

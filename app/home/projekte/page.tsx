@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <MainLayout>
             <Header />
-            {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
+            {/* -----  PER PAGE CONTENT GOES HERE  ----- */}
             <section className={`grow w-9/10 mx-auto my-0 flex flex-col`}>
                 <PageTitle
                     firstLetter="P"
@@ -85,7 +85,7 @@ export default function Home() {
                             />
                             <LinkCard
                                 description="„Flöte x Historisch“"
-                                descriptionStyle="items-end mt-2"
+                                descriptionStyle="items-end"
                                 subText="Vortragskonzerte mit historischen Travers- und Querflöten"
                                 subTextStyle="mb-3 leading-5"
                                 url="flötehistorisch.de"
