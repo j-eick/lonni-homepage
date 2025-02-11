@@ -4,6 +4,7 @@ import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
+import Image from "next/image";
 import SideVideos from "@/components/ui/SideVideos";
 
 export default function Home() {
@@ -19,11 +20,11 @@ export default function Home() {
                     firstLetter="U"
                     rest="nterricht"
                 />
-                <div className="h-full flex">
+                <div className="h-full flex relative">
                     <main className={`w-8/12`}>
                         <article className="flowText">
                             <div className="pr-10 flowText">
-                                <Bulletpoint>
+                                <Bulletpoint classname="w-10/12">
                                     Dozentin-Tätigkeit als Privat-Lehrerin und an der Staatlichen Jugendmusikschule
                                     Hamburg seit 1984 in den Standorten Gymnasium Bondenwald und
                                     Albert-Schweitzer-Gymnasium in Hamburg.
@@ -48,7 +49,19 @@ export default function Home() {
                             </div>
                         </article>
                     </main>
-                    <SideVideos />
+                    <div
+                        className={`absolute right-0 -top-28 rounded-xl overflow-hidden w-responsive-photo
+                                    shadow-softWhite border-1.5 border-slate-200`}
+                    >
+                        <Image
+                            src={"/unterricht.jpeg"}
+                            alt={""}
+                            width={600}
+                            height={100}
+                            className={``}
+                        />
+                    </div>
+                    {/* <SideVideos /> */}
                 </div>
             </section>
         </MainLayout>
