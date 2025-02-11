@@ -5,7 +5,7 @@ import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import Image from "next/image";
-import SideVideos from "@/components/ui/SideVideos";
+// import SideVideos from "@/components/ui/SideVideos";
 
 export default function Home() {
     return (
@@ -35,8 +35,8 @@ export default function Home() {
 
                                 <Bulletpoint>
                                     Workshop Leiterin mehrmals an Pädagogischen Jahreskonferenzen der Staatliche
-                                    Jugendmusikschule z.B. 'Wie kommt man in der Puste?' und 'Musikspiele - Spiele mit
-                                    Musik - Spiele für den Instrumentalen Gruppenunterricht'.
+                                    Jugendmusikschule z.B. &apos;Wie kommt man in der Puste?&apos; und &apos;Musikspiele
+                                    - Spiele mit Musik - Spiele für den Instrumentalen Gruppenunterricht&apos;.
                                 </Bulletpoint>
                                 <Bulletpoint>
                                     Mehrmals im Rahmen des „JeKi Tages“ der Landesinstitut für Lehrerbildung und

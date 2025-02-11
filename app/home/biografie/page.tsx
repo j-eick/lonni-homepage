@@ -37,7 +37,7 @@ export default function Home() {
                     <div className="w-4/12 pt-10 flex justify-center">
                         <div
                             className={`h-max rounded-lg overflow-hidden 
-                                        shadow-softWhite border-1 border-slate-200`}
+                                        shadow-softWhite border-1.5 border-slate-200`}
                         >
                             <Image
                                 src={profilePic}

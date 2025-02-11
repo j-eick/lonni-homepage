@@ -5,7 +5,7 @@ import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import "../../globals.css";
 import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
 import Image from "next/image";
-import UsedTools from "@/components/used-tools/UsedTools";
+// import UsedTools from "@/components/used-tools/UsedTools";
 
 export default function Home() {
     const bulletpointSize = 14;
