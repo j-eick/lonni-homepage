@@ -7,8 +7,11 @@ type WindowProps = {
 
 export default function useWindowSize() {
     const [windowSize, setwindowSize] = useState<WindowProps>({
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 0,
+        height: 0,
+        // next.js SSR cannt access window object
+        // width: window.innerWidth,
+        // height: window.innerHeight,
     });
 
     useEffect(() => {
