@@ -1,6 +1,5 @@
 import { allVideoLinks } from "@/lib/videoLinks";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 type SideVideosProps = {
     width?: number;

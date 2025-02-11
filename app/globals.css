@@ -51,16 +51,22 @@
     }
 
     .bb {
-        @apply border-1 border-slate-300;
+        @apply border-1 border-black;
     }
     .bbb {
-        @apply border-4 border-slate-800;
+        @apply border-2 border-black;
+    }
+    .bbbb {
+        @apply border-4 border-black;
     }
     .bw {
         @apply border-1 border-white;
     }
     .br {
         @apply border-1 border-red-400;
+    }
+    .brr {
+        @apply border-2 border-red-400;
     }
 
     .mainGradient {

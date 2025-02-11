@@ -228,6 +228,7 @@ module.exports = {
                 "9.5/10": "95%",
                 "nav-minWidth": "min(30%, 270px)",
                 "canvas-width": "min(85%, 1200px)",
+                "responsive-photo": "clamp(300px, 35vw, 500px)",
             },
             maxWidth: {
                 "navContainer-left": "440px",
