@@ -10,12 +10,18 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             {/* <div className={`absolute top-10 bb ${styles.bannerContainer}`}>
                 <p className={styles.movingBanner}>This is information</p>
             </div> */}
-            <div className="w-full pt-5 pb-20">
+            <div
+                className={`w-full 
+                            md:pt-5 md:pb-20
+                        `}
+            >
                 <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
                 <div
-                    className={`min-h-full w-8.5/10 max-w-canvas--1270px overflow-hidden
+                    className={`min-h-full max-w-canvas--1270px overflow-hidden
                                 mx-auto my-0 flex flex-col
-                                font-geosans text-size-default text-color-primary`}
+                                font-geosans text-size-default text-color-primary
+                                md:w-8.5/10
+                                `}
                 >
                     {children}
                 </div>
