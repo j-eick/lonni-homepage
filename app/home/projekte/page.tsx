@@ -17,7 +17,6 @@ export default function Home() {
 
     return (
         <MainLayout>
-            <Header />
             {/* -----  PER PAGE CONTENT GOES HERE  ----- */}
             <section className={`grow w-9/10 mx-auto my-0 flex flex-col`}>
                 <PageTitle

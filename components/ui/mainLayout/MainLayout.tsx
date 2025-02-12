@@ -1,5 +1,6 @@
 import useWindowSize from "@/app/hooks/useWindowSize";
 import { ReactNode } from "react";
+import Header from "./header/Header";
 // import styles from "./MovingBanner.module.css";
 
 export default function MainLayout({ children }: { children: ReactNode }) {
@@ -23,6 +24,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                                 md:w-8.5/10
                                 `}
                 >
+                    <Header />
                     {children}
                 </div>
             </div>

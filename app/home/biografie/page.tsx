@@ -10,7 +10,6 @@ import profilePic from "../../../public/content/profile.jpg";
 export default function Home() {
     return (
         <MainLayout>
-            <Header />
             {/* vvv---vvv PER PAGE CONTENT GOES HERE vvv---vvv */}
             <section className={`w-9/10 mx-auto my-0 flex flex-col`}>
                 <PageTitle
