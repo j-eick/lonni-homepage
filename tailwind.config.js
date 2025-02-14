@@ -103,6 +103,7 @@ module.exports = {
                 pageTitle: "Walkway SemiBold",
             },
             fontSize: {
+                // DESKTOP
                 // -----  Header-Title -----
                 "size-headerTitle": "85px",
 
@@ -122,17 +123,21 @@ module.exports = {
                 "size-default": "var(--step-1)",
                 "size-small": "var(--step--1)",
 
-                pageTitle: "33px",
-                firstLetterTitle: "44px",
-
                 //-----  Projekt-Links  -----
                 "size-project-title": "var(--step-025)",
                 "size-project-description": "var(--step--075)",
                 "projektSubtext-small": ".7em",
                 "size-projektUrl": "var(--step-0)",
+
+                // MOBILE
+                //----- Nav-Links
+                "size-mobile-navLinks": "var(--step-3)",
             },
             fontWeight: {
                 max: "1000",
+            },
+            gap: {
+                burgerMenu: "1.25vw",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",
@@ -196,6 +201,13 @@ module.exports = {
                 "8.5/10": "85%",
                 "9/10": "90%",
                 "9.5/10": "95%",
+
+                "mobile-header": "16vw",
+
+                // MOBILE
+                //----- Burger-Menu
+                "burger-canvas": "8vw",
+                "burger-lineHeight": ".5vw",
             },
             lineHeight: {
                 1: 1,
@@ -214,6 +226,7 @@ module.exports = {
                 "navLinks-selected": "1.15",
             },
             width: {
+                // DESKTOP
                 "1.5/10": "15%",
                 "2/10": "20%",
                 "2.5/10": "25%",
@@ -229,6 +242,12 @@ module.exports = {
                 "nav-minWidth": "min(30%, 270px)",
                 "canvas-width": "min(85%, 1200px)",
                 "responsive-photo": "clamp(300px, 35vw, 500px)",
+
+                // MOBILE
+                //----- Burger Menu
+                "burger-middleLine": "5vw",
+                "burger-outerLine": "4vw",
+                "burger-canvas": "8vw",
             },
             maxWidth: {
                 "navContainer-left": "440px",
@@ -242,8 +261,9 @@ module.exports = {
                 "canvas--1270px": "1270px",
             },
             screens: {
-                "1120x": "1120px",
-                "1230px": "1230px",
+                "mobile-topMargin": { max: "767px" },
+                "2xs": "320px",
+                xs: "375px",
             },
             translate: {
                 1.5: "6px",
