@@ -11,20 +11,19 @@ export default function PageTitle({ firstLetter, firstLetterStyle, rest, restSty
     return (
         <div className=" relative w-full">
             <span
-                className={`absolute ${shadowTopPosition} ${shadowLeftPosition} 
+                className={`absolute z-0 ${shadowTopPosition} ${shadowLeftPosition} 
                             font-quaternary tracking-widest font-max
                             text-size-pageTitle-shadow opacity-[.027] ${restStyle}`}
             >
                 <span className={`text-size-firstLetterPagetitle-shadow ${firstLetterStyle}`}>{firstLetter}</span>
                 {rest}
             </span>
-            {/* // TODO - PageTitle is not using fluid typing */}
             <h1 className="relative mb-7 text-size-pageTitle font-secondary leading-1.3">
                 <div className={`relative tracking-wider`}>
                     <span className="font-bold text-size-firstLetterPagetitle">{firstLetter}</span>
                     {rest}
                     {/* -----  UNDERLINE  ----- */}
-                    <div className="absolute w-full bottom-2 -left-2 border-b-1.5 border-slate-700/40" />
+                    <div className="absolute z-0 w-full bottom-2 -left-2 border-b-1.5 border-slate-700/40" />
                 </div>
             </h1>
         </div>

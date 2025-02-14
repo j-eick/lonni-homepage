@@ -49,7 +49,7 @@ export default function Home() {
                         </article>
                     </main>
                     <div
-                        className={`absolute right-0 -top-28 rounded-xl overflow-hidden w-responsive-photo
+                        className={`absolute z-0 right-0 -top-28 rounded-xl overflow-hidden w-responsive-photo
                                     shadow-softWhite border-1.5 border-slate-200`}
                     >
                         <Image

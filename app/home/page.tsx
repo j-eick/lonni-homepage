@@ -9,7 +9,7 @@ import { welcomeText } from "@/lib/paragraphs/home";
 export default function Home() {
     return (
         <MainLayout>
-            {/* ---vvv---vvv--- PER PAGE CONTENT GOES HERE ---vvv---vvv--- */}
+            {/* ----- PER PAGE CONTENT GOES HERE ----- */}
             <section
                 className={`grow
                 w-9/10 mx-auto my-0 flex gap-5`}
