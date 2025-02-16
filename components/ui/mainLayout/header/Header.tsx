@@ -18,6 +18,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
     const linkStyleClasses = (href: string) =>
         `h-1/3 w-full grid place-items-center duration-300 transition-all
         ${href === buttonClicked ? `scale-navLinks-selected text-navLinks font-bold` : ""}`;
+
     // const underlineLinkClasses = (href: string) => `w-max px-2 text-center relative navLinks-underlineHover
     //     ${href === buttonClicked ? `navLinks-underline` : ""}
     // `;
@@ -42,7 +43,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
 
     return (
         <header
-            className={`relative 
+            className={`relative
                         mb-14 
                         md:h-full `}
         >
@@ -51,13 +52,19 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                 className={`hidden w-full
                             md:block`}
             >
-                <ul className="w-full h-full flex justify-around">
+                <ul
+                    className={`w-full h-full
+                                flex justify-around
+                                md:gap-0 md:text-size-navLink-regular
+                                lg:gap-5
+                                2lg:text-size-navLink-bigger`}
+                >
                     <li className={`grow relative max-w-navContainer-left`}>
-                        <ul className={`relative h-full flex justify-between gap-3 font-navLink`}>
+                        <ul className={`relative h-full flex justify-between gap-0 font-navLink`}>
                             {navLinksLeft.map(link => (
                                 <li
                                     key={link.href}
-                                    className="grow h-full w-full flex items-center justify-center text-navLinks"
+                                    className="grow h-full w-full flex items-center justify-center"
                                 >
                                     <Link
                                         className={linkStyleClasses(link.href)}
@@ -69,21 +76,44 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                             ))}
                         </ul>
                     </li>
-                    <li className="min-w-[300px] max-w-[335px] flex-1 shrink">
+                    {/* min-w-[300px] */}
+                    <li
+                        className={`flex-1
+                            `}
+                    >
                         <Link href="/home">
                             <h1
                                 id="titleLonni"
-                                className={`h-[215px] relative font-headerTitle`}
+                                className={`relative font-headerTitle mx-auto my-0
+                                            max-h-[200px] 
+                                            min-w-[150px] max-w-[285px] w-[25vw] 
+                                            md:h-[17vw]
+                                           `}
                             >
-                                <span className="absolute top-7 w-full text-size-headerTitle">Lonni</span>
-                                <span className={`absolute right-0 bottom-12 text-size-headerTitle`}>
+                                <span
+                                    className={`absolute top-[2vw] -left-3 
+                                                md:text-[7vw]
+                                                2lg:text-[80px]`}
+                                >
+                                    Lonni
+                                </span>
+                                <span
+                                    className={`absolute -right-[1vw] bottom-[2vw] 
+                                                md:text-[7vw]
+                                                2lg:text-[80px] `}
+                                >
                                     <span className="">Inman</span>
                                 </span>
                             </h1>
                         </Link>
                     </li>
                     <li className="grow max-w-navContainer-right">
-                        <ul className={`h-full flex justify-between gap-3`}>
+                        <ul
+                            className={`h-full 
+                                        flex justify-between
+                                        md:gap-0
+                                        `}
+                        >
                             {navLinksRight.map(link => (
                                 <li
                                     key={link.href}

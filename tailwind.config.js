@@ -103,12 +103,17 @@ module.exports = {
                 pageTitle: "Walkway SemiBold",
             },
             fontSize: {
-                // DESKTOP
+                //### DESKTOP
                 // -----  Header-Title -----
                 "size-headerTitle": "85px",
 
                 // -----  Header-Navigation-Links -----
-                navLinks: "var(--step-0)",
+                // -- md:768px
+                "size-navLink-small": "var(--step--05)",
+                // -- lg:1024px
+                "size-navLink-regular": "var(--step-0)",
+                // -- 2lg:1200px
+                "size-navLink-bigger": "var(--step-05)",
 
                 // -----  Page-Title -----
                 "size-pageTitle": "var(--step-2)",
@@ -129,7 +134,7 @@ module.exports = {
                 "projektSubtext-small": ".7em",
                 "size-projektUrl": "var(--step-0)",
 
-                // MOBILE
+                //### MOBILE
                 //----- Nav-Links
                 "size-mobile-navLinks": "var(--step-3)",
             },
@@ -264,6 +269,7 @@ module.exports = {
                 "mobile-topMargin": { max: "767px" },
                 "2xs": "320px",
                 xs: "375px",
+                "2lg": "1200px",
             },
             translate: {
                 1.5: "6px",
