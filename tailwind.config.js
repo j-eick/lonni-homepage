@@ -33,6 +33,7 @@ module.exports = {
             },
             backgroundColor: {
                 selected: "rgb(194, 194, 194)",
+                "header-mobile": "#c0d1e0",
             },
             backgroundImage: {
                 fluteLonni: "url('/lonniFlute.png')",
@@ -103,40 +104,59 @@ module.exports = {
                 pageTitle: "Walkway SemiBold",
             },
             fontSize: {
-                //### DESKTOP
-                // -----  Header-Title -----
+                //--- FONT-SIZE ---//
+                //-----Mobile
+                //--------2xs:320px
+                "size-mobile-2xs": "var(--step-15)",
+                //-------- xs:375px
+                "size-mobile-xs": "var(--step-15)",
+                //-----Desktop
+                "size-default": "var(--step-0)",
+                //--------2lg:1200px
+                "size-desktop-2lg": "var(--step-1)",
+
+                //--- HEADER-TITLE ---//
+                //-----Mobile
+                //--------2xs:320px
+                "size-headerTitle-mobile-2xs": "9vw",
+                //-----Desktop
                 "size-headerTitle": "85px",
 
-                // -----  Header-Navigation-Links -----
-                // -- md:768px
+                //--- HEADER-NAVIGATION-LINKS ---//
+                //-----Mobile
+                "size-mobile-navLinks": "var(--step-3)",
+                "size-headerTitle-mobile": "clamp(1rem, 10vw, 2rem)",
+                //-----Desktop
+                //--------md:768px
                 "size-navLink-small": "var(--step--05)",
-                // -- lg:1024px
+                //--------lg:1024px
                 "size-navLink-regular": "var(--step-0)",
-                // -- 2lg:1200px
+                //--------2lg:1200px
                 "size-navLink-bigger": "var(--step-05)",
 
-                // -----  Page-Title -----
+                //--- PAGE-TITLE ---//
+                //-----Mobile
+                "size-firstLetterPagetitle-mobile": "var(--step-4)",
+                "size-RestPageTitle-mobile": "var(--step-2)",
+                //-----Desktop
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
                 "size-regularTitle": "var(--step-2)",
 
-                // ----------  PageTitle-Shadow ----------
+                //--- PAGE-TITLE-SHADOW ---//
+                //-----Mobile
+                "size-firstLetterPagetitle-shadow-mobile": "var(--step-5)",
+                "size-RestPageTitle-shadow-mobile": "var(--step-4)",
+                //-----Desktop
                 "size-firstLetterPagetitle-shadow": "var(--step-45)",
                 "size-pageTitle-shadow": "var(--step-35)",
 
-                // -----  regular  -----
-                "size-default": "var(--step-1)",
-                "size-small": "var(--step--1)",
-
-                //-----  Projekt-Links  -----
+                //--- PROJECT-LINKS ---//
+                //-----Desktop
                 "size-project-title": "var(--step-025)",
                 "size-project-description": "var(--step--075)",
                 "projektSubtext-small": ".7em",
                 "size-projektUrl": "var(--step-0)",
-
-                //### MOBILE
-                //----- Nav-Links
-                "size-mobile-navLinks": "var(--step-3)",
             },
             fontWeight: {
                 max: "1000",
@@ -223,12 +243,16 @@ module.exports = {
                 2: 2,
                 standardText: 1.8,
             },
-            padding: {
-                1.5: "6px",
-                2.5: "10px",
-            },
-            scale: {
-                "navLinks-selected": "1.15",
+            maxWidth: {
+                "navContainer-left": "440px",
+                "navContainer-right": "405px",
+                "950px": "950px",
+                "1050px": "1050px",
+                "1150px": "1150px",
+                "1200px": "1200px",
+                "1250px": "1250px",
+                "1350px": "1350px",
+                "canvas--1270px": "1270px",
             },
             width: {
                 // DESKTOP
@@ -254,21 +278,18 @@ module.exports = {
                 "burger-outerLine": "4vw",
                 "burger-canvas": "8vw",
             },
-            maxWidth: {
-                "navContainer-left": "440px",
-                "navContainer-right": "405px",
-                "950px": "950px",
-                "1050px": "1050px",
-                "1150px": "1150px",
-                "1200px": "1200px",
-                "1250px": "1250px",
-                "1350px": "1350px",
-                "canvas--1270px": "1270px",
+            padding: {
+                1.5: "6px",
+                2.5: "10px",
+            },
+            scale: {
+                "navLinks-selected": "1.15",
             },
             screens: {
                 "mobile-topMargin": { max: "767px" },
                 "2xs": "320px",
                 xs: "375px",
+                "2sm": "455px",
                 "2lg": "1200px",
             },
             translate: {
