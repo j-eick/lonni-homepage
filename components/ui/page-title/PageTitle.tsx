@@ -5,37 +5,54 @@ type PageTitleProps = {
     restStyle?: string;
 };
 export default function PageTitle({ firstLetter, firstLetterStyle, rest, restStyle }: PageTitleProps) {
-    const shadowTopPosition = "top-[-45px]";
-    const shadowLeftPosition = "-left-3";
-
     return (
-        <div className=" relative w-full">
-            <span
-                className={`absolute z-0 ${shadowTopPosition} ${shadowLeftPosition} 
-                            font-quaternary tracking-widest font-max
-                            text-size-pageTitle-shadow opacity-[.027] ${restStyle}`}
+        <div className="relative w-full mb-7">
+            {/* ----- PageTitle Shadow ----- */}
+            {/* <span
+                className={`absolute z-0 -left-3
+                            font-quaternary tracking-widest font-max 
+                            opacity-[.027] ${restStyle}
+                            2xs:opacity-[.035] 2xs:left-0 2xs:bottom-[-.3rem]
+                            2xs:text-size-RestPageTitle-shadow-mobile
+                            2sm:bottom-[-.5rem]
+                            md:-top-7 
+                            lg:-top-9 
+                            xl:-top-10 
+                            `}
             >
-                <span className={`text-size-firstLetterPagetitle-shadow ${firstLetterStyle}`}>{firstLetter}</span>
+                <span
+                    className={`text-size-firstLetterPagetitle-shadow-mobile
+                                ${firstLetterStyle}`}
+                >
+                    {firstLetter}
+                </span>
                 {rest}
-            </span>
-            <h1 className="relative mb-7 text-size-pageTitle font-secondary leading-1.3">
-                <div className={`relative tracking-wider`}>
-                    <span className="font-bold text-size-firstLetterPagetitle">{firstLetter}</span>
+            </span> */}
+            {/* ----------------------------- */}
+
+            <h1 className="relative font-secondary leading-1.3">
+                <span
+                    className={`font-bold
+                                2xs:text-size-firstLetterPagetitle
+                                `}
+                >
+                    {firstLetter}
+                </span>
+                <span
+                    className={`relative tracking-wider
+                                2xs:text-size-restPageTitle-mobile`}
+                >
                     {rest}
-                    {/* -----  UNDERLINE  ----- */}
-                    <div className="absolute z-0 w-full bottom-2 -left-2 border-b-1.5 border-slate-700/40" />
-                </div>
+                </span>
+                {/* -----  UNDERLINE  ----- */}
+                <div
+                    className={`absolute z-0 w-full border-b-1.5 border-slate-700/40
+                                2xs:bottom-[2vw] 2xs:border-b-1 2xs:border-slate-700/40
+                                2lg:bottom-[1.5rem]
+                                
+                        `}
+                />
             </h1>
         </div>
-        // ###-----  old version -----###
-        // <h1 className="relative mb-7 text-pageTitle leading-1.3">
-        //     {content}
-        //     <span
-        //         className={`block font-pageTitle tracking-wider
-        //                                     w-11/12 border-b-1 border-slate-700/40`}
-        //     >
-        //         <span className="font-bold text-firstLetterTitle">H</span>erzlich Willkommen!
-        //     </span>
-        // </h1>
     );
 }
