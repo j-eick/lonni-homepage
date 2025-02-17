@@ -161,6 +161,7 @@
     --step-3: clamp(1.5552rem, 0.9898rem + 2.8267vw, 3.1805rem);
     --step-4: clamp(1.8662rem, 0.9511rem + 4.5757vw, 4.4973rem);
     --step-5: clamp(2.2395rem, 0.8066rem + 7.1646vw, 6.3591rem);
+    --step-6: clamp(2.66rem, 0.65rem + 10.36vw, 8.56rem);
 
     --aside-width: clamp(150px, 4.88vw + 105px, 208px);
 
@@ -175,6 +176,7 @@
     --step-25: clamp(1.46rem, 0.97rem + 2.24vw, 2.71rem); /* between --step-2 & --step-3 */
     --step-35: clamp(1.71rem, 0.97rem + 3.68vw, 3.84rem); /* between --step-3 & --step-4 */
     --step-45: clamp(2.01rem, 0.9rem + 5.87vw, 5.49rem); /* between --step-4 & --step-5 */
+    --step-55: clamp(2.45rem, 0.73rem + 8.76vw, 7.46rem);
 }
 
 *,
