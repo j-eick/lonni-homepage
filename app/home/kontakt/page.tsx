@@ -70,9 +70,6 @@ export default function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                {/* <div className="w-max p-2 shadow-line rounded-md font-secondary text-size-small">
-                                <div>Webdesign / Joschka Eickhoff</div>
-                            </div> */}
                             </div>
                         </div>
                     </article>

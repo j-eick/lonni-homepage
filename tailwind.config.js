@@ -112,8 +112,8 @@ module.exports = {
                 "size-mobile-xs": "var(--step-15)",
                 //-----Desktop
                 "size-default": "var(--step-0)",
-                //--------2lg:1200px
-                "size-desktop-2lg": "var(--step-1)",
+                //--------md:768px
+                "size-desktop-md": "var(--step-1)",
 
                 //--- HEADER-TITLE ---//
                 //-----Mobile
@@ -290,6 +290,7 @@ module.exports = {
                 "2xs": "320px",
                 xs: "375px",
                 "2sm": "455px",
+                md: "768px",
                 "2lg": "1200px",
             },
             translate: {

@@ -172,6 +172,7 @@
     /* NEW half-steps (bigger) */
     --step-025: clamp(1.02rem, 0.911rem + 0.5474vw, 1.34rem);
     --step-05: clamp(1.04rem, 0.91rem + 0.66vw, 1.43rem); /* between --step-0 & --step-1 */
+    --step-125: clamp(1.14rem, 0.92rem + 1.08vw, 1.76rem);
     --step-15: clamp(1.19rem, 0.93rem + 1.27vw, 1.92rem); /* between --step-1 & --step-2 */
     --step-25: clamp(1.46rem, 0.97rem + 2.24vw, 2.71rem); /* between --step-2 & --step-3 */
     --step-35: clamp(1.71rem, 0.97rem + 3.68vw, 3.84rem); /* between --step-3 & --step-4 */

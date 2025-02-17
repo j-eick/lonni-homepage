@@ -1,6 +1,6 @@
 "use client";
 
-import Header from "@/components/ui/mainLayout/header/Header";
+// import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import "../../globals.css";
 import LinkCard from "@/components/ui/link-card/LinkCard";
