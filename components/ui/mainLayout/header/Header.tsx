@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import "./header.css";
+import "../../../../app/globals.css";
 
 type HeaderProps = {
     isModalOpen: boolean;
@@ -50,14 +51,18 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
             {/* ----- DESKTOP HEADER ----- */}
             <div
                 className={`hidden w-full
-                            md:block`}
+                            md:block md:relative`}
             >
+                {/* ----- Banner ----- */}
+                <div className="absolute top-0 right-0">Banner</div>
+                {/* ------------------ */}
                 <ul
-                    className={`w-full h-full
+                    className={`relative w-full h-full
                                 flex justify-around
                                 md:gap-0 md:text-size-navLink-regular
                                 lg:gap-5
-                                2lg:text-size-navLink-bigger`}
+                                
+                                `}
                 >
                     <li className={`grow relative max-w-navContainer-left`}>
                         <ul className={`relative h-full flex justify-between gap-0 font-navLink`}>
@@ -131,31 +136,46 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                     </li>
                 </ul>
             </div>
+            {/* <div className="absolute z-10 -bottom-1  left-1/2 w-screen -translate-x-1/2 h-11 bg-gradient-to-r from-transparent via-gray-400/20 to-transparent border-t border-b border-gray-200/50 overflow-hidden">
+                <div className="whitespace-nowrap animate-marquee">asd</div>
+            </div> */}
             {/* ----- MOBILE HEADER ----- */}
-            <div
-                className={`fixed w-full px-[5vw] py-[1vw] flex justify-between items-center bb
-                            min-h-[80px] h-mobile-header 
-                            md:hidden`}
-            >
-                <Link
-                    href="/home"
-                    className="h-full grid place-items-center "
+            <div className="relative">
+                {/* <div className="absolute z-10 bottom-10 w-full h-[.5px] bg-black" /> */}
+                <div
+                    className={`fixed z-10 w-full px-[5vw] py-[1vw] flex justify-between items-center
+                        min-h-[80px] h-mobile-header bg-header-mobile shadow-flat
+                        2xs:px-8
+                        md:hidden`}
                 >
-                    <h1
-                        className={`relative h-[16vw] w-[31vw] text-[8vw] font-headerTitle
-                                    xs:w-[33vw] xs:text-[9vw]
-                                    `}
+                    <Link
+                        href="/home"
+                        className="h-full grid place-items-center "
                     >
-                        <span className="absolute top-0 left-0">Lonni</span>
-                        <span className="absolute bottom-0 right-0">Inman</span>
-                    </h1>
-                </Link>
-                <BurgerMenu
-                    onClick={() => setIsModalOpen(!isModalOpen)}
-                    isOpen={isModalOpen}
-                />
+                        <h1
+                            className={`relative h-[16vw] w-[31vw] text-[8vw] font-headerTitle
+                                    xs:w-[33vw]`}
+                        >
+                            <span
+                                className={`absolute top-0 left-0
+                                        2xs:text-size-headerTitle-mobile-2xs`}
+                            >
+                                Lonni
+                            </span>
+                            <span
+                                className={`absolute bottom-0 right-0
+                                        2xs:text-[9vw]`}
+                            >
+                                Inman
+                            </span>
+                        </h1>
+                    </Link>
+                    <BurgerMenu
+                        onClick={() => setIsModalOpen(!isModalOpen)}
+                        isOpen={isModalOpen}
+                    />
 
-                {/* {isModalOpen && <div className="fixed inset-0 z-30 backdrop-blur-[7px] backdrop-brightness-80" />}
+                    {/* {isModalOpen && <div className="fixed inset-0 z-30 backdrop-blur-[7px] backdrop-brightness-80" />}
 
                 <div
                     id="mobileModal"
@@ -185,6 +205,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                         ))}
                     </ul>
                 </div> */}
+                </div>
             </div>
         </header>
     );
