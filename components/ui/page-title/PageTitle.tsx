@@ -6,7 +6,7 @@ type PageTitleProps = {
 };
 export default function PageTitle({ firstLetter, firstLetterStyle, rest, restStyle }: PageTitleProps) {
     return (
-        <div className="relative w-full mb-7">
+        <div className="relative">
             {/* ----- PageTitle Shadow ----- */}
             {/* <span
                 className={`absolute z-0 -left-3
@@ -30,27 +30,24 @@ export default function PageTitle({ firstLetter, firstLetterStyle, rest, restSty
             </span> */}
             {/* ----------------------------- */}
 
-            <h1 className="relative font-secondary leading-1.3">
+            <h1 className="relative h-max font-secondary">
                 <span
                     className={`font-bold
-                                2xs:text-size-firstLetterPagetitle
+                                xss-320:text-size-firstLetterPagetitle
                                 `}
                 >
                     {firstLetter}
                 </span>
                 <span
-                    className={`relative tracking-wider
-                                2xs:text-size-restPageTitle-mobile`}
+                    className={`tracking-wider
+                                xss-320:text-size-restPageTitle-mobile`}
                 >
                     {rest}
                 </span>
-                {/* -----  UNDERLINE  ----- */}
                 <div
-                    className={`absolute z-0 w-full border-b-1.5 border-slate-700/40
-                                2xs:bottom-[2vw] 2xs:border-b-1 2xs:border-slate-700/40
-                                2lg:bottom-[1.5rem]
-                                
-                        `}
+                    className={`absolute w-full bottom-pageTitle-underline border-b-1.5 border-slate-700/40
+                                xss-320:border-b-1
+                                `}
                 />
             </h1>
         </div>

@@ -181,6 +181,7 @@
 }
 
 *,
+h1,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -211,15 +212,14 @@ aside {
     width: var(--aside-width);
 }
 
-h1 {
-    font-size: var(--step-5);
-}
-
 #titleLonni {
     font-size: var(--step-4);
     line-height: 1.2;
 }
 
+/* h1 {
+    font-size: var(--step-5);
+}
 h2 {
     font-size: var(--step-4);
 }
@@ -231,7 +231,7 @@ h4 {
 }
 h5 {
     font-size: var(--step-1);
-}
+} */
 
 p {
     font-size: var(--size-default);
@@ -241,7 +241,7 @@ p {
     margin-top: 0.5em;
 }
 .flowTextAndLastChild > * + * {
-    margin-top: 0.75em;
+    margin-top: 0.55em;
 }
 
 .flowTextAndLastChild > :last-child {

@@ -41,30 +41,26 @@ export default function MainLayout({ children }: { children: ReactNode }) {
 
     return (
         <div
-            className={`relative h-full w-screen no-scrollbar overflow-auto brr
+            className={`relative h-full w-screen no-scrollbar overflow-auto
                          md:pt-5 md:pb-20`}
         >
-            {/* ---------- Backdrop Layer, when Modal open ---------- */}
-            <BackdropLayer isModalOpen={isModalOpen} />
-            {/*  // ---------- // ---------- // ---------- //  */}
+            <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
 
-            {/* ---------- MODAL ---------- */}
+            <BackdropLayer isModalOpen={isModalOpen} />
             <Modal
                 isModalOpen={isModalOpen}
                 setIsModalOpen={setIsModalOpen}
                 underlineLinkClasses={underlineLinkClasses}
             />
-            {/*  ----------------------------------------------  */}
-
-            {/* -----  View-Width ----- */}
-            <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
-            {/* ----------------------- */}
+            {/* <div className="absolute top-0 left-0 w-screen h-11 bg-gradient-to-r from-transparent via-gray-400/20 to-transparent border-t border-b border-gray-200/50 overflow-hidden">
+                <div className="whitespace-nowrap animate-marquee">asd</div>
+            </div> */}
 
             <div
                 className={`min-h-full max-w-canvas--1270px overflow-hidden
-                                mx-auto my-0 flex flex-col
-                                font-geosans text-size-default text-color-primary
-                                md:w-8.5/10`}
+                            mx-auto my-0 flex flex-col
+                            font-geosans text-size-default text-color-primary
+                            md:w-8.5/10`}
             >
                 <Header
                     isModalOpen={isModalOpen}
@@ -73,12 +69,8 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                     underlineLinkClasses={underlineLinkClasses}
                 />
                 {/* -----  TOP MARGIN (pushes content below header, if viewport < 768px)  ----- */}
-                <div className="mobile-topMargin:mt-[17vw]">{children}</div>
+                <div className="mobile-topMargin:mt-[15vw]">{children}</div>
             </div>
-
-            {/* <div className={`absolute top-10 bb ${styles.bannerContainer}`}>
-                            <p className={styles.movingBanner}>This is information</p>
-                        </div> */}
         </div>
     );
 }

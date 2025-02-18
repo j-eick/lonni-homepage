@@ -43,11 +43,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
     // }, [isModalOpen]);
 
     return (
-        <header
-            className={`relative
-                        mb-14 
-                        md:h-full `}
-        >
+        <header className={`relative mb-12 `}>
             {/* ----- DESKTOP HEADER ----- */}
             <div
                 className={`hidden w-full
@@ -60,9 +56,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                     className={`relative w-full h-full
                                 flex justify-around
                                 md:gap-0 md:text-size-navLink-regular
-                                lg:gap-5
-                                
-                                `}
+                                lg:gap-5`}
                 >
                     <li className={`grow relative max-w-navContainer-left`}>
                         <ul className={`relative h-full flex justify-between gap-0 font-navLink`}>
@@ -97,15 +91,15 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                             >
                                 <span
                                     className={`absolute top-[2vw] -left-3 
-                                                md:text-[7vw]
-                                                2lg:text-[80px]`}
+                                                md-768:text-[7vw]
+                                                lg-1024:text-[80px]`}
                                 >
                                     Lonni
                                 </span>
                                 <span
                                     className={`absolute -right-[1vw] bottom-[2vw] 
-                                                md:text-[7vw]
-                                                2lg:text-[80px] `}
+                                                md-768:text-[7vw]
+                                                lg-1024:text-[80px] `}
                                 >
                                     <span className="">Inman</span>
                                 </span>

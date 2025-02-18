@@ -136,8 +136,8 @@ module.exports = {
 
                 //--- PAGE-TITLE ---//
                 //-----Mobile
-                "size-firstLetterPagetitle-mobile": "var(--step-4)",
-                "size-RestPageTitle-mobile": "var(--step-2)",
+                "size-firstLetterPagetitle-mobile": "var(--step-3)",
+                "size-restPageTitle-mobile": "var(--step-2)",
                 //-----Desktop
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
@@ -288,10 +288,16 @@ module.exports = {
             screens: {
                 "mobile-topMargin": { max: "767px" },
                 "2xs": "320px",
+                "xss-320": "320px",
                 xs: "375px",
                 "2sm": "455px",
                 md: "768px",
+                "md-768": "768px",
+                "lg-1024": "1200px",
                 "2lg": "1200px",
+            },
+            spacing: {
+                "pageTitle-underline": "clamp(.6rem, 1.25vw, 1rem)",
             },
             translate: {
                 1.5: "6px",
