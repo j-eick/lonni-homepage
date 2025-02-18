@@ -4,6 +4,9 @@ import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import { welcomeText } from "@/lib/paragraphs/home";
+import Image from "next/image";
+import profilePic from "../../public/content/profile.jpg";
+
 // import styles from "./MovingBanner.module.css";
 
 export default function Home() {
@@ -12,15 +15,63 @@ export default function Home() {
             {/* ----- PER PAGE CONTENT GOES HERE ----- */}
             <section
                 className={`grow
-                w-9/10 mx-auto my-0 flex gap-5`}
+                            w-9/10 mx-auto my-0 flex gap-5
+                            md:w-7/10
+                            `}
             >
-                <main className={`w-8/12 pl-10`}>
+                <main
+                    className={`w-8/12 pl-10
+                                2xs:pl-5 2xs:w-11/12 
+                                2xs:text-size-mobile-2xs
+                                xs:text-size-mobile-xs                                
+                                `}
+                >
                     <article className="flowText">
+                        {/* ----  OPTIONAL PROFILE IMAGE  ----- */}
+                        {/* <div
+                            className={`w-32 h-auto mx-auto rounded-lg overflow-hidden
+                                        2xs:shadow-step 2xs:border-[.5px] 2xs:border-slate-300
+                                        md:hidden
+                                `}
+                        >
+                            <Image
+                                src={profilePic}
+                                alt={""}
+                                className="w-auto h-auto object-contain block"
+                            />
+                        </div> */}
+                        {/* ------------------------------------- */}
                         <PageTitle
                             firstLetter="W"
                             rest="illkommen"
                         />
-                        <div className="flowTextAndLastChild">{welcomeText}</div>
+                        <div
+                            className={`flowTextAndLastChild leading-9
+                                        md:text-size-desktop-md
+                            `}
+                        >
+                            <p>
+                                Ich freue mich, meine Leidenschaft für Musik mit Ihnen zu teilen – sei es in
+                                individuellen Unterrichtsstunden, spannenden Projekten oder besonderen
+                                Konzerterlebnissen.{" "}
+                            </p>
+                            <p>
+                                Mein Unterricht ist für alle da, egal ob Anfängerin oder Fortgeschrittener. Mit viel
+                                Geduld und einem persönlichen Ansatz helfe ich Ihnen, Ihre musikalischen Ziele zu
+                                erreichen und die Freude an der Musik zu entdecken. Neben dem Unterricht lade ich Sie zu
+                                Konzerten, Workshops und CD-Projekten ein. Gerne können Sie mich auch für eigene
+                                Projekte anfragen.
+                            </p>
+                            <p>
+                                Schauen Sie sich in Ruhe um, und wenn Sie Fragen haben oder Interesse an einem meiner
+                                Angebote, melden Sie sich einfach. Ich freue mich darauf, von Ihnen zu hören!
+                            </p>
+
+                            <p>
+                                Herzliche Grüße, <br />
+                                Lonni Inman
+                            </p>
+                        </div>
                     </article>
                 </main>
             </section>
