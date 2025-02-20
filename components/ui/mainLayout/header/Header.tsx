@@ -43,15 +43,12 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
     // }, [isModalOpen]);
 
     return (
-        <header className={`relative mb-12 `}>
+        <header className={`relative`}>
             {/* ----- DESKTOP HEADER ----- */}
             <div
                 className={`hidden w-full
                             md:block md:relative`}
             >
-                {/* ----- Banner ----- */}
-                <div className="absolute top-0 right-0">Banner</div>
-                {/* ------------------ */}
                 <ul
                     className={`relative w-full h-full
                                 flex justify-around
@@ -90,14 +87,14 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                                            `}
                             >
                                 <span
-                                    className={`absolute top-[2vw] -left-3 
+                                    className={`absolute z-10 top-[2vw] -left-3 
                                                 md-768:text-[7vw]
                                                 lg-1024:text-[80px]`}
                                 >
                                     Lonni
                                 </span>
                                 <span
-                                    className={`absolute -right-[1vw] bottom-[2vw] 
+                                    className={`absolute z-10 -right-[1vw] bottom-[2vw] 
                                                 md-768:text-[7vw]
                                                 lg-1024:text-[80px] `}
                                 >
