@@ -111,6 +111,8 @@ module.exports = {
                 //-------- xs:375px
                 "size-mobile-xs": "var(--step-15)",
                 //-----Desktop
+                "size-small": "var(--step--1)",
+                "size-smaller": "var(--step--05)",
                 "size-default": "var(--step-0)",
                 //--------md:768px
                 "size-desktop-md": "var(--step-1)",
@@ -228,11 +230,15 @@ module.exports = {
                 "9.5/10": "95%",
 
                 "mobile-header": "16vw",
+                "marquee-banner": "clamp( 1.85rem, 2.75vw, 2.25rem)",
 
-                // MOBILE
-                //----- Burger-Menu
+                //--- BURGER-MENU
+                //-----Mobile
                 "burger-canvas": "8vw",
                 "burger-lineHeight": ".5vw",
+
+                //--- PROFILE-IMAGE
+                profileImage: "clamp(5rem, 25vw, 9rem)",
             },
             lineHeight: {
                 1: 1,
@@ -243,6 +249,7 @@ module.exports = {
                 2: 2,
                 standardText: 1.8,
             },
+            margin: {},
             maxWidth: {
                 "navContainer-left": "440px",
                 "navContainer-right": "405px",
@@ -252,7 +259,7 @@ module.exports = {
                 "1200px": "1200px",
                 "1250px": "1250px",
                 "1350px": "1350px",
-                "canvas--1270px": "1270px",
+                "canvas--1270px": "1150px",
             },
             width: {
                 // DESKTOP
@@ -272,11 +279,14 @@ module.exports = {
                 "canvas-width": "min(85%, 1200px)",
                 "responsive-photo": "clamp(300px, 35vw, 500px)",
 
-                // MOBILE
-                //----- Burger Menu
+                //--- BURGER-MENU
+                //-----Mobile
                 "burger-middleLine": "5vw",
                 "burger-outerLine": "4vw",
                 "burger-canvas": "8vw",
+
+                //--- PROFILE-IMAGE
+                profileImage: "clamp(5rem, 25vw, 9rem)",
             },
             padding: {
                 1.5: "6px",
@@ -293,11 +303,12 @@ module.exports = {
                 "2sm": "455px",
                 md: "768px",
                 "md-768": "768px",
-                "lg-1024": "1200px",
-                "2lg": "1200px",
+                "lg-1024": "1024px",
+                "xl-1200": "1200px",
             },
             spacing: {
-                "pageTitle-underline": "clamp(.6rem, 1.25vw, 1rem)",
+                "pageTitle-underline": "clamp(.5rem, 1.25vw, 1rem)",
+                profilePhoto: "clamp(6rem, 20vw, 20rem)",
             },
             translate: {
                 1.5: "6px",
@@ -309,6 +320,7 @@ module.exports = {
                 slideIn: "slideIn 0.3s ease-in-out forwards",
                 slideInRightToLeft: "slideInRightToLeft 0.3s ease-in-out forwards",
                 slowOpacityFadeout: "slowOpacityFadeout 0.5s ease-in-out forwards",
+                // marquee: "marquee 10s linear infinite",
             },
             keyframes: {
                 ripple: {
@@ -338,6 +350,10 @@ module.exports = {
                 slowOpacityFadeout: {
                     "0%": { opacity: 1 },
                     "100%": { opacity: 0.6 },
+                },
+                marquee: {
+                    "0%": { transform: "translateX(100%)" },
+                    "100%": { transform: "translateX(-100%)" },
                 },
             },
         },
