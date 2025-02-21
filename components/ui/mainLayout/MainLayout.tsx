@@ -70,7 +70,8 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         <div
             className={`relative min-h-full w-screen no-scrollbar overflow-auto
                         font-geosans text-size-default text-color-primary
-                         md:pt-5 md:pb-20`}
+                        2xs:pb-16
+                        md:pt-2 md:pb-20`}
         >
             <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
 
@@ -83,9 +84,9 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             />
             <div className="relative ">
                 <Canvas
-                    className={`relative max-w-canvas--1270px overflow-hidden
-                    mb-12 mx-auto my-0
-                    md:w-8.5/10`}
+                    className={`relative max-w-canvas--1270px overflow-hidden 
+                                mb-12 mx-auto my-0
+                                md:w-8.5/10`}
                 >
                     <Header
                         isModalOpen={isModalOpen}
@@ -96,7 +97,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                 </Canvas>
                 <div
                     className={`
-                                absolute bottom-0  left-0 w-full h-[2.5vw] flex items-center justify-center
+                                absolute bottom-0  left-0 w-full h-marquee-banner flex items-center justify-center
                                 bg-gradient-to-r from-cyan-700/10 via-purple-400/10 to-cyan-700/10 whitespace-nowrap
                                 border-[.5px] border-b-[.5px] border-white/20
                                 backdrop-blur-sm shadow-lg`}
@@ -108,7 +109,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                 </div>
             </div>
             <Canvas
-                className={`max-w-canvas--1270px overflow-hidden
+                className={`max-w-canvas--1270px overflow-hidden 
                             mx-auto my-0 flex flex-col
                             md:w-8.5/10`}
             >

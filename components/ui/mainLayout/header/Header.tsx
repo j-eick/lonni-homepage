@@ -52,8 +52,8 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                 <ul
                     className={`relative w-full h-full
                                 flex justify-around
-                                md:gap-0 md:text-size-navLink-regular
-                                lg:gap-5`}
+                                md-768:gap-0 md-768:text-size-navLink-small
+                                lg-1024:gap-5 `}
                 >
                     <li className={`grow relative max-w-navContainer-left`}>
                         <ul className={`relative h-full flex justify-between gap-0 font-navLink`}>
@@ -89,14 +89,14 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                                 <span
                                     className={`absolute z-10 top-[2vw] -left-3 
                                                 md-768:text-[7vw]
-                                                lg-1024:text-[80px]`}
+                                                xl-1200:text-[80px]`}
                                 >
                                     Lonni
                                 </span>
                                 <span
                                     className={`absolute z-10 -right-[1vw] bottom-[2vw] 
                                                 md-768:text-[7vw]
-                                                lg-1024:text-[80px] `}
+                                                xl-1200:text-[80px] `}
                                 >
                                     <span className="">Inman</span>
                                 </span>
@@ -127,14 +127,11 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                     </li>
                 </ul>
             </div>
-            {/* <div className="absolute z-10 -bottom-1  left-1/2 w-screen -translate-x-1/2 h-11 bg-gradient-to-r from-transparent via-gray-400/20 to-transparent border-t border-b border-gray-200/50 overflow-hidden">
-                <div className="whitespace-nowrap animate-marquee">asd</div>
-            </div> */}
             {/* ----- MOBILE HEADER ----- */}
             <div className="relative">
                 {/* <div className="absolute z-10 bottom-10 w-full h-[.5px] bg-black" /> */}
                 <div
-                    className={`fixed z-10 w-full px-[5vw] py-[1vw] flex justify-between items-center
+                    className={`fixed z-10 w-full pl-[2vw] pr-[5vw] py-[1vw] flex justify-between items-center
                         min-h-[80px] h-mobile-header bg-header-mobile shadow-flat
                         2xs:px-8
                         md:hidden`}
