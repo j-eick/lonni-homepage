@@ -199,6 +199,7 @@ body {
     border: 1px dashed red;
     margin: 0 auto;
     display: flex;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -237,8 +238,11 @@ p {
     font-size: var(--size-default);
 }
 
+.flowTextMobile > * + * {
+    margin-top: 0.8em;
+}
 .flowText > * + * {
-    margin-top: 0.5em;
+    margin-top: 0.4em;
 }
 .flowTextAndLastChild > * + * {
     margin-top: 0.55em;

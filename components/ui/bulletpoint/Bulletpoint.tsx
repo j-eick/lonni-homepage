@@ -19,7 +19,7 @@ export default function Bulletpoint({
     classname,
 }: BulletpointProps) {
     const bulletpointClasses = "flex place-items-start gap-4";
-    const bulletpointPositionClasses = "pt-3";
+    const bulletpointPositionClasses = "pt-3 2xs:hidden";
 
     return (
         <li className={`${bulletpointClasses} ${classname}`}>
@@ -29,7 +29,7 @@ export default function Bulletpoint({
                     fill={fill}
                 />
             </span>
-            <div>{children}</div>
+            <p>{children}</p>
         </li>
     );
 }

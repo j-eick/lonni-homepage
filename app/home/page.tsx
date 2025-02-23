@@ -44,8 +44,9 @@ export default function Home() {
                         rest="illkommen!"
                     />
                     <div
-                        className={`flowTextAndLastChild leading-9
+                        className={`flowTextAndLastChild
                                     2xs:leading-7
+                                    sm-620:leading-regularText
                                     md:text-size-desktop-md
                             `}
                     >

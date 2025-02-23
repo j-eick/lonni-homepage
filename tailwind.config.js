@@ -248,6 +248,7 @@ module.exports = {
                 1.5: 1.5,
                 2: 2,
                 standardText: 1.8,
+                regularText: "34px",
             },
             margin: {},
             maxWidth: {
@@ -277,7 +278,7 @@ module.exports = {
                 "9.5/10": "95%",
                 "nav-minWidth": "min(30%, 270px)",
                 "canvas-width": "min(85%, 1200px)",
-                "responsive-photo": "clamp(300px, 35vw, 500px)",
+                "responsive-photo": "clamp(300px, 35vw, 450px)",
 
                 //--- BURGER-MENU
                 //-----Mobile
@@ -300,7 +301,9 @@ module.exports = {
                 "2xs": "320px",
                 "xss-320": "320px",
                 xs: "375px",
+                "xs-375": "375px",
                 "2sm": "455px",
+                "sm-620": "620px",
                 md: "768px",
                 "md-768": "768px",
                 "lg-1024": "1024px",

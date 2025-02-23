@@ -113,7 +113,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                             mx-auto my-0 flex flex-col
                             md:w-8.5/10`}
             >
-                <div className="mobile-topMargin:mt-[15vw]">{children}</div>
+                <div className="mobile-topMargin:mt-[20vw]">{children}</div>
             </Canvas>
         </div>
     );
