@@ -15,7 +15,7 @@ export default function Home() {
             {/* ----- PER PAGE CONTENT GOES HERE ----- */}
 
             <main
-                className={`grow 
+                className={`grow
                             pl-10 mx-auto my-0 flex gap-5
                             2xs:px-7 2xs:w-12/12 2xs:mt-10
                             2xs:text-size-mobile-2xs
@@ -72,10 +72,6 @@ export default function Home() {
                     </div>
                 </article>
             </main>
-
-            {/* <div className={`bb ${styles.bannerContainer}`}>
-                <p className={styles.movingBanner}>This is information</p>
-            </div> */}
         </MainLayout>
     );
 }

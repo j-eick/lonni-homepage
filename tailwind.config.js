@@ -239,6 +239,8 @@ module.exports = {
 
                 //--- PROFILE-IMAGE
                 profileImage: "clamp(5rem, 25vw, 9rem)",
+                //--- UNTERRICHT-IMAGE
+                // unterrichtImage: "clamp(3rem, 10vw, 9rem)",
             },
             lineHeight: {
                 1: 1,
@@ -288,6 +290,8 @@ module.exports = {
 
                 //--- PROFILE-IMAGE
                 profileImage: "clamp(5rem, 25vw, 9rem)",
+                //--- UNTERRICHT-IMAGE
+                unterrichtImage: "clamp(5rem, 25vw, 500px)",
             },
             padding: {
                 1.5: "6px",

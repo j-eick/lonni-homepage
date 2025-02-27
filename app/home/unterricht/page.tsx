@@ -6,6 +6,7 @@ import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import Image from "next/image";
 import "../../globals.css";
+import unterrichtImage from "../../../public/unterricht.jpeg";
 // import SideVideos from "@/components/ui/SideVideos";
 
 export default function Home() {
@@ -55,17 +56,16 @@ export default function Home() {
                         </article>
                     </main>
                     <div
-                        className={`absolute z-0 right-0 -top-8 rounded-xl overflow-hidden w-responsive-photo
+                        className={`w-unterrichtImage h-max rounded-xl overflow-hidden
                                     shadow-softWhite border-1.5 border-slate-200
                                     2xs:hidden
-                                    md-768:block`}
+                                    md-768:block
+                                    `}
                     >
                         <Image
-                            src={"/unterricht.jpeg"}
+                            src={unterrichtImage}
                             alt={""}
-                            width={600}
-                            height={100}
-                            className={``}
+                            className={`w-auto h-auto object-contain block`}
                         />
                     </div>
                     {/* <SideVideos /> */}
