@@ -4,7 +4,7 @@ import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
 import { welcomeText } from "@/lib/paragraphs/home";
-import Image from "next/image";
+import MyImage from "@/components/image/MyImage";
 import profilePic from "../../public/content/profile.jpg";
 
 // import styles from "./MovingBanner.module.css";
@@ -12,11 +12,9 @@ import profilePic from "../../public/content/profile.jpg";
 export default function Home() {
     return (
         <MainLayout>
-            {/* ----- PER PAGE CONTENT GOES HERE ----- */}
-
             <main
                 className={`grow
-                            pl-10 mx-auto my-0 flex gap-5
+                            mx-auto my-0 flex gap-5
                             2xs:px-7 2xs:w-12/12 2xs:mt-10
                             2xs:text-size-mobile-2xs
                             xs:text-size-mobile-xs
@@ -24,21 +22,14 @@ export default function Home() {
                         `}
             >
                 <article className="relative flowText">
-                    {/* ----  OPTIONAL PROFILE IMAGE  ----- */}
-                    <div
+                    <MyImage
+                        src={profilePic}
+                        alt={"Profile Photo"}
                         className={`fixed z-10 right-[5vw] top-profilePhoto
                                     w-profileImage h-profileImage mx-auto rounded-full overflow-hidden
                                     2xs:shadow-line 2xs:border-[.5px] 2xs:border-slate-300
-                                    md:hidden
-                                    `}
-                    >
-                        <Image
-                            src={profilePic}
-                            alt={""}
-                            className="w-auto h-auto object-contain block"
-                        />
-                    </div>
-                    {/* ------------------------------------- */}
+                                    md:hidden`}
+                    />
                     <PageTitle
                         firstLetter="W"
                         rest="illkommen!"
