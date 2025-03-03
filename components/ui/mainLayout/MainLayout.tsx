@@ -108,6 +108,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                     {/* <div className="w-2/12 text-size-default font-semibold text-white drop-shadow-md">[Playing Track]</div> */}
                 </div>
             </div>
+            {/* --- CONTENT --- */}
             <Canvas
                 className={`max-w-canvas--1270px overflow-hidden 
                             mx-auto my-0 flex flex-col

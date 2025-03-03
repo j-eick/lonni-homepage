@@ -291,7 +291,8 @@ module.exports = {
                 //--- PROFILE-IMAGE
                 profileImage: "clamp(5rem, 25vw, 9rem)",
                 //--- UNTERRICHT-IMAGE
-                unterrichtImage: "clamp(5rem, 25vw, 500px)",
+                "unterrichtImage-responsive": "clamp(5rem, 30vw, 500px)",
+                "unterrichtImage-big": "380px",
             },
             padding: {
                 1.5: "6px",
