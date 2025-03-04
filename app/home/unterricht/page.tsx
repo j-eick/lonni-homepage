@@ -1,50 +1,46 @@
 "use client";
 
 import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
-import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
-import Image from "next/image";
 import "../../globals.css";
 import unterrichtImage from "../../../public/unterricht.jpeg";
+import MyImage from "@/components/image/MyImage";
 // import SideVideos from "@/components/ui/SideVideos";
 
 export default function Home() {
     return (
         <MainLayout>
-            <section
-                className={`grow 
-                            w-8/10 mx-auto my-0 flex flex-col`}
+            <main
+                className={`grow
+                            w-12/12 mx-auto my-0 flex gap-5
+                            2xs:px-7 2xs:mt-10
+                            2xs:text-size-mobile-2xs
+                            xs:text-size-mobile-xs
+                            md-768:w-8.5/10`}
             >
-                <PageTitle
-                    firstLetter="U"
-                    rest="nterricht"
-                />
+                <article className={`relative flowText`}>
+                    <PageTitle
+                        firstLetter="U"
+                        rest="nterricht"
+                    />
 
-                <main className={`w-full`}>
-                    <article
-                        className={`flowText
-                                        mx-auto
-                                        xss-320:text-size-mobile-2xs xss-320:leading-7
-                                        xs-375:text-size-mobile-xs
-                                        sm-620:leading-regularText
-                                        md-768:text-size-desktop-md
-                                        `}
-                    >
-                        <div
-                            className={`w-unterrichtImage-responsive h-max float-right ml-3
+                    <MyImage
+                        src={unterrichtImage}
+                        alt={""}
+                        className={`
+                                w-unterrichtImage-responsive h-max float-right ml-3 mb-1
                                             rounded-xl overflow-hidden
                                             shadow-softWhite border-1.5 border-slate-200
                                             2xs:hidden
-                                            md-768:block lg-1024:w-unterrichtImage-big
-                                            `}
-                        >
-                            <Image
-                                src={unterrichtImage}
-                                alt={""}
-                                className={`w-auto h-auto object-contain block`}
-                            />
-                        </div>
+                                            md-768:block lg-1024:w-unterrichtImage-big`}
+                    />
+                    <div
+                        className={`flowText
+                                    2xs:leading-7
+                                    sm-620:leading-regularText
+                                    md:text-size-desktop-md`}
+                    >
                         <Bulletpoint>
                             Dozentin als Privatlehrerin und an der Staatlichen Jugendmusikschule Hamburg seit 1984 in
                             den Standorten Gymnasium Bondenwald und Albert-Schweitzer-Gymnasium in Hamburg.
@@ -66,10 +62,10 @@ export default function Home() {
                             erfolgreiche Teilnahme von diverse Schüler an Wettbewerbe, u.a. Jugendmusiziert bis zum
                             Bundeswettbewerb
                         </Bulletpoint>
-                    </article>
-                </main>
-                {/* <SideVideos /> */}
-            </section>
+                    </div>
+                </article>
+            </main>
+            {/* <SideVideos /> */}
         </MainLayout>
     );
 }
