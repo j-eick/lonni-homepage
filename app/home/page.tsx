@@ -3,7 +3,6 @@
 import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
 import PageTitle from "@/components/ui/page-title/PageTitle";
-import { welcomeText } from "@/lib/paragraphs/home";
 import MyImage from "@/components/image/MyImage";
 import profilePic from "../../public/content/profile.jpg";
 
@@ -13,9 +12,9 @@ export default function Home() {
     return (
         <MainLayout>
             <main
-                className={`grow
-                            mx-auto my-0 flex gap-5
-                            2xs:px-7 2xs:w-12/12 2xs:mt-10
+                className={`grow bbb
+                            w-12/12 mx-auto my-0 flex gap-5
+                            2xs:px-7 2xs:mt-10
                             2xs:text-size-mobile-2xs
                             xs:text-size-mobile-xs
                             md-768:w-8/10
