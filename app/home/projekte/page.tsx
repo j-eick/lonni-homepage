@@ -18,56 +18,63 @@ export default function Home() {
     return (
         <MainLayout>
             {/* -----  PER PAGE CONTENT GOES HERE  ----- */}
-            <main className={`grow w-9/10 mx-auto my-0 flex flex-col`}>
+            <main
+                className={`grow w-9/10 mx-auto my-0 flex flex-col
+                            2xs:text-size-mobile-2xs 2xs:mt-10
+                            xs:text-size-mobile-xs
+                            `}
+            >
                 <PageTitle
                     firstLetter="P"
                     rest="rojekte & CDs"
                 />
-                <div className="flex">
-                    <div className={`w-8/12`}>
-                        <article className="pr-10 flowText">
-                            <Bulletpoint bulletpointSize={bulletpointSize}>
-                                <strong className="font-semibold">Onlineauftritte</strong> zu verschiedenen Themen
-                            </Bulletpoint>
-                            <Bulletpoint bulletpointSize={bulletpointSize}>
-                                <strong className="font-semibold">Orchester-Tätigkeit</strong> in diversen
-                                Barockorchestern in Norddeutschland
-                            </Bulletpoint>
-                            <Bulletpoint bulletpointSize={bulletpointSize}>
-                                <strong className="font-semibold">Konzertreisen</strong> und Rundfunk- und
-                                Fernsehauftritte
-                            </Bulletpoint>
-                            <Bulletpoint
-                                classname="relative"
-                                bulletpointSize={bulletpointSize}
-                            >
-                                <strong className="font-semibold">CD-Aufnahmen</strong>
-                                <ul>
-                                    <Bulletpoint
-                                        fill="none"
-                                        bulletpointSize={bulletpointSize}
-                                    >
-                                        Trio Classico - Franz Danzi, Trios, Op. 71 mit Ancient Music Edition
-                                    </Bulletpoint>
-                                    <Bulletpoint
-                                        fill="none"
-                                        bulletpointSize={bulletpointSize}
-                                    >
-                                        Reflections - Flöte und Gitarre mit Daminus Records
-                                    </Bulletpoint>
-                                    <InfoBanner />
-                                </ul>
-                            </Bulletpoint>
-                            <Bulletpoint bulletpointSize={bulletpointSize}>
-                                <strong className="font-semibold">Fortbildungen</strong> gehalten im Rahmen des „JeKi
-                                Tages“ der Landesinstitut für Lehrerbildung und Schulentwicklung Hamburg.
-                            </Bulletpoint>
-                            <Bulletpoint bulletpointSize={bulletpointSize}>
-                                <strong className="font-semibold">Wettbewerbe</strong> - Erfolgreiche Teilnahme mehrerer
-                                Schüler bei Jugendmusiziert und Bundeswettbewerben.
-                            </Bulletpoint>
-                        </article>
-                    </div>
+                <div className="flex gap-3">
+                    <article
+                        className={`w-8/12 flowText
+                                    2xs:leading-7
+                                    sm-620:leading-regularText
+                                    md:text-size-desktop-md`}
+                    >
+                        <Bulletpoint bulletpointSize={bulletpointSize}>
+                            <strong className="font-semibold">Orchester-Tätigkeit</strong> in diversen Barockorchestern
+                            in Norddeutschland
+                        </Bulletpoint>
+                        <Bulletpoint bulletpointSize={bulletpointSize}>
+                            <strong className="font-semibold">Konzertreisen</strong> und Rundfunk- und Fernsehauftritte
+                        </Bulletpoint>
+                        <Bulletpoint
+                            classname="relative"
+                            bulletpointSize={bulletpointSize}
+                        >
+                            <strong className="font-semibold">CD-Aufnahmen</strong>
+                            <ul>
+                                <Bulletpoint
+                                    fill="none"
+                                    bulletpointSize={bulletpointSize}
+                                >
+                                    Trio Classico - Franz Danzi, Trios, Op. 71 mit Ancient Music Edition
+                                </Bulletpoint>
+                                <Bulletpoint
+                                    fill="none"
+                                    bulletpointSize={bulletpointSize}
+                                >
+                                    Reflections - Flöte und Gitarre mit Daminus Records
+                                </Bulletpoint>
+                                <InfoBanner />
+                            </ul>
+                        </Bulletpoint>
+                        <Bulletpoint bulletpointSize={bulletpointSize}>
+                            <strong className="font-semibold">Fortbildungen</strong> gehalten im Rahmen des „JeKi Tages“
+                            der Landesinstitut für Lehrerbildung und Schulentwicklung Hamburg.
+                        </Bulletpoint>
+                        <Bulletpoint bulletpointSize={bulletpointSize}>
+                            <strong className="font-semibold">Wettbewerbe</strong> - Erfolgreiche Teilnahme mehrerer
+                            Schüler bei Jugendmusiziert und Bundeswettbewerben.
+                        </Bulletpoint>
+                        <Bulletpoint bulletpointSize={bulletpointSize}>
+                            <strong className="font-semibold">Onlineauftritte</strong> zu verschiedenen Themen
+                        </Bulletpoint>
+                    </article>
                     <aside className={`grow w-4/12 flex justify-center`}>
                         <ul className="w-max p-5 flex flex-col gap-7">
                             <LinkCard
