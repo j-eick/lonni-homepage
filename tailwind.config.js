@@ -264,6 +264,11 @@ module.exports = {
                 "1350px": "1350px",
                 "canvas--1270px": "1150px",
             },
+            padding: {
+                //--- KONTAKT-CARD
+                //-----Mobile
+                mobile: "calc(1.2 * 8vw)",
+            },
             width: {
                 // DESKTOP
                 "1.5/10": "15%",
@@ -282,6 +287,9 @@ module.exports = {
                 "canvas-width": "min(85%, 1200px)",
                 "responsive-photo": "clamp(300px, 35vw, 450px)",
 
+                //--- KONTAKT-CARD
+                "kontaktCard-desktop": "clamp(80%, 80%, 500px)",
+
                 //--- BURGER-MENU
                 //-----Mobile
                 "burger-middleLine": "5vw",
@@ -290,9 +298,14 @@ module.exports = {
 
                 //--- PROFILE-IMAGE
                 profileImage: "clamp(5rem, 25vw, 9rem)",
+
                 //--- UNTERRICHT-IMAGE
                 "unterrichtImage-responsive": "clamp(5rem, 30vw, 500px)",
                 "unterrichtImage-big": "380px",
+
+                //--- CAT-SILHOUETTE
+                "catSilhuette-mobile": "clamp(120px, 45vw, 170px)",
+                "catSilhuette-desktop": "clamp(120px, .75 * 45vw, 200px)",
             },
             padding: {
                 1.5: "6px",
@@ -308,6 +321,7 @@ module.exports = {
                 xs: "375px",
                 "xs-375": "375px",
                 "2sm": "455px",
+                "2sm-455": "455px",
                 "sm-620": "620px",
                 md: "768px",
                 "md-768": "768px",
@@ -317,6 +331,7 @@ module.exports = {
             spacing: {
                 "pageTitle-underline": "clamp(.5rem, 1.25vw, 1rem)",
                 profilePhoto: "clamp(6rem, 20vw, 20rem)",
+                catSilhouette: "clamp(-5vw, 3vw, -50px)",
             },
             translate: {
                 1.5: "6px",

@@ -69,9 +69,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
     return (
         <div
             className={`relative min-h-full w-screen no-scrollbar overflow-auto
-                        font-geosans text-size-default text-color-primary
-                        2xs:pb-16
-                        md:pt-2 md:pb-20`}
+                        font-geosans text-size-default text-color-primary `}
         >
             <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
 

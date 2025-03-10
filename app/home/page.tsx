@@ -12,7 +12,7 @@ export default function Home() {
     return (
         <MainLayout>
             <main
-                className={`grow bbb
+                className={`grow
                             w-12/12 mx-auto my-0 flex gap-5
                             2xs:px-7 2xs:mt-10
                             2xs:text-size-mobile-2xs

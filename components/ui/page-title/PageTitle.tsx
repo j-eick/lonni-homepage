@@ -27,17 +27,11 @@ export default function PageTitle({ firstLetter, firstLetterStyle, rest, restSty
                     {firstLetter}
                 </span>
                 {rest}
-            </span> */}
+            </span> 
             {/* ----------------------------- */}
 
             <h1 className="relative h-max font-secondary">
-                <span
-                    className={`font-bold
-                                xss-320:text-size-firstLetterPagetitle
-                                `}
-                >
-                    {firstLetter}
-                </span>
+                <span className={`xss-320:text-size-firstLetterPagetitle `}>{firstLetter}</span>
                 <span
                     className={`tracking-wider
                                 xss-320:text-size-restPageTitle-mobile`}
