@@ -20,20 +20,19 @@ export default function Home() {
                             md-768:w-8.5/10`}
             >
                 <article className={`relative flowText`}>
-                    <PageTitle
-                        firstLetter="U"
-                        rest="nterricht"
-                    />
-
                     <MyImage
                         src={unterrichtImage}
                         alt={""}
                         className={`
-                                w-unterrichtImage-responsive h-max float-right ml-3 mb-1
-                                            rounded-xl overflow-hidden
-                                            shadow-softWhite border-1.5 border-slate-200
-                                            2xs:hidden
-                                            md-768:block lg-1024:w-unterrichtImage-big`}
+                            w-unterrichtImage-responsive h-max float-right ml-3 mb-1
+                            rounded-xl overflow-hidden
+                            shadow-softWhite border-1.5 border-slate-200
+                            2xs:hidden
+                            md-768:block lg-1024:w-unterrichtImage-big`}
+                    />
+                    <PageTitle
+                        firstLetter="U"
+                        rest="nterricht"
                     />
                     <div
                         className={`flowText
@@ -41,10 +40,7 @@ export default function Home() {
                                     sm-620:leading-regularText
                                     md:text-size-desktop-md`}
                     >
-                        <Bulletpoint>
-                            Dozentin als Privatlehrerin und an der Staatlichen Jugendmusikschule Hamburg seit 1984 in
-                            den Standorten Gymnasium Bondenwald und Albert-Schweitzer-Gymnasium in Hamburg.
-                        </Bulletpoint>
+                        <Bulletpoint>Here&apos;s some info about my classes and the way I teach.</Bulletpoint>
                         <Bulletpoint>
                             Als Pionierin des Gruppenunterrichts und Schulkooperations Hamburg weit bekannt
                         </Bulletpoint>
