@@ -17,7 +17,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
     // const [buttonClicked, setButtonClicked] = useState(path);
 
     const linkStyleClasses = (href: string) =>
-        `h-1/3 w-full grid place-items-center duration-300 transition-all
+        `w-full grid place-items-center duration-300 transition-all
         ${href === buttonClicked ? `scale-navLinks-selected text-navLinks font-bold` : ""}`;
 
     // const underlineLinkClasses = (href: string) => `w-max px-2 text-center relative navLinks-underlineHover
@@ -129,41 +129,36 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
             </div>
             {/* ----- MOBILE HEADER ----- */}
             <div className="relative">
-                {/* <div className="absolute z-10 bottom-10 w-full h-[.5px] bg-black" /> */}
                 <div
-                    className={`fixed z-10 w-full pl-[2vw] pr-[5vw] py-[1vw] flex justify-between items-center
-                        min-h-[80px] h-mobile-header bg-header-mobile shadow-flat
-                        2xs:px-8
-                        md:hidden`}
+                    className={`fixed z-10 w-full h-mobile-header-parent backdrop-blur-xl
+                                md:hidden`}
                 >
-                    <Link
-                        href="/home"
-                        className="h-full grid place-items-center "
+                    <div
+                        className={`h-mobile-header py-[1vw] 
+                                    flex justify-between items-center 
+                                    2xs:px-8
+                                `}
                     >
-                        <h1
-                            className={`relative h-[16vw] w-[31vw] text-[8vw] font-headerTitle
-                                    xs:w-[33vw]`}
+                        <Link
+                            href="/home"
+                            className="h-full grid place-items-center "
                         >
-                            <span
-                                className={`absolute top-0 left-0
-                                        2xs:text-size-headerTitle-mobile-2xs`}
+                            <h1
+                                className={`relative h-full w-[31vw] max-w-[205px] text-[8vw] font-headerTitle 
+                                        2xs:text-size-headerTitle-mobile-2xs
+                                        xs:w-[33vw]
+                                        `}
                             >
-                                Lonni
-                            </span>
-                            <span
-                                className={`absolute bottom-0 right-0
-                                        2xs:text-[9vw]`}
-                            >
-                                Inman
-                            </span>
-                        </h1>
-                    </Link>
-                    <BurgerMenu
-                        onClick={() => setIsModalOpen(!isModalOpen)}
-                        isOpen={isModalOpen}
-                    />
+                                <span className={`absolute top-title-lonni-top left-[-3vw] `}>Lonni</span>
+                                <span className={`absolute top-[5.5vw] right-[2vw] `}>Inman</span>
+                            </h1>
+                        </Link>
+                        <BurgerMenu
+                            onClick={() => setIsModalOpen(!isModalOpen)}
+                            isOpen={isModalOpen}
+                        />
 
-                    {/* {isModalOpen && <div className="fixed inset-0 z-30 backdrop-blur-[7px] backdrop-brightness-80" />}
+                        {/* {isModalOpen && <div className="fixed inset-0 z-30 backdrop-blur-[7px] backdrop-brightness-80" />}
 
                 <div
                     id="mobileModal"
@@ -193,6 +188,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                         ))}
                     </ul>
                 </div> */}
+                    </div>
                 </div>
             </div>
         </header>
