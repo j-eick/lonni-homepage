@@ -69,9 +69,9 @@ export default function MainLayout({ children }: { children: ReactNode }) {
     return (
         <div
             className={`relative min-h-full w-screen no-scrollbar overflow-auto
-                        font-geosans text-size-default text-color-primary `}
+                        font-TA_ExtraLight text-size-default text-color-primary `}
         >
-            <p className={`absolute top-2 right-2`}>{windowSize.width}px</p>
+            <p className={`absolute z-50 top-2 right-2`}>{windowSize.width}px</p>
 
             <BackdropLayer isModalOpen={isModalOpen} />
 
@@ -83,7 +83,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             <div className="relative ">
                 <Canvas
                     className={`relative max-w-canvas--1270px overflow-hidden 
-                                mb-12 mx-auto my-0
+                                mx-auto my-0
                                 md:w-8.5/10`}
                 >
                     <Header
@@ -112,7 +112,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
                             mx-auto my-0 flex flex-col
                             md:w-8.5/10`}
             >
-                <div className="mobile-topMargin:mt-[20vw]">{children}</div>
+                {children}
             </Canvas>
         </div>
     );
@@ -131,8 +131,8 @@ function Modal({
         <div
             id="mobileModal"
             className={`fixed inset-0 z-30 bg-slate-100 p-4 w-4/5 h-4/5 m-auto font-secondary
-                                transition-opacity duration-300 ease-in-out rounded-sm
-                                ${isModalOpen ? "opacity-70" : "opacity-0 pointer-events-none"}`}
+                        transition-opacity duration-300 ease-in-out rounded-md
+                        ${isModalOpen ? "opacity-70 " : "opacity-0 pointer-events-none"}`}
         >
             <button
                 className="absolute top-4 right-4 text-2xl"
@@ -160,7 +160,7 @@ function Modal({
 }
 
 function BackdropLayer({ isModalOpen }: { isModalOpen: boolean }) {
-    return <>{isModalOpen && <div className="fixed inset-0 z-20 backdrop-blur-[7px] backdrop-brightness-80" />}</>;
+    return <>{isModalOpen && <div className="fixed inset-0 z-20 backdrop-blur-[7px] backdrop-brightness-70" />}</>;
 }
 
 function Canvas({ children, className }: { children: ReactNode; className: string }) {
