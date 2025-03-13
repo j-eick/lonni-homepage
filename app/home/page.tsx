@@ -13,26 +13,37 @@ export default function Home() {
         <MainLayout>
             <main
                 className={`grow
-                            w-12/12 mx-auto my-0 flex gap-5
-                            2xs:px-7 2xs:mt-10
+                            mx-auto flex gap-5 mt-content_top-mobile mb-content_bottom-mobile
+                            2xs:w-10/12
                             2xs:text-size-mobile-2xs
                             xs:text-size-mobile-xs
-                            md-768:w-8/10
+                            md-768:w-8/10 
+                            md-768:mt-content_top-desktop 
+                            md-768:mb-content_bottom-desktop
                         `}
             >
-                <article className="relative flowText">
+                <article className="relative">
                     <MyImage
                         src={profilePic}
                         alt={"Profile Photo"}
-                        className={`fixed z-10 right-[5vw] top-profilePhoto
-                                    w-profileImage h-profileImage mx-auto rounded-full overflow-hidden
-                                    2xs:shadow-line 2xs:border-[.5px] 2xs:border-slate-300
+                        className={`w-profileImage h-profileImage mx-auto rounded-full overflow-hidden
+                                    2xs:shadow-step 2xs:border-[.15px] 2xs:border-slate-300
                                     md:hidden`}
                     />
-                    <PageTitle
-                        firstLetter="W"
-                        rest="illkommen!"
-                    />
+                    <h1 className="relative my-5 font-secondary text-center">
+                        <span className={`xss-320:text-size-firstLetterPagetitle-mobile `}>W</span>
+                        <span
+                            className={`tracking-wider
+                                xss-320:text-size-restPageTitle-mobile`}
+                        >
+                            illkommen!
+                        </span>
+                        {/* <div
+                            className={`absolute w-full bottom-pageTitle-underline border-b-1.5 border-slate-700/40
+                                xss-320:border-b-1
+                                `}
+                        /> */}
+                    </h1>
                     <div
                         className={`flowTextAndLastChild
                                     2xs:leading-7
@@ -54,9 +65,9 @@ export default function Home() {
                             Schauen Sie sich in Ruhe um, und wenn Sie Fragen haben oder Interesse an einem meiner
                             Angebote, melden Sie sich einfach. Ich freue mich darauf, von Ihnen zu hören!
                         </p>
-
                         <p>
-                            Herzliche Grüße, <br />
+                            Herzliche Grüße!
+                            <br />
                             Lonni Inman
                         </p>
                     </div>
