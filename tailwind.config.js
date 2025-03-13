@@ -78,6 +78,7 @@ module.exports = {
                 line2: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px",
                 flat: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
                 step: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+                stepp: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
                 soft: "rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px",
                 softWhite:
                     "0 0px 50px rgba(255, 255, 255, 0.753), 0 0 50px rgba(255, 255, 255, 0.353), 0 0 50px rgba(255, 255, 255, 0.353), rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
@@ -97,6 +98,9 @@ module.exports = {
                 tertiary: "var(--font-tertiary)",
                 quaternary: "var(--font-quaternary)",
                 geosans: "var(--font-geosans)",
+                creatoDisplay: "var(--font-creatoDisplay)",
+                TA: "var(--font-TA-Fabricans-Thin)",
+                TA_ExtraLight: "var(--font-TA-Fabricans-ExtraLight)",
 
                 landingTitle: ["Calinastiya"],
                 headerTitle: "var(--font-headerTitle)",
@@ -120,7 +124,7 @@ module.exports = {
                 //--- HEADER-TITLE ---//
                 //-----Mobile
                 //--------2xs:320px
-                "size-headerTitle-mobile-2xs": "9vw",
+                "size-headerTitle-mobile-2xs": "clamp(30px, 9vw, 55px)",
                 //-----Desktop
                 "size-headerTitle": "85px",
 
@@ -138,8 +142,8 @@ module.exports = {
 
                 //--- PAGE-TITLE ---//
                 //-----Mobile
-                "size-firstLetterPagetitle-mobile": "var(--step-3)",
-                "size-restPageTitle-mobile": "var(--step-2)",
+                "size-firstLetterPagetitle-mobile": "var(--step-4)",
+                "size-restPageTitle-mobile": "var(--step-3)",
                 //-----Desktop
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
@@ -229,7 +233,8 @@ module.exports = {
                 "9/10": "90%",
                 "9.5/10": "95%",
 
-                "mobile-header": "16vw",
+                "mobile-header": "clamp(70px, 18vw, 90px)",
+                "mobile-header-parent": "clamp(70px + 5px, 18vw + 2vw, 105px)",
                 "marquee-banner": "clamp( 1.85rem, 2.75vw, 2.25rem)",
 
                 //--- BURGER-MENU
@@ -238,7 +243,8 @@ module.exports = {
                 "burger-lineHeight": ".5vw",
 
                 //--- PROFILE-IMAGE
-                profileImage: "clamp(5rem, 25vw, 9rem)",
+                profileImage: "clamp(5rem, 35vw, 9rem)",
+
                 //--- UNTERRICHT-IMAGE
                 // unterrichtImage: "clamp(3rem, 10vw, 9rem)",
             },
@@ -252,7 +258,6 @@ module.exports = {
                 standardText: 1.8,
                 regularText: "34px",
             },
-            margin: {},
             maxWidth: {
                 "navContainer-left": "440px",
                 "navContainer-right": "405px",
@@ -297,11 +302,14 @@ module.exports = {
                 "burger-canvas": "8vw",
 
                 //--- PROFILE-IMAGE
-                profileImage: "clamp(5rem, 25vw, 9rem)",
+                profileImage: "clamp(5rem, 35vw, 9rem)",
 
                 //--- UNTERRICHT-IMAGE
-                "unterrichtImage-responsive": "clamp(5rem, 30vw, 500px)",
-                "unterrichtImage-big": "380px",
+                //-----Mobile
+                "unterrichtImage-min320": "clamp(10rem, 70vw, 400px)",
+                //-----Desktop
+                "unterrichtImage-min768": "clamp(5rem, 47.5vw, 350px)",
+                "unterrichtImage-min1024": "clamp(5rem, 47.5vw, 400px)",
 
                 //--- CAT-SILHOUETTE
                 "catSilhuette-mobile": "clamp(120px, 45vw, 170px)",
@@ -325,6 +333,7 @@ module.exports = {
                 "sm-620": "620px",
                 md: "768px",
                 "md-768": "768px",
+                "md2-855": "855px",
                 "lg-1024": "1024px",
                 "xl-1200": "1200px",
             },
@@ -332,6 +341,31 @@ module.exports = {
                 "pageTitle-underline": "clamp(.5rem, 1.25vw, 1rem)",
                 profilePhoto: "clamp(6rem, 20vw, 20rem)",
                 catSilhouette: "clamp(-5vw, 3vw, -50px)",
+
+                //--- CONTENT - MARGIN-TOP to header
+                //-----Mobile
+                marginToHeader: "clamp(70px, 18vw, 90px)",
+
+                //--- CONTENT (Margin-Top)
+                //-----Mobile
+                "content_top-mobile": "clamp(100px, 30vw, 160px)",
+                //-----Desktop
+                "content_top-desktop": "clamp(50px, 5vw, 70px)",
+
+                //--- CONTENT (Margin-Bottom)
+                //-----Mobile
+                "content_bottom-mobile": "clamp(60px, 20vw, 160px)",
+                //-----Desktop
+                "content_bottom-desktop": "clamp(60px, 10vw, 120px)",
+
+                //--- MOBILE-TITLE
+                //-----Lonni (top)
+                "title-lonni-top": "clamp(10px, 1.5vw, 20px)",
+                //-----Lonni (left)
+                "title-lonni-left": "clamp(10px, 0px, 20px)",
+
+                //-----Inman
+                "title-inman-mobile": "clamp(10px, 1.5vw, 20px)",
             },
             translate: {
                 1.5: "6px",

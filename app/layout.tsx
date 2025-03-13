@@ -25,7 +25,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="de">
             <body className={`${geistSans.variable} ${geistMono.variable} relative`}>
                 <div className={`absolute inset-0 bg`} />
                 {children}

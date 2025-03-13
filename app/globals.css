@@ -31,6 +31,18 @@
     font-family: GeosansLight;
     src: url("./fonts/GeosansLight.ttf");
 }
+@font-face {
+    font-family: CreatoDisplay-Thin;
+    src: url("./fonts/CreatoDisplay-Thin.otf");
+}
+@font-face {
+    font-family: TA-Fabricans-Thin;
+    src: url("./fonts/TA-Fabricans-Thin.otf");
+}
+@font-face {
+    font-family: TA-Fabricans-ExtraLight;
+    src: url("./fonts/TA-Fabricans-ExtraLight.otf");
+}
 
 @layer components {
     .content-allPages {
@@ -128,6 +140,9 @@
 
     --font-headerTitle: Argentina Script, "Inter";
     --font-geosans: GeosansLight, "Inter";
+    --font-creatoDisplay: CreatoDisplay-Thin, "Inter";
+    --font-TA-Fabricans-Thin: TA-Fabricans-Thin, "Inter";
+    --font-TA-Fabricans-ExtraLight: TA-Fabricans-ExtraLight, "Inter";
 
     /* ----- Schrift-Farben ----- */
     --primary: "#1c2022";
@@ -203,8 +218,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* font-family: var(--font-secondary, Arial, Helvetica, sans-serif);
-    font-size: var(--step-1); */
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -217,22 +231,6 @@ aside {
     font-size: var(--step-4);
     line-height: 1.2;
 }
-
-/* h1 {
-    font-size: var(--step-5);
-}
-h2 {
-    font-size: var(--step-4);
-}
-h3 {
-    font-size: var(--step-3);
-}
-h4 {
-    font-size: var(--step-2);
-}
-h5 {
-    font-size: var(--step-1);
-} */
 
 p {
     font-size: var(--size-default);
@@ -250,6 +248,11 @@ p {
 
 .flowTextAndLastChild > :last-child {
     margin-top: 2em;
+}
+
+.hyphen-auto {
+    hyphens: auto;
+    word-break: break-word;
 }
 
 a {
