@@ -124,7 +124,7 @@ module.exports = {
                 //--- HEADER-TITLE ---//
                 //-----Mobile
                 //--------2xs:320px
-                "size-headerTitle-mobile-2xs": "clamp(30px, 9vw, 55px)",
+                "size-headerTitle-mobile-2xs": "clamp(30px, 9vw, 50px)",
                 //-----Desktop
                 "size-headerTitle": "85px",
 
@@ -143,7 +143,7 @@ module.exports = {
                 //--- PAGE-TITLE ---//
                 //-----Mobile
                 "size-firstLetterPagetitle-mobile": "var(--step-4)",
-                "size-restPageTitle-mobile": "var(--step-3)",
+                "size-restPageTitle-mobile": "var(--step-2)",
                 //-----Desktop
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
@@ -258,22 +258,6 @@ module.exports = {
                 standardText: 1.8,
                 regularText: "34px",
             },
-            maxWidth: {
-                "navContainer-left": "440px",
-                "navContainer-right": "405px",
-                "950px": "950px",
-                "1050px": "1050px",
-                "1150px": "1150px",
-                "1200px": "1200px",
-                "1250px": "1250px",
-                "1350px": "1350px",
-                "canvas--1270px": "1150px",
-            },
-            padding: {
-                //--- KONTAKT-CARD
-                //-----Mobile
-                mobile: "calc(1.2 * 8vw)",
-            },
             width: {
                 // DESKTOP
                 "1.5/10": "15%",
@@ -291,6 +275,10 @@ module.exports = {
                 "nav-minWidth": "min(30%, 270px)",
                 "canvas-width": "min(85%, 1200px)",
                 "responsive-photo": "clamp(300px, 35vw, 450px)",
+
+                //--- TITLE
+                //-----Mobile
+                title: "clamp()",
 
                 //--- KONTAKT-CARD
                 "kontaktCard-desktop": "clamp(80%, 80%, 500px)",
@@ -315,9 +303,24 @@ module.exports = {
                 "catSilhuette-mobile": "clamp(120px, 45vw, 170px)",
                 "catSilhuette-desktop": "clamp(120px, .75 * 45vw, 200px)",
             },
+            maxWidth: {
+                "navContainer-left": "440px",
+                "navContainer-right": "405px",
+                "950px": "950px",
+                "1050px": "1050px",
+                "1150px": "1150px",
+                "1200px": "1200px",
+                "1250px": "1250px",
+                "1350px": "1350px",
+                "canvas--1270px": "1150px",
+            },
             padding: {
                 1.5: "6px",
                 2.5: "10px",
+
+                //--- KONTAKT-CARD
+                //-----Mobile
+                mobile: "calc(1.2 * 8vw)",
             },
             scale: {
                 "navLinks-selected": "1.15",
@@ -357,6 +360,9 @@ module.exports = {
                 "content_bottom-mobile": "clamp(60px, 20vw, 160px)",
                 //-----Desktop
                 "content_bottom-desktop": "clamp(60px, 10vw, 120px)",
+
+                //--- PAGE-TITLE || marginBottom
+                pageTitle: "clamp(12.5px, 1.75vw, 25px)",
 
                 //--- MOBILE-TITLE
                 //-----Lonni (top)
