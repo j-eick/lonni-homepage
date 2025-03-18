@@ -14,6 +14,7 @@ type LinkCardProps = {
     height?: number;
     optional?: string;
     photo: StaticImport;
+    photoStyle?: string;
 };
 
 export default function LinkCard({
@@ -27,6 +28,7 @@ export default function LinkCard({
     actualLink = "",
     optional,
     photo,
+    photoStyle,
 }: LinkCardProps) {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -41,7 +43,7 @@ export default function LinkCard({
     return (
         <div
             className={`
-                        relative w-max rounded-2xl overflow-hidden border-1 border-slate-700/50
+                        relative rounded-2xl overflow-hidden border-1 border-slate-700/50
                         hover:border-1 hover:border-slate-700 hover:shadow-flat`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -60,7 +62,7 @@ export default function LinkCard({
                 alt={""}
                 width={width}
                 height={height}
-                className={`absolute inset-0 z-0
+                className={`absolute inset-0 z-0 ${photoStyle}
                             ${isHovered ? "blur-sm brightness-80 animate-slowOpacityFadeout " : ""}`}
             />
             {isHovered ? <div className="absolute inset-0 z-10 bg-slate-600/40" /> : ""}

@@ -13,10 +13,11 @@ export default function Home() {
         <MainLayout>
             <main
                 className={`grow
-                            mx-auto flex gap-5 mt-content_top-mobile mb-content_bottom-mobile
+                            mx-auto flex gap-5 
+                            mt-content_top-mobile 
+                            mb-content_bottom-mobile
                             2xs:w-10/12
                             2xs:text-size-mobile-2xs
-                            xs:text-size-mobile-xs
                             md-768:w-8/10 
                             md-768:mt-content_top-desktop 
                             md-768:mb-content_bottom-desktop

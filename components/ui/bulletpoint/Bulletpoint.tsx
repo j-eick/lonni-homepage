@@ -7,25 +7,27 @@ import { ReactNode } from "react";
 
 type BulletpointProps = {
     children: ReactNode;
-    bulletpointSize?: number;
+    active?: true | false;
+    size?: number;
     fill?: "none" | "currentColor";
     classname?: string;
 };
 
 export default function Bulletpoint({
     children,
-    bulletpointSize = 14,
+    size = 14,
     fill = "currentColor",
+    active = false,
     classname,
 }: BulletpointProps) {
     const bulletpointClasses = "flex place-items-start gap-4";
-    const bulletpointPositionClasses = "pt-3 2xs:hidden";
+    const bulletpointPositionClasses = active ? "pt-3" : "hidden";
 
     return (
         <li className={`${bulletpointClasses} ${classname}`}>
             <span className={bulletpointPositionClasses}>
                 <MySVG.BulletItemArrow
-                    size={bulletpointSize}
+                    size={size}
                     fill={fill}
                 />
             </span>
