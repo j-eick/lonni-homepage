@@ -169,6 +169,9 @@ module.exports = {
             },
             gap: {
                 burgerMenu: "1.25vw",
+
+                //---PROJECT-LINKS
+                projectLinks: "clamp(20px, 3.5vw, 40px)",
             },
             gridTemplateRows: {
                 13: "repeat(16, minmax(0, 1fr))",

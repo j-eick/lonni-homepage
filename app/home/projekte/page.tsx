@@ -131,7 +131,7 @@ export default function Home() {
                         </h1>
                         <ul
                             className={`
-                                w-full flex flex-wrap gap-[clamp(20px, 3.5vw, 40px)] justify-center pt-[1vw]
+                                w-full flex flex-wrap gap-projectLinks justify-center pt-[1vw]
                             `}
                         >
                             <LinkCard
