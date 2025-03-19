@@ -45,7 +45,7 @@ export default function Home() {
                         /> */}
                     </h1>
                     <div
-                        className={`flowTextAndLastChild
+                        className={`flowTextAndLastChild hyphens-auto
                                     2xs:leading-7
                                     sm-620:leading-regularText
                                     md:text-size-desktop-md
