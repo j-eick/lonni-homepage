@@ -12,49 +12,59 @@ import Bulletpoint from "@/components/ui/bulletpoint/Bulletpoint";
 export default function Home() {
     return (
         <MainLayout>
-            <main
-                className={`w-12/12 px-7 mx-auto my-0 flex flex-col
+            {/* w-12/12 px-7 mx-auto my-0 flex flex-col
                             2xs:mt-10
-                            md-768:w-8/10
+                            md-768:w-8/10 */}
+            <main
+                className={`grow
+                            mx-auto flex-col gap-5 
+                            mt-content_top-mobile 
+                            mb-content_bottom-mobile
+                            2xs:w-10/12
+                            2xs:text-size-mobile-2xs
+                            md-768:w-9/12 
+                            md-768:mt-content_top-desktop 
+                            md-768:mb-content_bottom-desktop
                             `}
             >
-                <PageTitle
-                    firstLetter="B"
-                    rest="iografie"
-                />
-                <div className="flex">
+                <h1 className="relative mb-pageTitle font-secondary">
+                    <span
+                        className={`
+                                xss-320:text-size-restPageTitle-mobile`}
+                    >
+                        Über mich
+                    </span>
+                    <span
+                        className={`
+                                    absolute block w-full bottom-1 border-b-1.5 border-slate-700/40
+                                    xss-320:border-b-1
+                                `}
+                    />
+                </h1>
+                <div className="flex gap-5">
                     <article
-                        className={`w-8/12 flowText 
+                        className={`w-8/12 flowText hyphens-auto
                                     2xs:leading-7
                                     sm-620:leading-regularText
                                     md:text-size-desktop-md `}
                     >
-                        {/* ###-----  PageTitle without opaque mirroring  -----### */}
-                        {/* <h1 className="relative mb-7 text-pageTitle leading-1.3">
-                            <span
-                                className={`block font-pageTitle tracking-wider
-                                            w-11/12 border-b-1 border-slate-700/40`}
-                            >
-                                <span className="font-bold text-firstLetterTitle">B</span>iografie
-                            </span>
-                                 </h1> */}
-                        <Bulletpoint>
+                        <Bulletpoint active={true}>
                             Dozentin-Tätigkeit als Privat-Lehrerin und an der Staatlichen Jugendmusikschule Hamburg seit
                             1984 in den Standorten Gymnasium Bondenwald und Albert-Schweitzer-Gymnasium in Hamburg.
                         </Bulletpoint>
-                        <Bulletpoint>
+                        <Bulletpoint active={true}>
                             Als Pionierin des Gruppenunterrichts und Schulkooperations Hamburg weit bekannt.
                         </Bulletpoint>
-                        <Bulletpoint>
+                        <Bulletpoint active={true}>
                             Workshop Leiterin mehrmals an Pädagogischen Jahreskonferenzen der Staatliche
                             Jugendmusikschule z.B. &apos;Wie kommt man in der Puste?&apos; und &apos;Musikspiele -
                             Spiele mit Musik - Spiele für den Instrumentalen Gruppenunterricht&apos;.
                         </Bulletpoint>
-                        <Bulletpoint>
+                        <Bulletpoint active={true}>
                             Mehrmals im Rahmen des „JeKi Tages“ der Landesinstitut für Lehrerbildung und
                             Schulentwicklung Hamburg Fortbildungen gehalten
                         </Bulletpoint>
-                        <Bulletpoint>
+                        <Bulletpoint active={true}>
                             Erfolgreiche Teilnahme von diverse Schüler an Wettbewerbe, u.a. Jugendmusiziert bis zum
                             Bundeswettbewerb
                         </Bulletpoint>

@@ -382,6 +382,9 @@ module.exports = {
 
                 //--- INFO-BOX (padding top)
                 infoBox: "clamp(10px, 4vw, 40px)",
+
+                //---BULLETPOINT-POSITION
+                bulletpointPosition: "clamp(7px, .5vw, 7px)",
             },
             translate: {
                 1.5: "6px",

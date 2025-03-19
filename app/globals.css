@@ -240,7 +240,7 @@ p {
     margin-top: 0.8em;
 }
 .flowText > * + * {
-    margin-top: 0.4em;
+    margin-top: 0.5em;
 }
 .flowTextAndLastChild > * + * {
     margin-top: 0.55em;
