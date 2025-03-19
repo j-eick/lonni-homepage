@@ -232,16 +232,16 @@ const InfoBanner = () => {
                         />
                         <span className="font-black">Bestellen</span>
                     </div>
-                    <div className="w-full flex-col pt-infoBox text-center leading-10">
-                        <span className="block h-infobox-text px-3">
+                    <div className="w-full flex-col pt-infoBox text-center leading-8">
+                        <span className="block px-3">
                             eMail an: <br />
-                            <div
+                            {/* <div
                                 className={`absolute w-11/12 left-1/2 -translate-x-1/2  
                                         bottom border-b-1 border-slate-500/40`}
-                            />
+                            /> */}
                         </span>
                         <span
-                            className={`h-infobox-text px-3 flex items-center justify-center
+                            className={`px-3 flex items-center justify-center
                                         tracking-wider font-semibold
                             `}
                         >
