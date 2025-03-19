@@ -20,8 +20,8 @@ export default function Bulletpoint({
     active = false,
     classname,
 }: BulletpointProps) {
-    const bulletpointClasses = "flex place-items-start gap-4";
-    const bulletpointPositionClasses = active ? "pt-3" : "hidden";
+    const bulletpointClasses = "flex place-items-start gap-3";
+    const bulletpointPositionClasses = active ? "pt-bulletpointPosition" : "hidden";
 
     return (
         <li className={`${bulletpointClasses} ${classname}`}>
