@@ -21,7 +21,7 @@ export default function Home() {
         <MainLayout>
             <main
                 className={`grow 
-                            w-9/10 mx-auto flowText 
+                            w-9/10 mx-auto 
                             mt-content_top-mobile 
                             mb-content_bottom-mobile
                             2xs:w-10/12
@@ -47,7 +47,7 @@ export default function Home() {
                 </h1>
                 <div className="w-full flex gap-5">
                     <article
-                        className={`w-full flowText 
+                        className={`w-full 
                                     2xs:leading-7 
                                     sm-620:leading-regularText
                                     md:text-size-desktop-md`}
@@ -110,9 +110,11 @@ export default function Home() {
                             </Bulletpoint>
                             <Bulletpoint active={true}>Reflections - Flöte und Gitarre mit Daminus Records</Bulletpoint>
                             <br />
-                            <InfoBanner />
+                            <br className="md-768:hidden" />
                         </ul>
+                        <InfoBanner />
                         <br />
+                        <br className="md-768:hidden" />
                         <h1 className="relative mb-pageTitle font-secondary">
                             <span
                                 className={`
@@ -190,23 +192,66 @@ export default function Home() {
 
 const InfoBanner = () => {
     return (
-        <div
-            className={`relative px-10 py-3 my-5 mx-auto w-max flex flex-col flex-wrap gap-2 
+        <>
+            {/* ----- Desktop ----- */}
+            <div
+                className={`relative px-10 py-3 my-5 mx-auto w-max flex flex-col flex-wrap gap-2
                         font-secondary rounded-lg shadow-flat text-center 
-                        whitespace-pre bg-slate-200/60`}
-        >
-            <span className="inline-block px-2 w-max mx-auto my-0 border-b-1 border-slate-600">
-                Bestellen per eMail:
-            </span>
-            <div className="flex items-center flex-wrap gap-3">
-                <span className="inline-block font-semibold tracking-wider">lonni.inman@gmx.de</span>
-                <FaRightLong />
-                12eur + Versand
+                        whitespace-pre bg-slate-200/60
+                        xss-320:hidden
+                        md-768:block
+                        `}
+            >
+                <span className="inline-block px-2 w-max mx-auto my-0 border-b-1 border-slate-600">
+                    Bestellen per eMail:
+                </span>
+                <div className="mt-3 flex items-center flex-wrap gap-3">
+                    <span className="inline-block font-semibold tracking-wider">lonni.inman@gmx.de</span>
+                    <FaRightLong />
+                    12eur + Versand
+                </div>
+                <MySVG.Cart
+                    className="absolute -top-3 left-5"
+                    size={30}
+                />
             </div>
-            <MySVG.Cart
-                className="absolute -top-3 left-5"
-                size={30}
-            />
-        </div>
+            {/* ----- Mobile ----- */}
+            <div
+                className={`font-secondary rounded-lg shadow-flat bg-slate-200/60 
+                            md-768:hidden`}
+            >
+                <div className={`relative p-3 flex`}>
+                    <div
+                        className={`absolute z-10 -top-5 left-1/2 -translate-x-1/2 
+                                flex gap-2 items-center
+                                px-5 py-1 rounded-full border-[.5px] border-slate-600/40 bg-slate-200`}
+                    >
+                        <MySVG.Cart
+                            size={25}
+                            className="mx-auto"
+                        />
+                        <span className="font-black">Bestellen</span>
+                    </div>
+                    <div className="w-full flex-col pt-infoBox text-center leading-10">
+                        <span className="block h-infobox-text px-3">
+                            eMail an: <br />
+                            <div
+                                className={`absolute w-11/12 left-1/2 -translate-x-1/2  
+                                        bottom border-b-1 border-slate-500/40`}
+                            />
+                        </span>
+                        <span
+                            className={`h-infobox-text px-3 flex items-center justify-center
+                                        tracking-wider font-semibold
+                            `}
+                        >
+                            lonni.inman@gmx.de
+                        </span>
+                        {/* <div className="absolute h-full top-0 right-0 border-r-1 border-slate-700/40" /> */}
+                    </div>
+                </div>
+                <p className="text-center text-size-smaller">[ 12eur + Versand ]</p>
+            </div>
+        </>
     );
 };
