@@ -245,6 +245,10 @@ module.exports = {
                 //--- PROFILE-IMAGE
                 profileImage: "clamp(5rem, 35vw, 9rem)",
 
+                //--- INFO-BOX
+                //-----Mobile (padding top)
+                "infobox-text": "clamp(40px, 7vw, 50px)",
+
                 //--- UNTERRICHT-IMAGE
                 // unterrichtImage: "clamp(3rem, 10vw, 9rem)",
             },
@@ -372,6 +376,9 @@ module.exports = {
 
                 //-----Inman
                 "title-inman-mobile": "clamp(10px, 1.5vw, 20px)",
+
+                //--- INFO-BOX (padding top)
+                infoBox: "clamp(10px, 4vw, 40px)",
             },
             translate: {
                 1.5: "6px",

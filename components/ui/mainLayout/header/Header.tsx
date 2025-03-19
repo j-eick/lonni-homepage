@@ -130,7 +130,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
             {/* ----- MOBILE HEADER ----- */}
             <div className="relative">
                 <div
-                    className={`fixed z-10 w-full h-mobile-header-parent backdrop-blur-xl
+                    className={`fixed z-50 w-full h-mobile-header-parent backdrop-blur-xl
                                 md:hidden`}
                 >
                     <div
