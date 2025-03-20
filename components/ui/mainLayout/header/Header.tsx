@@ -130,7 +130,7 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
             {/* ----- MOBILE HEADER ----- */}
             <div className="relative">
                 <div
-                    className={`fixed z-50 w-full h-mobile-header-parent backdrop-blur-xl
+                    className={`fixed z-20 w-full h-mobile-header-parent backdrop-blur-xl
                                 md:hidden`}
                 >
                     <div
@@ -149,8 +149,8 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                                         xs:w-[33vw]
                                         `}
                             >
-                                <span className={`absolute top-title-lonni-top left-[-3vw] `}>Lonni</span>
-                                <span className={`absolute top-[5.5vw] right-[2vw] `}>Inman</span>
+                                <span className={`absolute z-10 top-title-lonni-top left-[-3vw] `}>Lonni</span>
+                                <span className={`absolute z-10 top-[5.5vw] right-[2vw] `}>Inman</span>
                             </h1>
                         </Link>
                         <BurgerMenu

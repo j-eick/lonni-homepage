@@ -160,7 +160,7 @@ function Modal({
 }
 
 function BackdropLayer({ isModalOpen }: { isModalOpen: boolean }) {
-    return <>{isModalOpen && <div className="fixed inset-0 z-20 backdrop-blur-[7px] backdrop-brightness-70" />}</>;
+    return <>{isModalOpen && <div className="fixed inset-0 z-30 backdrop-blur-[7px] backdrop-brightness-70" />}</>;
 }
 
 function Canvas({ children, className }: { children: ReactNode; className: string }) {
