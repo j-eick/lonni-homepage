@@ -34,7 +34,7 @@ export default function Home() {
                         <span className={`xss-320:text-size-firstLetterPagetitle-mobile `}>W</span>
                         <span
                             className={`tracking-wider
-                                xss-320:text-size-restPageTitle-mobile`}
+                                xss-320:text-size-pageTitle-mobile`}
                         >
                             illkommen!
                         </span>

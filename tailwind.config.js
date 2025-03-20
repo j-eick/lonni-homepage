@@ -142,8 +142,9 @@ module.exports = {
 
                 //--- PAGE-TITLE ---//
                 //-----Mobile
-                "size-firstLetterPagetitle-mobile": "var(--step-4)",
+                "size-firstLetterPagetitle-mobile": "var(--step-5)",
                 "size-restPageTitle-mobile": "var(--step-2)",
+                "size-pageTitle-mobile": "var(--step-3)",
                 //-----Desktop
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",

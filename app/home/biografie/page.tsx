@@ -30,7 +30,7 @@ export default function Home() {
                 <h1 className="relative mb-pageTitle font-secondary">
                     <span
                         className={`
-                                xss-320:text-size-restPageTitle-mobile`}
+                                xss-320:text-size-pageTitle-mobile`}
                     >
                         Über mich
                     </span>

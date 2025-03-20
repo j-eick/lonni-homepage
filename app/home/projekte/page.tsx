@@ -26,7 +26,7 @@ export default function Home() {
                             mb-content_bottom-mobile
                             2xs:w-10/12
                             2xs:text-size-mobile-2xs
-                            md-768:w-8/10 
+                            md-768:w-9/12 
                             md-768:mt-content_top-desktop 
                             md-768:mb-content_bottom-desktop
                             `}
@@ -34,7 +34,7 @@ export default function Home() {
                 <h1 className="relative mb-pageTitle font-secondary">
                     <span
                         className={`
-                                xss-320:text-size-restPageTitle-mobile`}
+                                xss-320:text-size-pageTitle-mobile`}
                     >
                         Projekte
                     </span>
@@ -90,13 +90,13 @@ export default function Home() {
                         <h1 className="relative mb-pageTitle font-secondary">
                             <span
                                 className={`
-                                xss-320:text-size-restPageTitle-mobile`}
+                                xss-320:text-size-pageTitle-mobile`}
                             >
                                 CD-Aufnahmen
                             </span>
                             <span
                                 className={`
-                                    absolute block w-full bottom-1 border-b-1.5 border-slate-700/40
+                                    absolute block w-full bottom-0 border-b-1.5 border-slate-700/40
                                     xss-320:border-b-1
                                 `}
                             />
@@ -118,13 +118,13 @@ export default function Home() {
                         <h1 className="relative mb-pageTitle font-secondary">
                             <span
                                 className={`
-                                xss-320:text-size-restPageTitle-mobile`}
+                                xss-320:text-size-pageTitle-mobile`}
                             >
                                 Online-Projekte
                             </span>
                             <span
                                 className={`
-                                    absolute block w-full bottom-1 border-b-1.5 border-slate-700/40
+                                    absolute block w-full bottom-0 border-b-1.5 border-slate-700/40
                                     xss-320:border-b-1
                                 `}
                             />
@@ -139,14 +139,14 @@ export default function Home() {
                                 url="trioclassico.de"
                                 photo={trioclassico}
                                 photoStyle="transform -translate-y-3 grow"
-                                width={270}
+                                width={250}
                             />
                             <LinkCard
                                 description="Barock und Klassik auf historischen Instrumenten"
                                 url="ilclavifiato.de"
                                 photo={ilclavifiato}
                                 photoStyle="transform -translate-y-5 grow"
-                                width={270}
+                                width={250}
                             />
                             <LinkCard
                                 description="„Flöte x Historisch“"
@@ -156,7 +156,7 @@ export default function Home() {
                                 url="flötehistorisch.de"
                                 actualLink="https://lonniinman.wixsite.com/fl-te-mal-historisch"
                                 photo={floeteHistorisch}
-                                width={270}
+                                width={250}
                                 photoStyle="grow"
                             />
                         </ul>

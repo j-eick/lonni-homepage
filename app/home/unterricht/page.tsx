@@ -18,16 +18,26 @@ export default function Home() {
                             mb-content_bottom-mobile
                             2xs:w-10/12
                             2xs:text-size-mobile-2xs
-                            md-768:w-8/10 
+                            md-768:w-9/12 
                             md-768:mt-content_top-desktop 
                             md-768:mb-content_bottom-desktop
                             `}
             >
                 <article className={`relative flowText`}>
-                    <PageTitle
-                        firstLetter="U"
-                        rest="nterricht"
-                    />
+                    <h1 className="relative mb-pageTitle font-secondary">
+                        <span
+                            className={`
+                                xss-320:text-size-pageTitle-mobile`}
+                        >
+                            Unterricht
+                        </span>
+                        <span
+                            className={`
+                                    absolute block w-full bottom-1 border-b-1.5 border-slate-700/40
+                                    xss-320:border-b-1
+                                `}
+                        />
+                    </h1>
                     <div
                         className={`text-justify hyphens-auto
                                     2xs:leading-7
