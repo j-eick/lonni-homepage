@@ -130,65 +130,29 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
             {/* ----- MOBILE HEADER ----- */}
             <div className="relative">
                 <div
-                    className={`fixed z-20 w-full h-mobile-header-parent backdrop-blur-xl
+                    className={`fixed z-20 w-full h-mobile-header-parent py-[1vw] flex justify-between items-center 
+                                backdrop-blur-xl shadow-regular
+                                2xs:px-8
                                 md:hidden`}
                 >
-                    <div
-                        className={`h-mobile-header py-[1vw] 
-                                    flex justify-between items-center 
-                                    2xs:px-8
-                                `}
+                    <Link
+                        href="/home"
+                        className="h-full grid place-items-center "
                     >
-                        <Link
-                            href="/home"
-                            className="h-full grid place-items-center "
-                        >
-                            <h1
-                                className={`relative h-full w-[31vw] max-w-[205px] text-[8vw] font-headerTitle 
+                        <h1
+                            className={`relative h-full w-[31vw] max-w-[195px] text-[8vw] font-headerTitle 
                                         2xs:text-size-headerTitle-mobile-2xs
                                         xs:w-[33vw]
                                         `}
-                            >
-                                <span className={`absolute z-10 top-title-lonni-top left-[-3vw] `}>Lonni</span>
-                                <span className={`absolute z-10 top-[5.5vw] right-[2vw] `}>Inman</span>
-                            </h1>
-                        </Link>
-                        <BurgerMenu
-                            onClick={() => setIsModalOpen(!isModalOpen)}
-                            isOpen={isModalOpen}
-                        />
-
-                        {/* {isModalOpen && <div className="fixed inset-0 z-30 backdrop-blur-[7px] backdrop-brightness-80" />}
-
-                <div
-                    id="mobileModal"
-                    className={`fixed inset-0 z-30 bg-slate-100 p-4 w-4/5 h-4/5 m-auto
-                                transition-opacity duration-300 ease-in-out rounded-sm
-                                ${isModalOpen ? "opacity-70" : "opacity-0 pointer-events-none"}`}
-                >
-                    <button
-                        className="absolute top-4 right-4 text-2xl"
-                        onClick={() => setIsModalOpen(false)}
-                    >
-                        close
-                    </button>
-                    <ul className="flex flex-col space-y-4 mt-12">
-                        {[...navLinksLeft, ...navLinksRight].map(link => (
-                            <li
-                                key={link.href}
-                                className="text-center text-size-mobile-navLinks"
-                            >
-                                <Link
-                                    href={link.href}
-                                    onClick={() => setIsModalOpen(false)}
-                                >
-                                    <span className={underlineLinkClasses(link.href)}>{link.name}</span>
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div> */}
-                    </div>
+                        >
+                            <span className={`absolute z-10 top-title-lonni-top-exp left-title-lonni-left`}>Lonni</span>
+                            <span className={`absolute z-10 bottom-1 right-[0rem] `}>Inman</span>
+                        </h1>
+                    </Link>
+                    <BurgerMenu
+                        onClick={() => setIsModalOpen(!isModalOpen)}
+                        isOpen={isModalOpen}
+                    />
                 </div>
             </div>
         </header>

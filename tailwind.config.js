@@ -372,11 +372,13 @@ module.exports = {
                 //--- PAGE-TITLE || marginBottom
                 pageTitle: "clamp(12.5px, 1.75vw, 25px)",
 
-                //--- MOBILE-TITLE
-                //-----Lonni (top)
+                //--- HEADER-TITLE
+                //-----Mobile (Lonni - top)
                 "title-lonni-top": "clamp(10px, 1.5vw, 20px)",
+                //-----Mobile (Lonni - top exp)
+                "title-lonni-top-exp": "clamp(2px, 1.5vw, 4px)",
                 //-----Lonni (left)
-                "title-lonni-left": "clamp(10px, 0px, 20px)",
+                "title-lonni-left": "clamp(-15px, -2vw, 10px)",
 
                 //-----Inman
                 "title-inman-mobile": "clamp(10px, 1.5vw, 20px)",
