@@ -146,6 +146,7 @@ module.exports = {
                 "size-restPageTitle-mobile": "var(--step-2)",
                 "size-pageTitle-mobile": "var(--step-3)",
                 //-----Desktop
+                "size-pageTitle-desktop": "var(--step-25)",
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
                 "size-regularTitle": "var(--step-2)",
@@ -253,6 +254,9 @@ module.exports = {
                 //-----Mobile (padding top)
                 "infobox-text": "clamp(40px, 7vw, 50px)",
 
+                //--- PAGE-TITLE (height of "CDs" & "Online-Projects")
+                "pageTitle-modded": "clamp(39.2px, 7.5vw, 78.3px)",
+
                 //--- UNTERRICHT-IMAGE
                 // unterrichtImage: "clamp(3rem, 10vw, 9rem)",
             },
@@ -349,7 +353,6 @@ module.exports = {
                 "xl-1200": "1200px",
             },
             spacing: {
-                "pageTitle-underline": "clamp(.5rem, 1.25vw, 1rem)",
                 profilePhoto: "clamp(6rem, 20vw, 20rem)",
                 catSilhouette: "clamp(-5vw, 3vw, -50px)",
 
@@ -371,6 +374,10 @@ module.exports = {
 
                 //--- PAGE-TITLE || marginBottom
                 pageTitle: "clamp(12.5px, 1.75vw, 25px)",
+
+                //--- PAGE-TITLE UNDERLINE || marginBottom
+                "pageTitle-underline": "clamp(.25rem, 1vw, 1rem)",
+                "pageTitle-underline-modded": "clamp(0px, .35vw, 10px)",
 
                 //--- HEADER-TITLE
                 //-----Mobile (Lonni - top)

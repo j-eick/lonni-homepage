@@ -31,7 +31,7 @@ export default function Bulletpoint({
                     fill={fill}
                 />
             </span>
-            <p>{children}</p>
+            <div>{children}</div>
         </li>
     );
 }

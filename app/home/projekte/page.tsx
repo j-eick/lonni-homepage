@@ -34,13 +34,15 @@ export default function Home() {
                 <h1 className="relative mb-pageTitle font-secondary">
                     <span
                         className={`
-                                xss-320:text-size-pageTitle-mobile`}
+                            xss-320:text-size-pageTitle-mobile
+                            sm-620:text-size-pageTitle-desktop
+                            `}
                     >
                         Projekte
                     </span>
                     <span
                         className={`
-                                    absolute block w-full bottom-1 border-b-1.5 border-slate-700/40
+                                    absolute block w-full bottom-pageTitle-underline border-b-1.5 border-slate-700/40
                                     xss-320:border-b-1
                                 `}
                     />
@@ -55,24 +57,26 @@ export default function Home() {
                         <ul className="flowText hyphens-auto">
                             <Bulletpoint active={true}>
                                 <strong className="font-semibold">Auftritte</strong>
-                                <Bulletpoint
-                                    active={true}
-                                    fill="none"
-                                >
-                                    Teilnahme an diversen Barockorchestern in Norddeutschland.
-                                </Bulletpoint>
-                                <Bulletpoint
-                                    active={true}
-                                    fill="none"
-                                >
-                                    Konzertreisen und Rundfunk- und Fernsehauftritte.
-                                </Bulletpoint>
-                                <Bulletpoint
-                                    active={true}
-                                    fill="none"
-                                >
-                                    Onlineauftritte zu verschiedenen Themen.
-                                </Bulletpoint>
+                                <ul>
+                                    <Bulletpoint
+                                        active={true}
+                                        fill="none"
+                                    >
+                                        Teilnahme an diversen Barockorchestern in Norddeutschland.
+                                    </Bulletpoint>
+                                    <Bulletpoint
+                                        active={true}
+                                        fill="none"
+                                    >
+                                        Konzertreisen und Rundfunk- und Fernsehauftritte.
+                                    </Bulletpoint>
+                                    <Bulletpoint
+                                        active={true}
+                                        fill="none"
+                                    >
+                                        Onlineauftritte zu verschiedenen Themen.
+                                    </Bulletpoint>
+                                </ul>
                             </Bulletpoint>
                             <Bulletpoint
                                 active={true}
@@ -89,14 +93,15 @@ export default function Home() {
                         <br />
                         <h1 className="relative mb-pageTitle font-secondary">
                             <span
-                                className={`
-                                xss-320:text-size-pageTitle-mobile`}
+                                className={`xss-320:text-size-pageTitle-mobile
+                                            sm-620:text-size-pageTitle-desktop`}
                             >
-                                CD-Aufnahmen
+                                CDs
                             </span>
                             <span
                                 className={`
-                                    absolute block w-full bottom-0 border-b-1.5 border-slate-700/40
+                                    absolute block w-full bottom-pageTitle-underline-modded 
+                                    border-b-1.5 border-slate-700/40
                                     xss-320:border-b-1
                                 `}
                             />
@@ -118,13 +123,15 @@ export default function Home() {
                         <h1 className="relative mb-pageTitle font-secondary">
                             <span
                                 className={`
-                                xss-320:text-size-pageTitle-mobile`}
+                                xss-320:text-size-pageTitle-mobile
+                                sm-620:text-size-pageTitle-desktop`}
                             >
                                 Online-Projekte
                             </span>
                             <span
                                 className={`
-                                    absolute block w-full bottom-0 border-b-1.5 border-slate-700/40
+                                    absolute block w-full bottom-pageTitle-underline-modded 
+                                    border-b-1.5 border-slate-700/40
                                     xss-320:border-b-1
                                 `}
                             />

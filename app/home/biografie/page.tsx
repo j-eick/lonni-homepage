@@ -30,13 +30,14 @@ export default function Home() {
                 <h1 className="relative mb-pageTitle font-secondary">
                     <span
                         className={`
-                                xss-320:text-size-pageTitle-mobile`}
+                                xss-320:text-size-pageTitle-mobile
+                                sm-620:text-size-pageTitle-desktop`}
                     >
                         Über mich
                     </span>
                     <span
                         className={`
-                                    absolute block w-full bottom-1 border-b-1.5 border-slate-700/40
+                                    absolute block w-full bottom-pageTitle-underline border-b-1.5 border-slate-700/40
                                     xss-320:border-b-1
                                 `}
                     />
