@@ -149,7 +149,7 @@ module.exports = {
                 "size-pageTitle-desktop": "var(--step-25)",
                 "size-pageTitle": "var(--step-2)",
                 "size-firstLetterPagetitle": "var(--step-3)",
-                "size-regularTitle": "var(--step-2)",
+                "size-regularTitle": "var(--step-15)",
 
                 //--- PAGE-TITLE-SHADOW ---//
                 //-----Mobile
@@ -386,6 +386,10 @@ module.exports = {
                 "title-lonni-top-exp": "clamp(2px, 1.5vw, 4px)",
                 //-----Lonni (left)
                 "title-lonni-left": "clamp(-15px, -2vw, 10px)",
+
+                //---KONTAKT-CARD (margin-top)
+                kontakt_card: "clamp(13rem, 40vw, 15rem)",
+                kontakt_card_768: "clamp(9rem, 40vw, 5rem)",
 
                 //-----Inman
                 "title-inman-mobile": "clamp(10px, 1.5vw, 20px)",
