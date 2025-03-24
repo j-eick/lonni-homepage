@@ -128,10 +128,11 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                 </ul>
             </div>
             {/* ----- MOBILE HEADER ----- */}
-            <div className="relative">
+            <div className="relative flex justify-center">
                 <div
-                    className={`fixed z-20 w-full h-mobile-header-parent py-[1vw] flex justify-between items-center 
-                                backdrop-blur-xl shadow-regular
+                    className={`fixed top-5 z-20 w-11/12 h-mobile-header-parent py-[1vw] 
+                                flex justify-between items-center rounded-lg
+                                backdrop-blur-xl shadow-regular 
                                 2xs:px-8
                                 md:hidden`}
                 >
