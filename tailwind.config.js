@@ -306,7 +306,8 @@ module.exports = {
 
                 //--- BIOGRAFIE-IMAGE
                 //-----Mobile
-                biografieImg: "clamp(6.25rem, 25vw, 10rem)",
+                biografieImg_mobile: "clamp(5.5rem, 25vw, 9rem)",
+                biografieImg_desktop: "clamp(6.25rem, 17.5vw, 10rem)",
 
                 //--- UNTERRICHT-IMAGE
                 //-----Mobile

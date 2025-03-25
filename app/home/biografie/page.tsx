@@ -56,7 +56,7 @@ export default function Home() {
                                     sm-620:leading-regularText
                                     md:text-size-desktop-md `}
                     >
-                        <div className={`float-end w-biografieImg flex justify-center ml-4 mb-3`}>
+                        <div className={`float-end w-biografieImg_mobile flex justify-center ml-4 mb-3`}>
                             <MyImage
                                 src={profilePic}
                                 alt={"Profile photo"}
@@ -113,7 +113,7 @@ export default function Home() {
                                     sm-620:leading-regularText
                                     md:text-size-desktop-md`}
                     >
-                        <div className="float-end flex justify-center ml-4">
+                        <div className="float-end w-biografieImg_desktop flex justify-center ml-4">
                             <MyImage
                                 src={profilePic}
                                 alt={"Profile photo"}
