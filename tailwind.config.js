@@ -304,6 +304,10 @@ module.exports = {
                 //--- PROFILE-IMAGE
                 profileImage: "clamp(5rem, 35vw, 9rem)",
 
+                //--- BIOGRAFIE-IMAGE
+                //-----Mobile
+                biografieImg: "clamp(6.25rem, 25vw, 10rem)",
+
                 //--- UNTERRICHT-IMAGE
                 //-----Mobile
                 "unterrichtImage-min320": "clamp(10rem, 70vw, 400px)",
@@ -362,7 +366,7 @@ module.exports = {
 
                 //--- CONTENT (Margin-Top)
                 //-----Mobile
-                "content_top-mobile": "clamp(100px, 30vw, 160px)",
+                "content_top-mobile": "clamp(130px, 30vw, 160px)",
                 //-----Desktop
                 "content_top-desktop": "clamp(50px, 5vw, 70px)",
 
