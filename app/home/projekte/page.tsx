@@ -48,44 +48,32 @@ export default function Home() {
                 </h1>
                 <div className="w-full flex gap-5">
                     <article
-                        className={`w-full 
+                        className={`w-full
                                     sm-620:leading-mobile
                                     2md-875:leading-desktop`}
                     >
                         <ul className="flowText hyphens-auto">
+                            <strong className="font-CreatoDisplay text-gray-500/60">Auftritte</strong>
+                            <ul className="flowText">
+                                <Bulletpoint active={true}>
+                                    Teilnahme an diversen Barockorchestern in Norddeutschland.
+                                </Bulletpoint>
+                                <Bulletpoint active={true}>
+                                    Konzertreisen und Rundfunk- und Fernsehauftritte.
+                                </Bulletpoint>
+                                <Bulletpoint active={true}>Onlineauftritte zu verschiedenen Themen.</Bulletpoint>
+                            </ul>
+
+                            <strong className="font-CreatoDisplay text-gray-500/60">Dozentin</strong>
+                            <ul className="flowText">
+                                <Bulletpoint active={true}>
+                                    Fortbildungen gehalten im Rahmen des „JeKi Tages“ der Landesinstitut für
+                                    Lehrerbildung und Schulentwicklung Hamburg.
+                                </Bulletpoint>
+                            </ul>
+                            <strong className="font-CreatoDisplay text-gray-500/60">Wettbewerbe</strong>
                             <Bulletpoint active={true}>
-                                <strong className="font-semibold">Auftritte</strong>
-                                <ul className="flowText">
-                                    <Bulletpoint
-                                        active={true}
-                                        fill="none"
-                                    >
-                                        Teilnahme an diversen Barockorchestern in Norddeutschland.
-                                    </Bulletpoint>
-                                    <Bulletpoint
-                                        active={true}
-                                        fill="none"
-                                    >
-                                        Konzertreisen und Rundfunk- und Fernsehauftritte.
-                                    </Bulletpoint>
-                                    <Bulletpoint
-                                        active={true}
-                                        fill="none"
-                                    >
-                                        Onlineauftritte zu verschiedenen Themen.
-                                    </Bulletpoint>
-                                </ul>
-                            </Bulletpoint>
-                            <Bulletpoint
-                                active={true}
-                                classname=""
-                            >
-                                <strong className="font-semibold">Fortbildungen</strong> gehalten im Rahmen des „JeKi
-                                Tages“ der Landesinstitut für Lehrerbildung und Schulentwicklung Hamburg.
-                            </Bulletpoint>
-                            <Bulletpoint active={true}>
-                                <strong className="font-semibold">Wettbewerbe</strong> - Erfolgreiche Teilnahme mehrerer
-                                Schüler bei Jugendmusiziert und Bundeswettbewerben.
+                                Erfolgreiche Teilnahme mehrerer Schüler bei Jugendmusiziert und Bundeswettbewerben.
                             </Bulletpoint>
                         </ul>
                         <br />
@@ -118,7 +106,7 @@ export default function Home() {
                         <InfoBanner />
                         <br />
                         <br className="md-768:hidden" />
-                        <h1 className="relative mb-pageTitle font-secondary">
+                        <h1 className="relative mb-pageTitle  font-secondary">
                             <span
                                 className={`
                                 xss-320:text-size-pageTitle-mobile

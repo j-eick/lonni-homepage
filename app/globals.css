@@ -247,12 +247,19 @@ p {
 .flowText > * + * {
     margin-top: 0.5em;
 }
+.flowText > :last-child {
+    margin-bottom: 0.75em;
+}
+
 .flowTextAndLastChild > * + * {
     margin-top: 0.55em;
 }
-
 .flowTextAndLastChild > :last-child {
     margin-top: 2em;
+}
+.lastChild:last-child {
+    color: red;
+    margin-bottom: 1em;
 }
 
 .hyphen-auto {
