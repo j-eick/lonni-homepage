@@ -110,6 +110,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
             <Canvas
                 className={`max-w-canvas--1270px overflow-hidden 
                             mx-auto my-0 flex flex-col
+                            text-size-default
                             md:w-8.5/10`}
             >
                 {children}

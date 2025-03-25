@@ -17,7 +17,6 @@ export default function Home() {
                             mt-content_top-mobile 
                             mb-content_bottom-mobile
                             2xs:w-10/12
-                            2xs:text-size-mobile-2xs
                             md-768:w-9/12 
                             md-768:mt-content_top-desktop 
                             md-768:mb-content_bottom-desktop
@@ -42,9 +41,9 @@ export default function Home() {
                     </h1>
                     <div
                         className={`text-justify hyphens-auto
-                                    2xs:leading-7
-                                    sm-620:leading-regularText
-                                    md:text-size-desktop-md`}
+                                    sm-620:leading-mobile
+                                    2md-875:leading-desktop
+                                    `}
                     >
                         Here&apos;s some info about my classes and the way I teach. Als Pionierin des Gruppenunterrichts
                         und Schulkooperations Hamburg weit bekannt.

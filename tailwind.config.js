@@ -101,6 +101,7 @@ module.exports = {
                 creatoDisplay: "var(--font-creatoDisplay)",
                 TA: "var(--font-TA-Fabricans-Thin)",
                 TA_ExtraLight: "var(--font-TA-Fabricans-ExtraLight)",
+                CreatoDisplay: "var(--font-CreatoDisplay)",
 
                 landingTitle: ["Calinastiya"],
                 headerTitle: "var(--font-headerTitle)",
@@ -111,15 +112,13 @@ module.exports = {
                 //--- FONT-SIZE ---//
                 //-----Mobile
                 //--------2xs:320px
-                "size-mobile-2xs": "var(--step-15)",
-                //-------- xs:375px
-                "size-mobile-xs": "var(--step-15)",
+                "size-mobile-2xs": "var(--step-1)",
                 //-----Desktop
                 "size-small": "var(--step--1)",
                 "size-smaller": "var(--step--05)",
-                "size-default": "var(--step-0)",
+                "size-default": "var(--step-05)",
                 //--------md:768px
-                "size-desktop-md": "var(--step-1)",
+                "size-desktop-md": "var(--step-125)",
 
                 //--- HEADER-TITLE ---//
                 //-----Mobile
@@ -268,7 +267,8 @@ module.exports = {
                 1.5: 1.5,
                 2: 2,
                 standardText: 1.8,
-                regularText: "34px",
+                mobile: "34px",
+                desktop: "calc(1.4rem + 1.2vw)",
             },
             width: {
                 // DESKTOP
@@ -353,7 +353,7 @@ module.exports = {
                 "sm-620": "620px",
                 md: "768px",
                 "md-768": "768px",
-                "md2-855": "855px",
+                "2md-875": "875px",
                 "lg-1024": "1024px",
                 "xl-1200": "1200px",
             },

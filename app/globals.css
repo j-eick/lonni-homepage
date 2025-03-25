@@ -43,6 +43,10 @@
     font-family: TA-Fabricans-ExtraLight;
     src: url("./fonts/TA-Fabricans-ExtraLight.otf");
 }
+@font-face {
+    font-family: CreatoDisplay-ExtraBold;
+    src: url("./fonts/CreatoDisplay-ExtraBold.otf");
+}
 
 @layer components {
     .content-allPages {
@@ -143,6 +147,7 @@
     --font-creatoDisplay: CreatoDisplay-Thin, "Inter";
     --font-TA-Fabricans-Thin: TA-Fabricans-Thin, "Inter";
     --font-TA-Fabricans-ExtraLight: TA-Fabricans-ExtraLight, "Inter";
+    --font-CreatoDisplay: CreatoDisplay-ExtraBold, "Inter";
 
     /* ----- Schrift-Farben ----- */
     --primary: "#1c2022";

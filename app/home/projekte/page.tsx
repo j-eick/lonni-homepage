@@ -25,7 +25,6 @@ export default function Home() {
                             mt-content_top-mobile 
                             mb-content_bottom-mobile
                             2xs:w-10/12
-                            2xs:text-size-mobile-2xs
                             md-768:w-9/12 
                             md-768:mt-content_top-desktop 
                             md-768:mb-content_bottom-desktop
@@ -50,14 +49,13 @@ export default function Home() {
                 <div className="w-full flex gap-5">
                     <article
                         className={`w-full 
-                                    2xs:leading-7 
-                                    sm-620:leading-regularText
-                                    md:text-size-desktop-md`}
+                                    sm-620:leading-mobile
+                                    2md-875:leading-desktop`}
                     >
                         <ul className="flowText hyphens-auto">
                             <Bulletpoint active={true}>
                                 <strong className="font-semibold">Auftritte</strong>
-                                <ul>
+                                <ul className="flowText">
                                     <Bulletpoint
                                         active={true}
                                         fill="none"
@@ -200,31 +198,10 @@ export default function Home() {
 const InfoBanner = () => {
     return (
         <>
-            {/* ----- Desktop ----- */}
-            <div
-                className={`relative px-10 py-3 my-5 mx-auto w-max flex flex-col flex-wrap gap-2
-                        font-secondary rounded-lg shadow-flat text-center 
-                        whitespace-pre bg-slate-200/60
-                        xss-320:hidden
-                        md-768:block
-                        `}
-            >
-                <span className="inline-block px-2 w-max mx-auto my-0 border-b-1 border-slate-600">
-                    Bestellen per eMail:
-                </span>
-                <div className="mt-3 flex items-center flex-wrap gap-3">
-                    <span className="inline-block font-semibold tracking-wider">lonni.inman@gmx.de</span>
-                    <FaRightLong />
-                    12eur + Versand
-                </div>
-                <MySVG.Cart
-                    className="absolute -top-3 left-5"
-                    size={30}
-                />
-            </div>
             {/* ----- Mobile ----- */}
             <div
-                className={`font-secondary rounded-lg shadow-flat bg-slate-200/60 
+                className={`font-secondary rounded-lg shadow-flat bg-slate-200/60
+                            text-size-mobile-2xs
                             md-768:hidden`}
             >
                 <div className={`relative p-3 flex`}>
@@ -258,6 +235,29 @@ const InfoBanner = () => {
                     </div>
                 </div>
                 <p className="text-center text-size-smaller">[ 12eur + Versand ]</p>
+            </div>
+
+            {/* ----- Desktop ----- */}
+            <div
+                className={`relative px-10 py-3 my-5 mx-auto w-max flex flex-col flex-wrap gap-2
+                        font-secondary rounded-lg shadow-flat text-center 
+                        whitespace-pre bg-slate-200/60
+                        xss-320:hidden
+                        md-768:block
+                        `}
+            >
+                <span className="inline-block px-2 w-max mx-auto my-0 border-b-1 border-slate-600">
+                    Bestellen per eMail:
+                </span>
+                <div className="mt-3 flex items-center flex-wrap gap-3">
+                    <span className="inline-block font-semibold tracking-wider">lonni.inman@gmx.de</span>
+                    <FaRightLong />
+                    12eur + Versand
+                </div>
+                <MySVG.Cart
+                    className="absolute -top-3 left-5"
+                    size={30}
+                />
             </div>
         </>
     );
