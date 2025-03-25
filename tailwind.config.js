@@ -403,7 +403,7 @@ module.exports = {
                 infoBox: "clamp(10px, 4vw, 40px)",
 
                 //---BULLETPOINT-POSITION
-                bulletpointPosition: "clamp(7px, .5vw, 7px)",
+                bulletpointPosition: "clamp(7.5px, .75vw, 10px)",
             },
             translate: {
                 1.5: "6px",
