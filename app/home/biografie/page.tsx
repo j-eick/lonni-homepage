@@ -111,7 +111,6 @@ export default function Home() {
                         className={`w-full flowText hyphens-auto
                                     2xs:leading-7
                                     sm-620:leading-mobile
-                                    md:text-size-desktop-md
                                     2md-875:leading-desktop`}
                     >
                         <div className="float-end w-biografieImg_desktop flex justify-center ml-4">
