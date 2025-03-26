@@ -1,8 +1,6 @@
 "use client";
 
-import Header from "@/components/ui/mainLayout/header/Header";
 import MainLayout from "@/components/ui/mainLayout/MainLayout";
-import PageTitle from "@/components/ui/page-title/PageTitle";
 import MyImage from "@/components/image/MyImage";
 import profilePic from "../../public/content/profile.jpg";
 
@@ -28,6 +26,15 @@ export default function Home() {
                                     2xs:shadow-step 2xs:border-[.15px] 2xs:border-slate-300
                                     md:hidden`}
                     />
+                    <MyImage
+                        src={profilePic}
+                        alt={"Profile Photo"}
+                        className={`hidden
+                            w-profileImage_desktop h-profileImage_desktop mx-auto rounded-full overflow-hidden
+                            2xs:shadow-step 2xs:border-[.15px] 2xs:border-slate-300
+                            md:block 
+                            md:absolute md:right-0 md:-top-welcomeImg`}
+                    />
                     <h1 className="relative my-5 font-secondary text-center">
                         <span className={`xss-320:text-size-firstLetterPagetitle-mobile `}>W</span>
                         <span
@@ -43,9 +50,7 @@ export default function Home() {
                         /> */}
                     </h1>
                     <div
-                        className={`flowTextAndLastChild hyphens-auto
-                                    text-size-default
-                                    md:text-size-desktop-md
+                        className={`flowTextAndLastChild hyphens-auto text-size-welcomePage
                                     2md-875:leading-desktop
                             `}
                     >

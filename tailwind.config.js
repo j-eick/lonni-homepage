@@ -117,6 +117,8 @@ module.exports = {
                 "size-small": "var(--step--1)",
                 "size-smaller": "var(--step--05)",
                 "size-default": "var(--step-05)",
+                "size-welcomePage": "var(--step-1)",
+
                 //--------md:768px
                 "size-desktop-md": "var(--step-125)",
 
@@ -247,7 +249,10 @@ module.exports = {
                 "burger-lineHeight": ".5vw",
 
                 //--- PROFILE-IMAGE
+                //-----Mobile
                 profileImage: "clamp(5rem, 35vw, 9rem)",
+                //-----Desktop
+                profileImage_desktop: "clamp(5rem, 17.5vw, 12rem)",
 
                 //--- INFO-BOX
                 //-----Mobile (padding top)
@@ -302,7 +307,10 @@ module.exports = {
                 "burger-canvas": "8vw",
 
                 //--- PROFILE-IMAGE
+                //-----Mobile
                 profileImage: "clamp(5rem, 35vw, 9rem)",
+                //-----Desktop
+                profileImage_desktop: "clamp(5rem, 17.5vw, 12rem)",
 
                 //--- BIOGRAFIE-IMAGE
                 //-----Mobile
@@ -404,6 +412,9 @@ module.exports = {
 
                 //---BULLETPOINT-POSITION
                 bulletpointPosition: "clamp(7.5px, .75vw, 10px)",
+
+                //--- WELCOMEPAGE-IMAGE
+                welcomeImg: "clamp(3.75rem, 6vw , 5rem)",
             },
             translate: {
                 1.5: "6px",
