@@ -44,6 +44,70 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
 
     return (
         <header className={`relative`}>
+            {/* ----- MOBILE HEADER ----- */}
+            <div className="relative flex justify-center">
+                <div
+                    className={`fixed top-5 z-20 w-11/12 h-mobile-header py-[1vw] 
+                                flex justify-between items-center rounded-lg
+                                backdrop-blur-xl shadow-regular 
+                                2xs:px-8
+                                md:hidden`}
+                >
+                    <Link
+                        href="/home"
+                        className="h-full grid place-items-center"
+                    >
+                        <h1
+                            className={`relative h-full w-[31vw] max-w-[195px] text-[8vw] font-headerTitle 
+                                        2xs:text-size_headerTitle_mobile
+                                        xs:w-[33vw]
+                                        `}
+                        >
+                            <span className={`absolute z-10 top-title-lonni-top-exp left-title-lonni-left`}>Lonni</span>
+                            <span
+                                className={`absolute z-10 
+                                            bottom-title_inman_bottom 
+                                            right-title_inman_right_320
+                                            2sm-510:right-title_inman_right_510
+                                            `}
+                            >
+                                Inman
+                            </span>
+                        </h1>
+                    </Link>
+                    <div
+                        className={`hidden relative 
+                                    h-[70%] w-auto px-3 flex-col justify-center items-center
+                                    whitespace-pre tracking-wider text-size-smallest opacity-80
+                                    font-CreatoDisplay text-gray-500/40 italic
+                                    2sm-455:flex
+                                    2sm-510:text-size-small
+                                    sm-670:hidden
+                                    `}
+                    >
+                        <span className="h-full flex items-center">{`Unterricht  -  Konzerte`}</span>
+                        <span className="h-full flex items-center">Workshops</span>
+                        <div className="absolute w-[95%] h-[.25px] bg-slate-500/60 top-1/2 translate-y-1/2" />
+                    </div>
+                    <div
+                        className={`hidden relative 
+                                    h-[70%] w-auto px-3 justify-start items-center
+                                    whitespace-pre tracking-wider text-size-small opacity-80
+                                    font-CreatoDisplay text-gray-500/40 italic
+                                    sm-670:flex
+                                    `}
+                    >
+                        <span>{`Unterricht   /   `}</span>
+                        <span>{`Konzerte   /   `}</span>
+                        <span>Workshops</span>
+                    </div>
+                    <BurgerMenu
+                        onClick={() => setIsModalOpen(!isModalOpen)}
+                        isOpen={isModalOpen}
+                    />
+                </div>
+            </div>
+
             {/* ----- DESKTOP HEADER ----- */}
             <div
                 className={`hidden w-full
@@ -126,35 +190,6 @@ export default function Header({ isModalOpen, setIsModalOpen, underlineLinkClass
                         </ul>
                     </li>
                 </ul>
-            </div>
-            {/* ----- MOBILE HEADER ----- */}
-            <div className="relative flex justify-center">
-                <div
-                    className={`fixed top-5 z-20 w-11/12 h-mobile-header-parent py-[1vw] 
-                                flex justify-between items-center rounded-lg
-                                backdrop-blur-xl shadow-regular 
-                                2xs:px-8
-                                md:hidden`}
-                >
-                    <Link
-                        href="/home"
-                        className="h-full grid place-items-center "
-                    >
-                        <h1
-                            className={`relative h-full w-[31vw] max-w-[195px] text-[8vw] font-headerTitle 
-                                        2xs:text-size-headerTitle-mobile-2xs
-                                        xs:w-[33vw]
-                                        `}
-                        >
-                            <span className={`absolute z-10 top-title-lonni-top-exp left-title-lonni-left`}>Lonni</span>
-                            <span className={`absolute z-10 bottom-1 right-[0rem] `}>Inman</span>
-                        </h1>
-                    </Link>
-                    <BurgerMenu
-                        onClick={() => setIsModalOpen(!isModalOpen)}
-                        isOpen={isModalOpen}
-                    />
-                </div>
             </div>
         </header>
     );
