@@ -114,6 +114,7 @@ module.exports = {
                 //--------2xs:320px
                 "size-mobile-2xs": "var(--step-1)",
                 //-----Desktop
+                "size-smallest": "var(--step--2)",
                 "size-small": "var(--step--1)",
                 "size-smaller": "var(--step--05)",
                 "size-default": "var(--step-05)",
@@ -125,7 +126,7 @@ module.exports = {
                 //--- HEADER-TITLE ---//
                 //-----Mobile
                 //--------2xs:320px
-                "size-headerTitle-mobile-2xs": "clamp(30px, 9vw, 50px)",
+                size_headerTitle_mobile: "clamp(1.875rem, 8vw, 2.5rem)",
                 //-----Desktop
                 "size-headerTitle": "85px",
 
@@ -171,7 +172,7 @@ module.exports = {
                 max: "1000",
             },
             gap: {
-                burgerMenu: "1.25vw",
+                burgerMenu: "1.1vw",
 
                 //---PROJECT-LINKS
                 projectLinks: "clamp(20px, 3.5vw, 40px)",
@@ -240,13 +241,12 @@ module.exports = {
                 "9.5/10": "95%",
 
                 "mobile-header": "clamp(70px, 18vw, 90px)",
-                "mobile-header-parent": "clamp(70px + 5px, 18vw + 2vw, 105px)",
                 "marquee-banner": "clamp( 1.85rem, 2.75vw, 2.25rem)",
 
                 //--- BURGER-MENU
                 //-----Mobile
                 "burger-canvas": "8vw",
-                "burger-lineHeight": ".5vw",
+                "burger-lineHeight": ".3vw",
 
                 //--- PROFILE-IMAGE
                 //-----Mobile
@@ -302,8 +302,8 @@ module.exports = {
 
                 //--- BURGER-MENU
                 //-----Mobile
-                "burger-middleLine": "5vw",
-                "burger-outerLine": "4vw",
+                "burger-middleLine": "4vw",
+                "burger-outerLine": "3vw",
                 "burger-canvas": "8vw",
 
                 //--- PROFILE-IMAGE
@@ -358,7 +358,9 @@ module.exports = {
                 "xs-375": "375px",
                 "2sm": "455px",
                 "2sm-455": "455px",
+                "2sm-510": "510px",
                 "sm-620": "620px",
+                "sm-670": "670px",
                 md: "768px",
                 "md-768": "768px",
                 "2md-875": "875px",
@@ -393,12 +395,18 @@ module.exports = {
                 "pageTitle-underline-modded": "clamp(0px, .35vw, 10px)",
 
                 //--- HEADER-TITLE
-                //-----Mobile (Lonni - top)
-                "title-lonni-top": "clamp(10px, 1.5vw, 20px)",
-                //-----Mobile (Lonni - top exp)
+                //-----Mobile
+                //--------(Lonni - top)
+                // "title-lonni-top": "clamp(10px, 1.5vw, 20px)",
+                //--------(Lonni - top exp)
                 "title-lonni-top-exp": "clamp(2px, 1.5vw, 4px)",
-                //-----Lonni (left)
-                "title-lonni-left": "clamp(-15px, -2vw, 10px)",
+                //--------(Lonni - left)
+                "title-lonni-left": "clamp(-15px, -5vw, 10px)",
+                //--------(Inman - bottom)
+                title_inman_bottom: "clamp(-1rem, -.5vw, 3.125rem)",
+                //--------(Inman - right)
+                title_inman_right_320: "clamp(1rem, 5vw, 5vw)",
+                title_inman_right_510: "clamp(1rem, 7vw, 7vw)",
 
                 //---KONTAKT-CARD (margin-top)
                 kontakt_card: "clamp(13rem, 40vw, 15rem)",
