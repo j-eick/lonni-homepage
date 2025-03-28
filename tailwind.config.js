@@ -322,7 +322,7 @@ module.exports = {
                 "unterrichtImage-min320": "clamp(10rem, 70vw, 400px)",
                 //-----Desktop
                 "unterrichtImage-min768": "clamp(5rem, 47.5vw, 350px)",
-                "unterrichtImage-min1024": "clamp(5rem, 47.5vw, 400px)",
+                "unterrichtImage-min1024": "clamp(5rem, 32.5vw, 400px)",
 
                 //--- CAT-SILHOUETTE
                 "catSilhuette-mobile": "clamp(120px, 45vw, 170px)",
